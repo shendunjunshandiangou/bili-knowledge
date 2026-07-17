@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -37,8 +38,12 @@ function removeExt(name) {
   return name.replace(/\.md$/i, '');
 }
 
+// Linux 文件名上限 255 字节，VitePress 构建时还会给资源文件追加
+// 目录前缀和 hash 后缀，中文每字符占 3 字节，故 slug 须限制字节长度。
+const SLUG_MAX_BYTES = 90;
+
 function toSlug(name) {
-  return name
+  const full = name
     .replace(/\.md$/i, '')
     .replace(/[<>:"/\\|?*#&%]/g, '')
     .replace(/[\s\u3000]+/g, '-')
@@ -46,6 +51,18 @@ function toSlug(name) {
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
     .toLowerCase();
+
+  if (Buffer.byteLength(full, 'utf8') <= SLUG_MAX_BYTES) return full;
+
+  // 超长时截断并追加短 hash 保证唯一性
+  const hash = crypto.createHash('md5').update(full).digest('hex').slice(0, 8);
+  let truncated = '';
+  for (const ch of full) {
+    if (Buffer.byteLength(truncated + ch, 'utf8') > SLUG_MAX_BYTES - 9) break;
+    truncated += ch;
+  }
+  truncated = truncated.replace(/-$/, '');
+  return `${truncated}-${hash}`;
 }
 
 function readVaultFile(filePath) {
