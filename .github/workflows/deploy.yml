@@ -20,33 +20,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: site/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        working-directory: site
         run: npm ci
 
-      - name: Sync content and build
-        working-directory: site
-        run: |
-          npm run sync
-          npm run build
+      # 注意：docs/ 内容由本地 `npm run sync` 预生成并提交，
+      # CI 不执行 sync（知识库源文件不在本仓库中）
+      - name: Build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/docs/.vitepress/dist
+          path: docs/.vitepress/dist
 
   deploy:
     environment:
