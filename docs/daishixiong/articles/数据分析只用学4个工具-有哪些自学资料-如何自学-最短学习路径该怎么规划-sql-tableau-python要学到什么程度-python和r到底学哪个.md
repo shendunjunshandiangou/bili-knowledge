@@ -1,0 +1,31 @@
+---
+title: 数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL/Tableau/Python要学到什么程度？Python和R到底学哪个？
+---
+
+<BiliPlayer :bvid="'BV1fz4y1D7sy'" />
+
+> **摘要**：分析师四工具路径 Excel → SQL → Tableau → Python；Tableau 半天入门，求职需能搭仪表盘；Python 不做可视化，交给 BI。
+
+## 学习顺序
+
+1. **Excel**：基础函数、作图、数据透视表（Office2016+ 自带教程；系统学推荐则秀课程）
+2. **SQL**：`SELECT/FROM/WHERE/GROUP BY/HAVING/ORDER BY/LIMIT` + 基础函数覆盖 80%+ 查询；书《SQL必知必会》+ SQLZoo + 牛客 20 道中等题
+3. **Tableau**：拖拽出图，**入门约半天**；Public 社区有系统资料
+4. **Python**：放最后；仅用于大规模数据处理与高精度建模
+
+## Tableau 学到什么程度
+
+- 入门：拖拽制作各类图表；可补充统计学（李航《统计学习方法》），**结合图表/建模场景学**，勿脱离场景专门啃统计。
+- **求职门槛**：能用 Tableau **搭建数据仪表盘**；读《商业仪表盘可视化解决方案》。
+- 高级：数据库直连、发布、监控与预警——**入职后再掌握**。
+- Power BI / FineBI 等原理相通，初学 **集中掌握一个** 即可。
+
+## Python 与 BI 分工
+
+- **不用 Python 做可视化与分析**：Tableau 几步拖拽的事，Python 多行代码 + debug 打断思路，商业分析场景低效。
+- Python 核心：控制流、函数、**NumPy/Pandas/Matplotlib/sklearn**；LeetCode 刷题；做 **完整数据项目**（科赛社区）。
+- **Python vs R**：功能接近；深度学习 Python 更全面，新手选 Python。
+
+## 结论
+
+Excel + SQL + Tableau + Python 四工具可满足日常分析需求；熟练掌握可应对基础数据类岗位。

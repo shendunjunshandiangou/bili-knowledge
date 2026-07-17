@@ -1,0 +1,40 @@
+:root {
+  --vp-font-family-base: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  --vp-font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+.vp-doc {
+  line-height: 1.8;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.vp-doc p,
+.vp-doc li {
+  font-size: 16px;
+}
+
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  padding: 0.5rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.bili-player {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.VPNavBar .title {
+  font-weight: 700;
+}
+
+.VPSidebarItem .text {
+  font-size: 14px;
+}
