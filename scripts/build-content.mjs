@@ -326,12 +326,7 @@ function writeVaultIndex(vault, sections) {
 }
 
 function writeHomeIndex(vaultStats) {
-  const totalPages = vaultStats.reduce((sum, v) => sum + v.total, 0);
-  const content = `---\ntitle: B 站知识库\n---\n\n# B 站知识库网站\n\n将 Obsidian 知识库（小Lin说、戴师兄）导出为可搜索、可跳转的 VitePress 站点。\n\n## 知识库入口\n\n${vaultStats
-    .map((v) => `- [${v.name}](${v.key}/) — ${v.total} 页`)
-    .join('\n')}\n\n## 统计\n\n- 总页面数：${totalPages}\n${vaultStats
-    .map((v) => `  - ${v.name}：${v.total} 页（${v.details}）`)
-    .join('\n')}\n\n<ClientOnly>\n  <p style="color: var(--vp-c-text-2); margin-top: 2rem;">\n    本站为个人学习整理，所有内容版权归原作者与原 UP 主所有。\n  </p>\n</ClientOnly>\n`;
+  const content = `---\ntitle: B 站知识库\naside: false\nsidebar: false\n---\n\n<script setup>\nimport HomeHero from './.vitepress/theme/components/HomeHero.vue'\n</script>\n\n<HomeHero />\n`;
   fs.writeFileSync(path.join(docsRoot, 'index.md'), content, 'utf8');
 }
 

@@ -28,11 +28,18 @@ const src = computed(() => {
 .bili-player {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
-  margin: 1rem 0;
-  border-radius: 8px;
+  padding-top: 56.25%;
+  margin: 1.5rem 0;
+  border-radius: 12px;
   overflow: hidden;
-  background: #000;
+  background: var(--vp-c-bg-soft);
+  box-shadow: var(--vp-shadow-3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bili-player:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--vp-shadow-3);
 }
 
 .bili-player iframe {
@@ -41,5 +48,6 @@ const src = computed(() => {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 </style>
