@@ -1,12 +1,12 @@
 import { nextTick } from 'vue';
 
-const HOME_INTRO_KEY = 'bili-knowledge-home-intro-played';
-const ENTER_MS = 320;
+const HOME_INTRO_KEY = 'bili-knowledge-home-intro-v2';
+const ENTER_MS = 420;
 
 type MotionRouter = {
-  go: (href: string) => void;
+  go: (href: string) => void | Promise<void>;
   onBeforeRouteChange?: (to: string) => unknown;
-  onAfterRouteChange?: () => unknown;
+  onAfterRouteChange?: (to: string) => unknown;
 };
 
 function prefersReducedMotion() {
@@ -76,12 +76,12 @@ export function setupPageMotion(router: MotionRouter) {
   };
 
   const originalAfter = router.onAfterRouteChange;
-  router.onAfterRouteChange = () => {
+  router.onAfterRouteChange = (to: string) => {
     document.documentElement.classList.remove('route-leave');
     triggerRouteEnter(navigatingBack ? 'back' : 'forward');
     navigatingBack = false;
     nextTick(() => decorateArticleReveal());
-    return originalAfter?.();
+    return originalAfter?.(to);
   };
 
   window.addEventListener('kb-nav-back', () => {
@@ -95,16 +95,18 @@ export function setupPageMotion(router: MotionRouter) {
 }
 
 export async function navigateWithMotion(router: MotionRouter, href: string) {
-  const go = () => router.go(href);
+  const go = () => Promise.resolve(router.go(href));
 
   if (prefersReducedMotion() || isMobileViewport() || typeof document.startViewTransition !== 'function') {
-    go();
+    await go();
     return;
   }
 
   try {
-    await document.startViewTransition(go).finished;
+    await document.startViewTransition(async () => {
+      await go();
+    }).finished;
   } catch {
-    go();
+    await go();
   }
 }

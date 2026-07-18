@@ -9,16 +9,16 @@ html {
 
 /* ── Global route transitions ── */
 html.route-leave .VPDoc > .container > .content {
-  opacity: 0.72;
-  transform: translateY(6px);
+  opacity: 0.55;
+  transform: translateY(10px);
   transition:
-    opacity var(--kb-motion-fast) var(--kb-motion-ease-out),
-    transform var(--kb-motion-fast) var(--kb-motion-ease-out);
+    opacity var(--kb-motion-base) var(--kb-motion-ease-out),
+    transform var(--kb-motion-base) var(--kb-motion-ease-out);
 }
 
 html.route-enter .VPDoc > .container > .content,
 html.route-enter-back .VPDoc > .container > .content {
-  animation: kb-route-enter var(--kb-motion-slow) var(--kb-motion-ease-out) both;
+  animation: kb-route-enter 420ms var(--kb-motion-ease-out) both;
 }
 
 html.route-enter-back .VPDoc > .container > .content {
@@ -28,7 +28,7 @@ html.route-enter-back .VPDoc > .container > .content {
 @keyframes kb-route-enter {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
@@ -39,7 +39,7 @@ html.route-enter-back .VPDoc > .container > .content {
 @keyframes kb-route-enter-back {
   from {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;

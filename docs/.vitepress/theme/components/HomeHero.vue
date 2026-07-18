@@ -39,7 +39,20 @@ onMounted(() => {
       if (entry.isIntersecting) entry.target.classList.add('is-visible');
     }
   }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.home-page .section-block, .home-page .editorial-image').forEach((element) => revealObserver?.observe(element));
+  document.querySelectorAll('.home-page .section-block, .home-page .editorial-image').forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const viewport = window.innerHeight || document.documentElement.clientHeight;
+    if (rect.top < viewport * 0.92 && rect.bottom > viewport * 0.08) {
+      element.classList.add('is-visible');
+      return;
+    }
+    revealObserver?.observe(element);
+  });
+  window.setTimeout(() => {
+    document.querySelectorAll('.home-page .section-block:not(.is-visible), .home-page .editorial-image:not(.is-visible)').forEach((element) => {
+      element.classList.add('is-visible');
+    });
+  }, 1800);
 });
 
 onUnmounted(() => {
