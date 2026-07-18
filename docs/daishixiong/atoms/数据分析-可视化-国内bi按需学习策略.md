@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\", \"[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]\""
+title: 国内 BI 按需学习策略
 tags: "[可视化]"
 source: "\"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\", \"[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]\""
 ---
@@ -29,6 +29,6 @@ FineBI/Quick BI/永洪等国内 BI 多为 Power BI+Tableau 缝合版，不必专
 
 ## 被引用于
 
-- ["[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]"](/daishixiong/atoms/数据分析-可视化-2026tableau与finebi推荐.html)
-- ["[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-可视化-powerbi首选与tableau定位2023.html)
-- ["[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]"](/daishixiong/atoms/数据分析-可视化-数据工程四步与工具联动.html)
+- [2026 Tableau 与 FineBI 推荐](/daishixiong/atoms/数据分析-可视化-2026tableau与finebi推荐.html)
+- [Power BI 首选与 Tableau 定位（2023）](/daishixiong/atoms/数据分析-可视化-powerbi首选与tableau定位2023.html)
+- [数据工程四步与工具联动](/daishixiong/atoms/数据分析-可视化-数据工程四步与工具联动.html)

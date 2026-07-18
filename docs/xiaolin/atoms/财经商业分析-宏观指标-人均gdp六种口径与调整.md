@@ -1,5 +1,5 @@
 ---
-title: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+title: 人均GDP六种口径与调整
 tags: "[宏观指标]"
 source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ---
@@ -46,7 +46,7 @@ source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 
 - [第一章 · 认知准备：财经商业分析是什么](/xiaolin/knowledge/01-认知准备-财经商业分析是什么.html)
 - [第二章 · 宏观经济与政策：读懂新闻里的「央妈降息」「GDP 5%」](/xiaolin/knowledge/02-宏观经济与政策.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp局限性破窗谬论与虚假繁荣.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-人均收入与人均gdp区别.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]", "[[一口气了解土豪中的土豪 - 卡塔尔]]"](/xiaolin/atoms/财经商业分析-宏观指标-购买力平价ppp.html)
+- [GDP增长率与汇率换算陷阱](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)
+- [GDP局限性破窗谬论与虚假繁荣](/xiaolin/atoms/财经商业分析-宏观指标-gdp局限性破窗谬论与虚假繁荣.html)
+- [人均收入与人均GDP区别](/xiaolin/atoms/财经商业分析-宏观指标-人均收入与人均gdp区别.html)
+- [购买力平价PPP](/xiaolin/atoms/财经商业分析-宏观指标-购买力平价ppp.html)

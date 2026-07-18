@@ -1,5 +1,5 @@
 ---
-title: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
+title: BI 工具选型标准
 tags: "[可视化]"
 source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 ---
@@ -33,7 +33,7 @@ source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 
 ## 被引用于
 
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-tableau-lod与结构化分析优势.html)
-- ["[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-可视化-powerbi首选与tableau定位2023.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-可视化-敏捷bi与复杂报表.html)
+- [Tableau LOD 与结构化分析优势](/daishixiong/atoms/数据分析-tableau-lod与结构化分析优势.html)
+- [Power BI 首选与 Tableau 定位（2023）](/daishixiong/atoms/数据分析-可视化-powerbi首选与tableau定位2023.html)
+- [Python 可视化主动学习选工具法](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)
+- [敏捷 BI 与复杂报表](/daishixiong/atoms/数据分析-可视化-敏捷bi与复杂报表.html)

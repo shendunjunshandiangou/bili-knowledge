@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，焦虑是骗局吗？]]\""
+title: AI焦虑传导链路
 tags: "[AI应用]"
 source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ---
@@ -30,4 +30,4 @@ AI 焦虑不是自媒体单独造成的，而是鼓吹抬高预期 → 安装折
 ## 被引用于
 
 - [第一章 · 认知准备：数据分析是什么](/daishixiong/knowledge/01-认知准备-数据分析是什么.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai焦虑是骗局论.html)
+- [AI焦虑是骗局论](/daishixiong/atoms/数据分析-ai应用-ai焦虑是骗局论.html)

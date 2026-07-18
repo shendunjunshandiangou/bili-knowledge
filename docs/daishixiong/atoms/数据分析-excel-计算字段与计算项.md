@@ -1,5 +1,5 @@
 ---
-title: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]\""
+title: 计算字段与计算项
 tags: "[Excel]"
 source: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]\""
 ---
@@ -39,5 +39,5 @@ source: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-透视表值显示方式与环比.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-透视表行列值字段规则.html)
+- [透视表值显示方式与环比](/daishixiong/atoms/数据分析-excel-透视表值显示方式与环比.html)
+- [透视表行列值字段规则](/daishixiong/atoms/数据分析-excel-透视表行列值字段规则.html)

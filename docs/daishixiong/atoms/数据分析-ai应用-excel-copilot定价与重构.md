@@ -1,5 +1,5 @@
 ---
-title: "\"[[Copilot已公布定价！最底仅需…….md]]\""
+title: Excel Copilot 定价与重构
 tags: "[AI应用]"
 source: "\"[[Copilot已公布定价！最底仅需…….md]]\""
 ---

@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡Python搭看板⚡]]\""
+title: Shiny 看板搭建流程
 tags: "[可视化, Python]"
 source: "\"[[⚡Python搭看板⚡]]\""
 ---
@@ -35,4 +35,4 @@ Shiny 是 Python Web 看板框架，需配合 Plotly 等作图库；按「构思
 
 ## 被引用于
 
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)
+- [Python 可视化主动学习选工具法](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)

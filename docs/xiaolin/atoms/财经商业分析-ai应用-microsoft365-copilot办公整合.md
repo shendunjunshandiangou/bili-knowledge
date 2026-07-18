@@ -1,5 +1,5 @@
 ---
-title: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
+title: Microsoft 365 Copilot 办公整合
 tags: "[AI应用]"
 source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
 ---
@@ -28,5 +28,5 @@ source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\"
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[人工智能发展到什么程度了？是不是太快了点？]]"](/xiaolin/atoms/财经商业分析-ai应用-alpaca低成本大模型微调.html)
-- ["[[人工智能发展到什么程度了？是不是太快了点？]]"](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)
+- [Alpaca 低成本大模型微调](/xiaolin/atoms/财经商业分析-ai应用-alpaca低成本大模型微调.html)
+- [生成式 AI 定义与颠覆性](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)

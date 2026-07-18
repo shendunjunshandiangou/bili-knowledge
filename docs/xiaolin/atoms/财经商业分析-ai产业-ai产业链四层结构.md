@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+title: AI产业链四层结构
 tags: "[AI产业]"
 source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ---
@@ -33,9 +33,9 @@ source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]"](/xiaolin/atoms/财经商业分析-ai应用-ai产业链价值分配格局.html)
-- ["[[称他是中国最牛CTO，没人有异议吧？]]"](/xiaolin/atoms/财经商业分析-云计算-公有云与创业潮基建效应.html)
-- ["[[SpaceX上市，背后在玩什么资本游戏_]]"](/xiaolin/atoms/财经商业分析-公司案例-spacex三大业务板块.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-芯片产业-英伟达ai生态投资与备胎策略.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-ai资本圈三条主线框架.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)
+- [AI产业链价值分配格局](/xiaolin/atoms/财经商业分析-ai应用-ai产业链价值分配格局.html)
+- [公有云与创业潮基建效应](/xiaolin/atoms/财经商业分析-云计算-公有云与创业潮基建效应.html)
+- [SpaceX三大业务板块](/xiaolin/atoms/财经商业分析-公司案例-spacex三大业务板块.html)
+- [英伟达AI生态投资与备胎策略](/xiaolin/atoms/财经商业分析-芯片产业-英伟达ai生态投资与备胎策略.html)
+- [AI资本圈三条主线框架](/xiaolin/atoms/财经商业分析-资本市场-ai资本圈三条主线框架.html)
+- [OpenAI与微软投资关系](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)

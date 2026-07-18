@@ -1,5 +1,5 @@
 ---
-title: "\"[[【Excel教学】数据匹配专题！]]\""
+title: XLOOKUP 与 INDEX-MATCH 查找方案
 tags: "[Excel]"
 source: "\"[[【Excel教学】数据匹配专题！]]\""
 ---
@@ -49,5 +49,5 @@ source: "\"[[【Excel教学】数据匹配专题！]]\""
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[【EXCEL教学】合并表格专题！]]"](/daishixiong/atoms/数据分析-excel-index-match动态列查找.html)
-- ["[[【Excel教学】数据匹配专题！]]"](/daishixiong/atoms/数据分析-excel-vlookup基础与常见陷阱.html)
+- [INDEX-MATCH 动态列查找](/daishixiong/atoms/数据分析-excel-index-match动态列查找.html)
+- [VLOOKUP 基础与常见陷阱](/daishixiong/atoms/数据分析-excel-vlookup基础与常见陷阱.html)

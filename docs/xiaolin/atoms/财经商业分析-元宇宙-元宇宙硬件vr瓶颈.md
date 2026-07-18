@@ -1,5 +1,5 @@
 ---
-title: "\"[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]\""
+title: 元宇宙硬件 VR 瓶颈
 tags: "[元宇宙]"
 source: "\"[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]\""
 ---
@@ -28,4 +28,4 @@ source: "\"[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]\
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]"](/xiaolin/atoms/财经商业分析-元宇宙-meta改名机遇与无奈.html)
+- [Meta 改名机遇与无奈](/xiaolin/atoms/财经商业分析-元宇宙-meta改名机遇与无奈.html)

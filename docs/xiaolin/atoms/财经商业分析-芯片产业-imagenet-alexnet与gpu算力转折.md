@@ -1,5 +1,5 @@
 ---
-title: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
+title: ImageNet AlexNet 与 GPU 算力转折
 tags: "[芯片产业, AI]"
 source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
 ---
@@ -28,6 +28,6 @@ source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-英伟达数据中心业务转型.html)
+- [CUDA 与 GPGPU 生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
+- [GPU 与 CPU 并行计算差异](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
+- [英伟达数据中心业务转型](/xiaolin/atoms/财经商业分析-芯片产业-英伟达数据中心业务转型.html)

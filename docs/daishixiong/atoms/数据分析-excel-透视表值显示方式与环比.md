@@ -1,5 +1,5 @@
 ---
-title: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]\""
+title: 透视表值显示方式与环比
 tags: "[Excel]"
 source: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]\""
 ---
@@ -47,8 +47,8 @@ source: "\"[[Excel中最被低估的功能，学会数据透视表，你的Excel
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-getpivotdata提取规则.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-数据透视图基础用法.html)
-- ["[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]"](/daishixiong/atoms/数据分析-excel-环比计算与iferror容错.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-计算字段与计算项.html)
-- ["[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-透视表行列值字段规则.html)
+- [GETPIVOTDATA 提取规则](/daishixiong/atoms/数据分析-excel-getpivotdata提取规则.html)
+- [数据透视图基础用法](/daishixiong/atoms/数据分析-excel-数据透视图基础用法.html)
+- [环比计算与 IFERROR 容错](/daishixiong/atoms/数据分析-excel-环比计算与iferror容错.html)
+- [计算字段与计算项](/daishixiong/atoms/数据分析-excel-计算字段与计算项.html)
+- [透视表行列值字段规则](/daishixiong/atoms/数据分析-excel-透视表行列值字段规则.html)

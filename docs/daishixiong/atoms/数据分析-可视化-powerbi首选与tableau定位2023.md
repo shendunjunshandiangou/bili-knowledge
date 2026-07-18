@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
+title: Power BI 首选与 Tableau 定位（2023）
 tags: "[可视化, Power BI, Tableau]"
 source: "\"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
 ---
@@ -34,7 +34,7 @@ source: "\"[[【戴师兄】数据分析有哪些必学工具？2023最新版！
 
 ## 被引用于
 
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-tableau-国内购买部署与成本.html)
-- ["[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]"](/daishixiong/atoms/数据分析-可视化-2026tableau与finebi推荐.html)
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-可视化-bi工具选型标准.html)
-- ["[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]", "[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]"](/daishixiong/atoms/数据分析-可视化-国内bi按需学习策略.html)
+- [Tableau 国内购买部署与成本](/daishixiong/atoms/数据分析-tableau-国内购买部署与成本.html)
+- [2026 Tableau 与 FineBI 推荐](/daishixiong/atoms/数据分析-可视化-2026tableau与finebi推荐.html)
+- [BI 工具选型标准](/daishixiong/atoms/数据分析-可视化-bi工具选型标准.html)
+- [国内 BI 按需学习策略](/daishixiong/atoms/数据分析-可视化-国内bi按需学习策略.html)

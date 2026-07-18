@@ -1,5 +1,5 @@
 ---
-title: "\"[[【揭秘】史上最大金融骗局，真实版华尔街之狼~]]\""
+title: 投行Legal Reserve法律准备金
 tags: "[金融监管]"
 source: "\"[[【揭秘】史上最大金融骗局，真实版华尔街之狼~]]\""
 ---
@@ -25,5 +25,5 @@ source: "\"[[【揭秘】史上最大金融骗局，真实版华尔街之狼~]]\
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[【揭秘】史上最大金融骗局，真实版华尔街之狼~]]"](/xiaolin/atoms/财经商业分析-案例-高盛1mdb发债与10佣金.html)
-- ["[[华尔街投行JPMorgan工作是一种什么样的体验]]"](/xiaolin/atoms/财经商业分析-职场-投行合规监控与compliance文化.html)
+- [高盛1MDB发债与10%佣金](/xiaolin/atoms/财经商业分析-案例-高盛1mdb发债与10佣金.html)
+- [投行合规监控与 Compliance 文化](/xiaolin/atoms/财经商业分析-职场-投行合规监控与compliance文化.html)

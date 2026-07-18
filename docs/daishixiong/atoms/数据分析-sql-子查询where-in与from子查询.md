@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL真题，轻松拿捏！第二集~]]\", \"[[【戴师兄】SQL入门免费教程]]\""
+title: 子查询 WHERE IN 与 FROM 子查询
 tags: "[SQL]"
 source: "\"[[SQL真题，轻松拿捏！第二集~]]\", \"[[【戴师兄】SQL入门免费教程]]\""
 ---
@@ -55,6 +55,6 @@ WHERE cnt >= 2
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[【戴师兄】如何自学SQL？Tableau如何通过SQL直连数据库？SQL有哪些知识点？数据库要学到什么程度？]]", "[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-sql七大核心语句与执行顺序.html)
-- ["[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
-- ["[[SQL真题，轻松拿捏！]]"](/daishixiong/atoms/数据分析-sql-表连接原理与left-join.html)
+- [SQL 七大核心语句与执行顺序](/daishixiong/atoms/数据分析-sql-sql七大核心语句与执行顺序.html)
+- [SQL 入门课程知识框架](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
+- [表连接原理与 LEFT JOIN](/daishixiong/atoms/数据分析-sql-表连接原理与left-join.html)

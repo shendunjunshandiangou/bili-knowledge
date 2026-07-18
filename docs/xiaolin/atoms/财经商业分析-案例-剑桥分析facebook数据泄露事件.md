@@ -1,5 +1,5 @@
 ---
-title: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
+title: 剑桥分析 Facebook 数据泄露事件
 tags: "[案例, 数据与心理学, 数据隐私]"
 source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
 ---
@@ -27,7 +27,7 @@ Cambridge Analytica（CA，SCL 的子公司）通过剑桥学者科根的问卷 
 ## 被引用于
 
 - [第五章 · 热点事件分析方法论](/xiaolin/knowledge/05-热点事件分析方法论.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-数据与心理学-心理战psyops与选举咨询.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-数据与心理学-点赞数据画像与ocean模型.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-案例-特多doso运动心理战操纵选举.html)
+- [Micro-targeting 精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
+- [心理战 PsyOps 与选举咨询](/xiaolin/atoms/财经商业分析-数据与心理学-心理战psyops与选举咨询.html)
+- [点赞数据画像与 OCEAN 模型](/xiaolin/atoms/财经商业分析-数据与心理学-点赞数据画像与ocean模型.html)
+- [特多「Do So」运动：心理战操纵选举](/xiaolin/atoms/财经商业分析-案例-特多doso运动心理战操纵选举.html)

@@ -1,5 +1,5 @@
 ---
-title: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
+title: Tableau 标记卡标签与工具提示
 tags: "[Tableau, 可视化]"
 source: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
 ---
@@ -30,4 +30,4 @@ Tableau 的「标记」卡可将度量拖到标签（常显数值）或工具提
 ## 被引用于
 
 - [第四章 · 数据可视化与报表](/daishixiong/knowledge/04-数据可视化与报表.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-四大基础图表快速上手.html)
+- [Tableau 四大基础图表快速上手](/daishixiong/atoms/数据分析-tableau-四大基础图表快速上手.html)

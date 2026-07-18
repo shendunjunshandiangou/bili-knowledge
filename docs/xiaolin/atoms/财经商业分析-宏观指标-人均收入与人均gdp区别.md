@@ -1,5 +1,5 @@
 ---
-title: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+title: 人均收入与人均GDP区别
 tags: "[宏观指标]"
 source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ---
@@ -34,5 +34,5 @@ source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ## 被引用于
 
 - [第二章 · 宏观经济与政策：读懂新闻里的「央妈降息」「GDP 5%」](/xiaolin/knowledge/02-宏观经济与政策.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp定义与核算边界.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)
+- [GDP定义与核算边界](/xiaolin/atoms/财经商业分析-宏观指标-gdp定义与核算边界.html)
+- [人均GDP六种口径与调整](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)

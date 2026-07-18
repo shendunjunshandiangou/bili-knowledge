@@ -1,5 +1,5 @@
 ---
-title: "\"[[神话对冲基金LTCM的世纪大崩盘]]\""
+title: LTCM 崩盘与美联储救助
 tags: "[案例, 金融监管]"
 source: "\"[[神话对冲基金LTCM的世纪大崩盘]]\""
 ---
@@ -32,8 +32,8 @@ source: "\"[[神话对冲基金LTCM的世纪大崩盘]]\""
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[神话对冲基金LTCM的世纪大崩盘]]"](/xiaolin/atoms/财经商业分析-对冲基金-ltcm梦幻团队与创立背景.html)
-- ["[[神话对冲基金LTCM的世纪大崩盘]]"](/xiaolin/atoms/财经商业分析-案例-ltcm挤兑与被动杠杆飙升.html)
-- ["[[一口气了解硅谷银行倒闭危机]]"](/xiaolin/atoms/财经商业分析-案例-硅谷银行48小时倒闭始末.html)
-- ["[[【硬核】一口气了解外汇]]"](/xiaolin/atoms/财经商业分析-汇率-俄罗斯卢布脱钩与ltcm导火索.html)
-- ["[[神话对冲基金LTCM的世纪大崩盘]]"](/xiaolin/atoms/财经商业分析-金融监管-ltcm系统性风险与投行敞口.html)
+- [LTCM 梦幻团队与创立背景](/xiaolin/atoms/财经商业分析-对冲基金-ltcm梦幻团队与创立背景.html)
+- [LTCM 挤兑与被动杠杆飙升](/xiaolin/atoms/财经商业分析-案例-ltcm挤兑与被动杠杆飙升.html)
+- [硅谷银行 48 小时倒闭始末](/xiaolin/atoms/财经商业分析-案例-硅谷银行48小时倒闭始末.html)
+- [俄罗斯卢布脱钩与 LTCM 导火索](/xiaolin/atoms/财经商业分析-汇率-俄罗斯卢布脱钩与ltcm导火索.html)
+- [LTCM 系统性风险与投行敞口](/xiaolin/atoms/财经商业分析-金融监管-ltcm系统性风险与投行敞口.html)

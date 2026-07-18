@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+title: OpenAI与微软投资关系
 tags: "[资本市场]"
 source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ---
@@ -39,8 +39,8 @@ source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-基础设施-stargate星际之门项目.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-芯片产业-amd股权权证换算力订单.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-ai捆绑投资与系统性风险.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
+- [AI产业链四层结构](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
+- [Stargate星际之门项目](/xiaolin/atoms/财经商业分析-基础设施-stargate星际之门项目.html)
+- [AMD股权权证换算力订单](/xiaolin/atoms/财经商业分析-芯片产业-amd股权权证换算力订单.html)
+- [AI捆绑投资与系统性风险](/xiaolin/atoms/财经商业分析-资本市场-ai捆绑投资与系统性风险.html)
+- [Anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)

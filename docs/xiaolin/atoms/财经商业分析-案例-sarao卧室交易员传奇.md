@@ -1,5 +1,5 @@
 ---
-title: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
+title: Sarao 卧室交易员传奇
 tags: "[案例, 交易]"
 source: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
 ---
@@ -27,5 +27,5 @@ Navinder Singh Sarao：印度裔英国自闭症交易天才，在父母家卧室
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]"](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
-- ["[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]"](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
+- [Spoofing 诱骗交易](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
+- [2010 美股闪崩 Flash Crash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)

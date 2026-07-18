@@ -1,5 +1,5 @@
 ---
-title: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
+title: Tableau 工作簿格式与工作区类型
 tags: "[Tableau]"
 source: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
 ---
@@ -35,5 +35,5 @@ Tableau 工作簿分 `.twb`（无数据）与 `.twbx`（含数据）；工作区
 ## 被引用于
 
 - [第四章 · 数据可视化与报表](/daishixiong/knowledge/04-数据可视化与报表.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-四大基础图表快速上手.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-数据连接与提取模式.html)
+- [Tableau 四大基础图表快速上手](/daishixiong/atoms/数据分析-tableau-四大基础图表快速上手.html)
+- [Tableau 数据连接与提取模式](/daishixiong/atoms/数据分析-tableau-数据连接与提取模式.html)

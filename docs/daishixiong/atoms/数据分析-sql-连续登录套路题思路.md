@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL真题，轻松拿捏！]]\", \"[[SQL到底要学到什么程度才够用？]]\""
+title: 连续登录套路题思路
 tags: "[SQL, 求职]"
 source: "\"[[SQL真题，轻松拿捏！]]\", \"[[SQL到底要学到什么程度才够用？]]\""
 ---
@@ -44,5 +44,5 @@ source: "\"[[SQL真题，轻松拿捏！]]\", \"[[SQL到底要学到什么程度
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
-- ["[[SQL真题，轻松拿捏！]]"](/daishixiong/atoms/数据分析-sql-表连接原理与left-join.html)
+- [笔试面试套路题方法论](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
+- [表连接原理与 LEFT JOIN](/daishixiong/atoms/数据分析-sql-表连接原理与left-join.html)

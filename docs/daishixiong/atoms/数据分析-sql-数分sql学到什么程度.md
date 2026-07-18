@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL到底要学到什么程度才够用？]]\""
+title: 数分 SQL 学到什么程度
 tags: "[SQL, 求职]"
 source: "\"[[SQL到底要学到什么程度才够用？]]\""
 ---
@@ -41,9 +41,9 @@ source: "\"[[SQL到底要学到什么程度才够用？]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-sql学习输入输出刷题法.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
-- ["[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]"](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)
-- ["[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]"](/daishixiong/atoms/数据分析-工具-必学四工具与掌握程度.html)
-- ["[[【戴师兄】数据分析自学&求职必看全攻略_不看会后悔的那种哦！]]"](/daishixiong/atoms/数据分析-求职-数据分析自学四阶段路径.html)
-- ["[[金三银四求职，这些技巧必知！]]"](/daishixiong/atoms/数据分析-求职-求职准备优先级报告看板sql.html)
+- [SQL 学习输入输出刷题法](/daishixiong/atoms/数据分析-sql-sql学习输入输出刷题法.html)
+- [笔试面试套路题方法论](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
+- [四工具路径与 Tableau 程度](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)
+- [必学四工具与掌握程度](/daishixiong/atoms/数据分析-工具-必学四工具与掌握程度.html)
+- [数据分析自学四阶段路径](/daishixiong/atoms/数据分析-求职-数据分析自学四阶段路径.html)
+- [求职准备优先级报告看板SQL](/daishixiong/atoms/数据分析-求职-求职准备优先级报告看板sql.html)

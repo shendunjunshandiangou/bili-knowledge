@@ -1,5 +1,5 @@
 ---
-title: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]\""
+title: 微软 Bing 整合与谷歌 Code Red
 tags: "[AI产业, 平台经济]"
 source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]\""
 ---
@@ -32,4 +32,4 @@ ChatGPT 威胁谷歌 93% 搜索垄断与 60% 广告收入；微软借 Bing+ChatG
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]"](/xiaolin/atoms/财经商业分析-ai产业-openai-capped-profit与微软投资.html)
+- [OpenAI capped-profit 与微软投资](/xiaolin/atoms/财经商业分析-ai产业-openai-capped-profit与微软投资.html)

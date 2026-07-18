@@ -1,5 +1,5 @@
 ---
-title: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+title: Hindenburg Research 做空 Nikola
 tags: "[案例]"
 source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
 ---
@@ -45,8 +45,8 @@ source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[【硬核加长版】真正的做空]]"](/xiaolin/atoms/财经商业分析-做空-有限收益无限损失.html)
-- ["[[【硬核加长版】真正的做空]]"](/xiaolin/atoms/财经商业分析-做空-浑水调查报告式做空模式.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-milton刑事诉讼与nikola崩盘.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
-- ["[[一口气搞清避税天堂的资本游戏]]"](/xiaolin/atoms/财经商业分析-案例-阿达尼离岸空壳操控股价.html)
+- [有限收益无限损失](/xiaolin/atoms/财经商业分析-做空-有限收益无限损失.html)
+- [浑水调查报告式做空模式](/xiaolin/atoms/财经商业分析-做空-浑水调查报告式做空模式.html)
+- [Milton 刑事诉讼与 Nikola 崩盘](/xiaolin/atoms/财经商业分析-案例-milton刑事诉讼与nikola崩盘.html)
+- [Nikola 滑坡视频造假手法](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
+- [阿达尼离岸空壳操控股价](/xiaolin/atoms/财经商业分析-案例-阿达尼离岸空壳操控股价.html)

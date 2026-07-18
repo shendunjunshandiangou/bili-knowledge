@@ -1,5 +1,5 @@
 ---
-title: "\"[[【EXCEL教学】合并表格专题！]]\""
+title: INDEX-MATCH 动态列查找
 tags: "[Excel]"
 source: "\"[[【EXCEL教学】合并表格专题！]]\""
 ---
@@ -48,7 +48,7 @@ source: "\"[[【EXCEL教学】合并表格专题！]]\""
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[【EXCEL教学】合并表格专题！]]", "[[Excel中最被低估的功能，学会数据透视表，你的Excel速度直接翻3倍]]"](/daishixiong/atoms/数据分析-excel-powerquery追加与合并查询.html)
-- ["[[【Excel教学】数据匹配专题！]]"](/daishixiong/atoms/数据分析-excel-vlookup基础与常见陷阱.html)
-- ["[[【Excel教学】数据匹配专题！]]"](/daishixiong/atoms/数据分析-excel-xlookup与index-match查找方案.html)
-- ["[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]"](/daishixiong/atoms/数据分析-excel-公式引用方式混合引用.html)
+- [Power Query 追加与合并查询](/daishixiong/atoms/数据分析-excel-powerquery追加与合并查询.html)
+- [VLOOKUP 基础与常见陷阱](/daishixiong/atoms/数据分析-excel-vlookup基础与常见陷阱.html)
+- [XLOOKUP 与 INDEX-MATCH 查找方案](/daishixiong/atoms/数据分析-excel-xlookup与index-match查找方案.html)
+- [公式引用方式混合引用](/daishixiong/atoms/数据分析-excel-公式引用方式混合引用.html)

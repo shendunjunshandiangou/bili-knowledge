@@ -1,5 +1,5 @@
 ---
-title: "\"[[一面试就紧张得要死，心理障碍如何克服？]]\""
+title: 面试录音AI复盘法
 tags: "[求职]"
 source: "\"[[一面试就紧张得要死，心理障碍如何克服？]]\""
 ---
@@ -27,6 +27,6 @@ source: "\"[[一面试就紧张得要死，心理障碍如何克服？]]\""
 ## 被引用于
 
 - [第七章 · 求职与职业发展](/daishixiong/knowledge/07-求职与职业发展.html)
-- ["[[一面试就紧张得要死，心理障碍如何克服？]]"](/daishixiong/atoms/数据分析-求职-5到7场面试拿offer统计.html)
-- ["[[如何用AI提升面试能力？]]"](/daishixiong/atoms/数据分析-求职-ai模拟面试身份反转设定.html)
-- ["[[一面试就紧张得要死，心理障碍如何克服？]]"](/daishixiong/atoms/数据分析-求职-面试紧张心态调整.html)
+- [5到7场面试拿offer统计](/daishixiong/atoms/数据分析-求职-5到7场面试拿offer统计.html)
+- [AI模拟面试身份反转设定](/daishixiong/atoms/数据分析-求职-ai模拟面试身份反转设定.html)
+- [面试紧张心态调整](/daishixiong/atoms/数据分析-求职-面试紧张心态调整.html)

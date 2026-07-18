@@ -1,5 +1,5 @@
 ---
-title: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
+title: 取代你的是使用 AI 的人
 tags: "[AI应用]"
 source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
 ---
@@ -28,5 +28,5 @@ source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\"
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]"](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
-- ["[[人工智能发展到什么程度了？是不是太快了点？]]"](/xiaolin/atoms/财经商业分析-ai应用-auto-gpt自主agent雏形.html)
+- [AI 套路性工作与失业风险](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
+- [Auto-GPT 自主 Agent 雏形](/xiaolin/atoms/财经商业分析-ai应用-auto-gpt自主agent雏形.html)

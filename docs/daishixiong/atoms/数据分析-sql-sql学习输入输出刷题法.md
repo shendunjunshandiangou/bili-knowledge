@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL到底要学到什么程度才够用？]]\""
+title: SQL 学习输入输出刷题法
 tags: "[SQL, 学习方法]"
 source: "\"[[SQL到底要学到什么程度才够用？]]\""
 ---
@@ -38,6 +38,6 @@ source: "\"[[SQL到底要学到什么程度才够用？]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-数分sql学到什么程度.html)
-- ["[[金三银四求职，这些技巧必知！]]"](/daishixiong/atoms/数据分析-求职-sql笔试临阵刷题法.html)
-- ["[[【数据分析求职_找实习全攻略】数据分析要学什么？如何制作数据作品？面试常见问题如何回答？数分就业热门行业有哪些？]]"](/daishixiong/atoms/数据分析-求职-无业务场景学习五步法.html)
+- [数分 SQL 学到什么程度](/daishixiong/atoms/数据分析-sql-数分sql学到什么程度.html)
+- [SQL 笔试临阵刷题法](/daishixiong/atoms/数据分析-求职-sql笔试临阵刷题法.html)
+- [无业务场景学习五步法](/daishixiong/atoms/数据分析-求职-无业务场景学习五步法.html)

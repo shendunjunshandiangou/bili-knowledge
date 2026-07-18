@@ -1,5 +1,5 @@
 ---
-title: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
+title: Tableau 喜乐君学习路径
 tags: "[Tableau]"
 source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 ---
@@ -29,4 +29,4 @@ source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 
 ## 被引用于
 
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-tableau-lod与结构化分析优势.html)
+- [Tableau LOD 与结构化分析优势](/daishixiong/atoms/数据分析-tableau-lod与结构化分析优势.html)

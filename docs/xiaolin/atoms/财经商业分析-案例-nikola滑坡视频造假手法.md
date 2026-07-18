@@ -1,5 +1,5 @@
 ---
-title: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+title: Nikola 滑坡视频造假手法
 tags: "[案例]"
 source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
 ---
@@ -44,6 +44,6 @@ source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-hindenburg-research做空nikola.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
+- [Hindenburg Research 做空 Nikola](/xiaolin/atoms/财经商业分析-案例-hindenburg-research做空nikola.html)
+- [Nikola One 发布会模型车骗局](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
+- [Nikola 融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)

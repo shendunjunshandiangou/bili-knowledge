@@ -1,5 +1,5 @@
 ---
-title: "\"[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]\""
+title: 公式引用方式混合引用
 tags: "[Excel]"
 source: "\"[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]\""
 ---
@@ -40,5 +40,5 @@ SUMIFS 向下填充省份明细时：
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[【EXCEL教学】合并表格专题！]]"](/daishixiong/atoms/数据分析-excel-index-match动态列查找.html)
-- ["[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]"](/daishixiong/atoms/数据分析-excel-sumif与sumifs条件汇总.html)
+- [INDEX-MATCH 动态列查找](/daishixiong/atoms/数据分析-excel-index-match动态列查找.html)
+- [SUMIF 与 SUMIFS 条件汇总](/daishixiong/atoms/数据分析-excel-sumif与sumifs条件汇总.html)

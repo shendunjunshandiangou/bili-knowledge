@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】如何自学SQL？Tableau如何通过SQL直连数据库？SQL有哪些知识点？数据库要学到什么程度？]]\", \"[[SQL到底要学到什么程度才够用？]]\""
+title: SQL 七大核心语句与执行顺序
 tags: "[SQL]"
 source: "\"[[【戴师兄】如何自学SQL？Tableau如何通过SQL直连数据库？SQL有哪些知识点？数据库要学到什么程度？]]\", \"[[SQL到底要学到什么程度才够用？]]\""
 ---
@@ -47,7 +47,7 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
-- ["[[【戴师兄】如何自学SQL？Tableau如何通过SQL直连数据库？SQL有哪些知识点？数据库要学到什么程度？]]"](/daishixiong/atoms/数据分析-sql-sql是什么一大能力两大属性.html)
-- ["[[SQL真题，轻松拿捏！第二集~]]", "[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-子查询where-in与from子查询.html)
-- ["[[【戴师兄】Tableau动态图表_动态仪表盘制作教程_数据动图教程_动态可视化教程_SQL教程_如何制作数据动图？怎么让数据动起来？]]"](/daishixiong/atoms/数据分析-tableau-社区query取数.html)
+- [SQL 入门课程知识框架](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
+- [SQL 是什么：一大能力两大属性](/daishixiong/atoms/数据分析-sql-sql是什么一大能力两大属性.html)
+- [子查询 WHERE IN 与 FROM 子查询](/daishixiong/atoms/数据分析-sql-子查询where-in与from子查询.html)
+- [Tableau 社区 Query 取数](/daishixiong/atoms/数据分析-tableau-社区query取数.html)

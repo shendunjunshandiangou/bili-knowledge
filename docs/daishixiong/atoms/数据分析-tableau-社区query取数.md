@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】Tableau动态图表_动态仪表盘制作教程_数据动图教程_动态可视化教程_SQL教程_如何制作数据动图？怎么让数据动起来？]]\""
+title: Tableau 社区 Query 取数
 tags: "[Tableau, SQL]"
 source: "\"[[【戴师兄】Tableau动态图表_动态仪表盘制作教程_数据动图教程_动态可视化教程_SQL教程_如何制作数据动图？怎么让数据动起来？]]\""
 ---
@@ -33,4 +33,4 @@ Tableau Public 社区数据集支持 Query 页面写 SQL 筛选后下载 CSV/XLS
 
 ## 被引用于
 
-- ["[[【戴师兄】Tableau动态图表_动态仪表盘制作教程_数据动图教程_动态可视化教程_SQL教程_如何制作数据动图？怎么让数据动起来？]]"](/daishixiong/atoms/数据分析-tableau-动态可视化主题与数据准备.html)
+- [动态可视化主题与数据准备](/daishixiong/atoms/数据分析-tableau-动态可视化主题与数据准备.html)

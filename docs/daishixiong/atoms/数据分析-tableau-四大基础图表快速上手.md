@@ -1,5 +1,5 @@
 ---
-title: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
+title: Tableau 四大基础图表快速上手
 tags: "[Tableau, 可视化]"
 source: "\"[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]\""
 ---
@@ -40,9 +40,9 @@ Tableau 通过拖拽维度与度量到行列、颜色、大小等「架子」即
 ## 被引用于
 
 - [第四章 · 数据可视化与报表](/daishixiong/knowledge/04-数据可视化与报表.html)
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-tableau-喜乐君学习路径.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-工作簿格式与工作区类型.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-标记卡标签与工具提示.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-筛选器排除与全局应用.html)
-- ["[[⚡Python搭看板⚡]]", "[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]", "[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-可视化-pygwalker拖拽出图.html)
-- ["[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]"](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)
+- [Tableau 喜乐君学习路径](/daishixiong/atoms/数据分析-tableau-喜乐君学习路径.html)
+- [Tableau 工作簿格式与工作区类型](/daishixiong/atoms/数据分析-tableau-工作簿格式与工作区类型.html)
+- [Tableau 标记卡标签与工具提示](/daishixiong/atoms/数据分析-tableau-标记卡标签与工具提示.html)
+- [Tableau 筛选器排除与全局应用](/daishixiong/atoms/数据分析-tableau-筛选器排除与全局应用.html)
+- [PyGWalker 拖拽出图](/daishixiong/atoms/数据分析-可视化-pygwalker拖拽出图.html)
+- [四工具路径与 Tableau 程度](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)

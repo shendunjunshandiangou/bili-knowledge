@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL真题，轻松拿捏！]]\""
+title: 表连接原理与 LEFT JOIN
 tags: "[SQL]"
 source: "\"[[SQL真题，轻松拿捏！]]\""
 ---
@@ -48,6 +48,6 @@ SQL 无 VLOOKUP，必须 JOIN 拼表再取字段；工作场景以 LEFT JOIN 为
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
-- ["[[SQL真题，轻松拿捏！第二集~]]", "[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-子查询where-in与from子查询.html)
-- ["[[【Tableau光速入门教程】下载安装注册激活全攻略_四大基础图表制作]]"](/daishixiong/atoms/数据分析-tableau-数据连接与提取模式.html)
+- [SQL 入门课程知识框架](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
+- [子查询 WHERE IN 与 FROM 子查询](/daishixiong/atoms/数据分析-sql-子查询where-in与from子查询.html)
+- [Tableau 数据连接与提取模式](/daishixiong/atoms/数据分析-tableau-数据连接与提取模式.html)

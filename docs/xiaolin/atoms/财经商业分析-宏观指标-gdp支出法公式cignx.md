@@ -1,5 +1,5 @@
 ---
-title: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+title: GDP支出法公式CIGNX
 tags: "[宏观指标]"
 source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ---
@@ -36,5 +36,5 @@ GDP = C + I + G + NX
 ## 被引用于
 
 - [第二章 · 宏观经济与政策：读懂新闻里的「央妈降息」「GDP 5%」](/xiaolin/knowledge/02-宏观经济与政策.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp三种核算方法.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)
+- [GDP三种核算方法](/xiaolin/atoms/财经商业分析-宏观指标-gdp三种核算方法.html)
+- [GDP增长率与汇率换算陷阱](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)

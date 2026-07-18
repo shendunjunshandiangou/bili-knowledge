@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡1节课搞定爬虫⚡]]\""
+title: 网络请求五步法
 tags: "[Python]"
 source: "\"[[⚡1节课搞定爬虫⚡]]\""
 ---
@@ -39,7 +39,7 @@ res = requests.get(url, headers=headers, params=params)
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[⚡1节课搞定爬虫⚡]]"](/daishixiong/atoms/数据分析-python-三种响应解析方案.html)
-- ["[[2026年数分还有哪些必学工具？先学哪个？学到什么程度？]]"](/daishixiong/atoms/数据分析-工具-数据工程四步法.html)
-- ["[[小白能学数据分析吗？要不要入行？]]"](/daishixiong/atoms/数据分析-工具-爬虫三不原则合法边界.html)
-- ["[[【戴师兄】快速掌握企业级爬虫项目全流程，实习生都学会了！数据爬取&数据清洗丨数据分析师 _ 数据标注 _ 数据治理 _ Tableau丨Excel丨后羿采集器丨]]", "[[教大家一个在职场非常实用的爬虫小技巧，人人都能学会~]]"](/daishixiong/atoms/数据分析-工具-爬虫选型与反爬现实.html)
+- [三种响应解析方案](/daishixiong/atoms/数据分析-python-三种响应解析方案.html)
+- [数据工程四步法](/daishixiong/atoms/数据分析-工具-数据工程四步法.html)
+- [爬虫三不原则合法边界](/daishixiong/atoms/数据分析-工具-爬虫三不原则合法边界.html)
+- [爬虫选型与反爬现实](/daishixiong/atoms/数据分析-工具-爬虫选型与反爬现实.html)

@@ -1,5 +1,5 @@
 ---
-title: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
+title: CUDA 与 GPGPU 生态护城河
 tags: "[芯片产业, AI]"
 source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
 ---
@@ -30,6 +30,6 @@ source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-imagenet-alexnet与gpu算力转折.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-黄氏定律与芯片持续奔跑护城河.html)
+- [GPU 与 CPU 并行计算差异](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
+- [ImageNet AlexNet 与 GPU 算力转折](/xiaolin/atoms/财经商业分析-芯片产业-imagenet-alexnet与gpu算力转折.html)
+- [黄氏定律与芯片持续奔跑护城河](/xiaolin/atoms/财经商业分析-芯片产业-黄氏定律与芯片持续奔跑护城河.html)

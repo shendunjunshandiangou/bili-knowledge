@@ -1,5 +1,5 @@
 ---
-title: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
+title: Spoofing 诱骗交易
 tags: "[市场操纵, 金融监管]"
 source: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
 ---
@@ -27,8 +27,8 @@ Spoofing（诱骗交易）指挂出大量不打算成交的订单制造虚假供
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]"](/xiaolin/atoms/财经商业分析-市场微观结构-盘口挂单量与供需信号.html)
-- ["[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]"](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
-- ["[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]"](/xiaolin/atoms/财经商业分析-案例-sarao卧室交易员传奇.html)
-- ["[[史上最大财务造假，600亿骗局 - 安然丑闻]]"](/xiaolin/atoms/财经商业分析-案例-安然操纵加州电力危机.html)
-- ["[[华尔街投行JPMorgan工作是一种什么样的体验]]"](/xiaolin/atoms/财经商业分析-职场-投行合规监控与compliance文化.html)
+- [盘口挂单量与供需信号](/xiaolin/atoms/财经商业分析-市场微观结构-盘口挂单量与供需信号.html)
+- [2010 美股闪崩 Flash Crash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
+- [Sarao 卧室交易员传奇](/xiaolin/atoms/财经商业分析-案例-sarao卧室交易员传奇.html)
+- [安然操纵加州电力危机](/xiaolin/atoms/财经商业分析-案例-安然操纵加州电力危机.html)
+- [投行合规监控与 Compliance 文化](/xiaolin/atoms/财经商业分析-职场-投行合规监控与compliance文化.html)

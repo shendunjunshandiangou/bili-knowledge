@@ -1,5 +1,5 @@
 ---
-title: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
+title: 马斯克被踢出 PayPal
 tags: "[案例, 公司治理]"
 source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
 ---
@@ -28,5 +28,5 @@ source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-公司治理-不可替代性即隐性股权.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)
+- [不可替代性即隐性股权](/xiaolin/atoms/财经商业分析-公司治理-不可替代性即隐性股权.html)
+- [OpenAI 宫斗五日始末](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)

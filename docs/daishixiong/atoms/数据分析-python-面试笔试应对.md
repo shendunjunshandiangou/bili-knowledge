@@ -1,5 +1,5 @@
 ---
-title: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\""
+title: 面试笔试应对
 tags: "[Python]"
 source: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\""
 ---
@@ -35,4 +35,4 @@ Python 面试：**直接说会**并追问业务需求；简历问法结合效率
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]"](/daishixiong/atoms/数据分析-python-领域用户定位.html)
+- [领域用户定位](/daishixiong/atoms/数据分析-python-领域用户定位.html)

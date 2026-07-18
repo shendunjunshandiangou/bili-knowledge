@@ -1,5 +1,5 @@
 ---
-title: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+title: Nikola 氢能源卡车商业定位
 tags: "[案例]"
 source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
 ---
@@ -44,5 +44,5 @@ Milton 在天然气卡车市场反应平平后 pivot 到氢燃料电池，并选
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
-- ["[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]"](/xiaolin/atoms/财经商业分析-案例-trevor-milton与nikola创始背景.html)
+- [Nikola One 发布会模型车骗局](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
+- [Trevor Milton 与 Nikola 创始背景](/xiaolin/atoms/财经商业分析-案例-trevor-milton与nikola创始背景.html)

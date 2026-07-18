@@ -1,5 +1,5 @@
 ---
-title: "\"[[Web3.0到底是怎么回事儿？]]\""
+title: 公链代币与股票类比
 tags: "[Web3, 加密货币]"
 source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ---
@@ -26,7 +26,7 @@ source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-三代互联网与数据所有权.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-发币即ipo与自我强化风口.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-案例-币安崛起与赵长鹏.html)
+- [GameFi 与 Play to Earn 可持续性](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)
+- [三代互联网与数据所有权](/xiaolin/atoms/财经商业分析-web3-三代互联网与数据所有权.html)
+- [发币即 IPO 与自我强化风口](/xiaolin/atoms/财经商业分析-web3-发币即ipo与自我强化风口.html)
+- [币安崛起与赵长鹏](/xiaolin/atoms/财经商业分析-案例-币安崛起与赵长鹏.html)

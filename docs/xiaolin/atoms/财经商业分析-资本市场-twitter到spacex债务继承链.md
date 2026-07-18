@@ -1,5 +1,5 @@
 ---
-title: "\"[[SpaceX上市，背后在玩什么资本游戏_]]\""
+title: Twitter到SpaceX债务继承链
 tags: "[资本市场]"
 source: "\"[[SpaceX上市，背后在玩什么资本游戏_]]\""
 ---
@@ -44,5 +44,5 @@ source: "\"[[SpaceX上市，背后在玩什么资本游戏_]]\""
 ## 被引用于
 
 - [第五章 · 热点事件分析方法论](/xiaolin/knowledge/05-热点事件分析方法论.html)
-- ["[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]"](/xiaolin/atoms/财经商业分析-案例-马斯克收购推特全过程.html)
-- ["[[SpaceX上市，背后在玩什么资本游戏_]]"](/xiaolin/atoms/财经商业分析-资本市场-过桥贷款与ipo承销博弈.html)
+- [马斯克收购推特全过程](/xiaolin/atoms/财经商业分析-案例-马斯克收购推特全过程.html)
+- [过桥贷款与IPO承销博弈](/xiaolin/atoms/财经商业分析-资本市场-过桥贷款与ipo承销博弈.html)

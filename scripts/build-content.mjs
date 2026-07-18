@@ -228,7 +228,11 @@ function processVault(vault, globalSlugMap) {
       const content = readVaultFile(filePath);
       const { fm, body: rawBody } = parseFrontmatter(content);
       const h1 = extractFirstH1(rawBody) || base;
-      const title = fm['title'] || fm['视频标题'] || fm['来源文章'] || h1 || base;
+      // 原子卡片：H1 才是概念名；来源文章只是视频双链，不能当侧边栏标题
+      const title =
+        section.key === 'atoms'
+          ? fm['title'] || h1 || base
+          : fm['title'] || fm['视频标题'] || fm['来源文章'] || h1 || base;
 
       let escapedBody = escapeVueBody(rawBody);
       let processedBody = wikilinkReplacer(escapedBody, globalSlugMap);

@@ -1,5 +1,5 @@
 ---
-title: "\"[[HR是如何骗你入职的！]]\""
+title: JD招聘话术陷阱识别
 tags: "[求职]"
 source: "\"[[HR是如何骗你入职的！]]\""
 ---
@@ -29,9 +29,9 @@ source: "\"[[HR是如何骗你入职的！]]\""
 ## 被引用于
 
 - [第七章 · 求职与职业发展](/daishixiong/knowledge/07-求职与职业发展.html)
-- ["[[2026，你必须了解的就业信息差！]]"](/daishixiong/atoms/数据分析-求职-hr抢人没耐心应对.html)
-- ["[[小白能学数据分析吗？要不要入行？]]"](/daishixiong/atoms/数据分析-求职-天坑岗位避雷清单.html)
-- ["[[【戴师兄】7分钟了解就业局势，普通人有何机会？]]"](/daishixiong/atoms/数据分析-求职-小红书得物避坑信号.html)
-- ["[[应届生起薪3-8K正常吗？多少钱合适？]]"](/daishixiong/atoms/数据分析-求职-应届生起薪参考范围.html)
-- ["[[大厂用人标准首度公开！想进大厂一定要这样准备！笔试面试需要注意哪些点又该如何准备？大厂HR最喜欢的简历长啥样？大厂背调怎么过？大厂用人标准和筛选条件]]"](/daishixiong/atoms/数据分析-求职-背调严禁造假.html)
+- [HR抢人没耐心应对](/daishixiong/atoms/数据分析-求职-hr抢人没耐心应对.html)
+- [天坑岗位避雷清单](/daishixiong/atoms/数据分析-求职-天坑岗位避雷清单.html)
+- [小红书得物避坑信号](/daishixiong/atoms/数据分析-求职-小红书得物避坑信号.html)
+- [应届生起薪参考范围](/daishixiong/atoms/数据分析-求职-应届生起薪参考范围.html)
+- [背调严禁造假](/daishixiong/atoms/数据分析-求职-背调严禁造假.html)
 - [薪酬账期与坏账思维](/daishixiong/atoms/数据分析-求职-薪酬账期与坏账思维.html)

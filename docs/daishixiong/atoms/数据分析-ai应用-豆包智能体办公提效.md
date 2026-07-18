@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，哪些技能最值钱？]]\""
+title: 豆包智能体办公提效
 tags: "[AI应用]"
 source: "\"[[AI时代，哪些技能最值钱？]]\""
 ---
@@ -29,5 +29,5 @@ source: "\"[[AI时代，哪些技能最值钱？]]\""
 ## 被引用于
 
 - [第五章 · 业务思维与分析方法论](/daishixiong/knowledge/05-业务思维与分析方法论.html)
-- ["[[分析报告交给AI，真的靠谱？]]", "[[让AI帮我写分析报告，结果.....]]"](/daishixiong/atoms/数据分析-ai应用-ai写分析报告局限性.html)
-- ["[[如何用AI提升面试能力？]]"](/daishixiong/atoms/数据分析-求职-豆包模拟面试全流程.html)
+- [AI写分析报告局限性](/daishixiong/atoms/数据分析-ai应用-ai写分析报告局限性.html)
+- [豆包模拟面试全流程](/daishixiong/atoms/数据分析-求职-豆包模拟面试全流程.html)

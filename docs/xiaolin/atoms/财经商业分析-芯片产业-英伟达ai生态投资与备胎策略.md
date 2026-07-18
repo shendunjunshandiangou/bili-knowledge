@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+title: 英伟达AI生态投资与备胎策略
 tags: "[芯片产业]"
 source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ---
@@ -38,9 +38,9 @@ source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
-- ["[[内存暴涨，谁在哭？谁在笑？]]"](/xiaolin/atoms/财经商业分析-半导体-ai驱动内存涨价周期.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-芯片产业-amd股权权证换算力订单.html)
-- ["[[一口气了解英伟达，芯片新王凭什么是他？]]"](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-ai资本圈三条主线框架.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
+- [AI产业链四层结构](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
+- [AI 驱动内存涨价周期](/xiaolin/atoms/财经商业分析-半导体-ai驱动内存涨价周期.html)
+- [AMD股权权证换算力订单](/xiaolin/atoms/财经商业分析-芯片产业-amd股权权证换算力订单.html)
+- [CUDA 与 GPGPU 生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
+- [AI资本圈三条主线框架](/xiaolin/atoms/财经商业分析-资本市场-ai资本圈三条主线框架.html)
+- [Anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)

@@ -1,5 +1,5 @@
 ---
-title: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
+title: OpenAI 宫斗五日始末
 tags: "[案例, 公司治理, AI产业]"
 source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
 ---
@@ -30,7 +30,7 @@ source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-公司治理-openai非营利控股结构与权力集中.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-公司治理-不可替代性即隐性股权.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-公司治理-东亚与美国董事会文化差异.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-案例-马斯克被踢出paypal.html)
+- [OpenAI 非营利控股结构与权力集中](/xiaolin/atoms/财经商业分析-公司治理-openai非营利控股结构与权力集中.html)
+- [不可替代性即隐性股权](/xiaolin/atoms/财经商业分析-公司治理-不可替代性即隐性股权.html)
+- [东亚与美国董事会文化差异](/xiaolin/atoms/财经商业分析-公司治理-东亚与美国董事会文化差异.html)
+- [马斯克被踢出 PayPal](/xiaolin/atoms/财经商业分析-案例-马斯克被踢出paypal.html)

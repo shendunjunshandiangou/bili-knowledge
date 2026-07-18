@@ -1,5 +1,5 @@
 ---
-title: "\"[[大厂SQL到底长啥样？]]\""
+title: 数仓四层分层 ODS-DWD-DWS-ADS
 tags: "[SQL, 数仓]"
 source: "\"[[大厂SQL到底长啥样？]]\""
 ---
@@ -47,8 +47,8 @@ source: "\"[[大厂SQL到底长啥样？]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-大厂取数三级路径.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-数仓表命名规范解读.html)
-- ["[[小白能学数据分析吗？要不要入行？]]"](/daishixiong/atoms/数据分析-工具-公司规模数据链路与必学工具.html)
-- ["[[为什么大多数企业都没有数据建设？]]"](/daishixiong/atoms/数据分析-工具-数据建设四环节定义.html)
-- ["[[数分与数仓，哪个更吃香？]]"](/daishixiong/atoms/数据分析-职业认知-数分与数仓四维度对比.html)
+- [大厂取数三级路径](/daishixiong/atoms/数据分析-sql-大厂取数三级路径.html)
+- [数仓表命名规范解读](/daishixiong/atoms/数据分析-sql-数仓表命名规范解读.html)
+- [公司规模数据链路与必学工具](/daishixiong/atoms/数据分析-工具-公司规模数据链路与必学工具.html)
+- [数据建设四环节定义](/daishixiong/atoms/数据分析-工具-数据建设四环节定义.html)
+- [数分与数仓四维度对比](/daishixiong/atoms/数据分析-职业认知-数分与数仓四维度对比.html)

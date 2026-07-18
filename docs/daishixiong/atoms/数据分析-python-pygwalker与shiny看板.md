@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡Python搭看板⚡]]\""
+title: PyGWalker 与 Shiny 看板
 tags: "[Python]"
 source: "\"[[⚡Python搭看板⚡]]\""
 ---
@@ -34,4 +34,4 @@ Python 搭看板两路线：**PyGWalker**（类 Tableau 单图拖拽，难组仪
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-python-主动学习选工具法.html)
+- [主动学习选工具法](/daishixiong/atoms/数据分析-python-主动学习选工具法.html)

@@ -1,5 +1,5 @@
 ---
-title: "\"[[硅谷女乔布斯，世界最美女骗子 “一滴血的骗局”]]\", \"[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]\""
+title: Theranos 一滴血检测骗局
 tags: "[案例, 医疗]"
 source: "\"[[硅谷女乔布斯，世界最美女骗子 “一滴血的骗局”]]\", \"[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]\""
 ---
@@ -33,5 +33,5 @@ Elizabeth Holmes 19 岁创立 Theranos，宣称指尖一滴血可检测 200+ 健
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[硅谷女乔布斯，世界最美女骗子 “一滴血的骗局”]]"](/xiaolin/atoms/财经商业分析-创业伦理-fakeittillyoumakeit医疗风险.html)
-- ["[[硅谷女乔布斯，世界最美女骗子 “一滴血的骗局”]]"](/xiaolin/atoms/财经商业分析-案例-theranos数据造假与西门子代检.html)
+- [Fake It Till You Make It 医疗风险](/xiaolin/atoms/财经商业分析-创业伦理-fakeittillyoumakeit医疗风险.html)
+- [Theranos 数据造假与西门子代检](/xiaolin/atoms/财经商业分析-案例-theranos数据造假与西门子代检.html)

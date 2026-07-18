@@ -1,5 +1,5 @@
 ---
-title: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
+title: 点赞数据画像与 OCEAN 模型
 tags: "[数据与心理学]"
 source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
 ---
@@ -25,5 +25,5 @@ source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
 ## 被引用于
 
 - [第五章 · 热点事件分析方法论](/xiaolin/knowledge/05-热点事件分析方法论.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
-- ["[[你是如何被大数据+心理学操控的？｜脸书丑闻]]"](/xiaolin/atoms/财经商业分析-案例-剑桥分析facebook数据泄露事件.html)
+- [Micro-targeting 精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
+- [剑桥分析 Facebook 数据泄露事件](/xiaolin/atoms/财经商业分析-案例-剑桥分析facebook数据泄露事件.html)

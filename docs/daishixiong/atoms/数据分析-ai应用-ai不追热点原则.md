@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，哪些技能最值钱？]]\""
+title: AI不追热点原则
 tags: "[AI应用]"
 source: "\"[[AI时代，哪些技能最值钱？]]\""
 ---
@@ -27,5 +27,5 @@ source: "\"[[AI时代，哪些技能最值钱？]]\""
 ## 被引用于
 
 - [第一章 · 认知准备：数据分析是什么](/daishixiong/knowledge/01-认知准备-数据分析是什么.html)
-- ["[[AI时代，哪些技能最值钱？]]", "[[被AI替代，还有的救！]]"](/daishixiong/atoms/数据分析-ai应用-ai替代判断标准.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai焦虑传导链路.html)
+- [AI替代判断标准](/daishixiong/atoms/数据分析-ai应用-ai替代判断标准.html)
+- [AI焦虑传导链路](/daishixiong/atoms/数据分析-ai应用-ai焦虑传导链路.html)

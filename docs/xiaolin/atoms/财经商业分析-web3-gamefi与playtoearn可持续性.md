@@ -1,5 +1,5 @@
 ---
-title: "\"[[Web3.0到底是怎么回事儿？]]\""
+title: GameFi 与 Play to Earn 可持续性
 tags: "[Web3, 游戏产业]"
 source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ---
@@ -26,4 +26,4 @@ Web3 游戏自带经济体系——原生代币做流通货币、皮肤装备土
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)
+- [智能合约与 DApp](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)

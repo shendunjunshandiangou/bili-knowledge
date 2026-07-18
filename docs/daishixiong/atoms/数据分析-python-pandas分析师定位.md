@@ -1,5 +1,5 @@
 ---
-title: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\", \"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
+title: Pandas 分析师定位
 tags: "[Python]"
 source: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\", \"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
 ---
@@ -39,9 +39,9 @@ source: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[⚡1节课搞定爬虫⚡]]"](/daishixiong/atoms/数据分析-python-三种响应解析方案.html)
-- ["[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]"](/daishixiong/atoms/数据分析-python-面试笔试应对.html)
-- ["[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]"](/daishixiong/atoms/数据分析-python-领域用户定位.html)
-- ["[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-工具-2023必学工具优先级.html)
-- ["[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]"](/daishixiong/atoms/数据分析-工具-必学四工具与掌握程度.html)
-- ["[[数分学习顺序误区！顺序错了全白学！]]"](/daishixiong/atoms/数据分析-工具-数分学习顺序误区.html)
+- [三种响应解析方案](/daishixiong/atoms/数据分析-python-三种响应解析方案.html)
+- [面试笔试应对](/daishixiong/atoms/数据分析-python-面试笔试应对.html)
+- [领域用户定位](/daishixiong/atoms/数据分析-python-领域用户定位.html)
+- [2023 必学工具优先级](/daishixiong/atoms/数据分析-工具-2023必学工具优先级.html)
+- [必学四工具与掌握程度](/daishixiong/atoms/数据分析-工具-必学四工具与掌握程度.html)
+- [数分学习顺序误区](/daishixiong/atoms/数据分析-工具-数分学习顺序误区.html)

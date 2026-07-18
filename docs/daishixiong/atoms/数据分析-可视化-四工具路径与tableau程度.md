@@ -1,5 +1,5 @@
 ---
-title: "\"[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]\""
+title: 四工具路径与 Tableau 程度
 tags: "[可视化, Tableau]"
 source: "\"[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]\""
 ---

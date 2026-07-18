@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】SQL入门免费教程]]\""
+title: SQL 入门课程知识框架
 tags: "[SQL, 入门]"
 source: "\"[[【戴师兄】SQL入门免费教程]]\""
 ---
@@ -53,5 +53,5 @@ source: "\"[[【戴师兄】SQL入门免费教程]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[【戴师兄】如何自学SQL？Tableau如何通过SQL直连数据库？SQL有哪些知识点？数据库要学到什么程度？]]"](/daishixiong/atoms/数据分析-sql-sql是什么一大能力两大属性.html)
-- ["[[SQL到底要学到什么程度才够用？]]", "[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-窗口函数与top-n套路.html)
+- [SQL 是什么：一大能力两大属性](/daishixiong/atoms/数据分析-sql-sql是什么一大能力两大属性.html)
+- [窗口函数与 Top N 套路](/daishixiong/atoms/数据分析-sql-窗口函数与top-n套路.html)

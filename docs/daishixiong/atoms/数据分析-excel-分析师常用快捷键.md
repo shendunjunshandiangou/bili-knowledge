@@ -1,5 +1,5 @@
 ---
-title: "\"[[【戴师兄】什么TM的叫效率！瞬间掌握24个快捷键丨分析师必备丨你这快捷键要是好使，我肯定学啊！]]\""
+title: 分析师常用快捷键
 tags: "[Excel]"
 source: "\"[[【戴师兄】什么TM的叫效率！瞬间掌握24个快捷键丨分析师必备丨你这快捷键要是好使，我肯定学啊！]]\""
 ---
@@ -49,6 +49,6 @@ source: "\"[[【戴师兄】什么TM的叫效率！瞬间掌握24个快捷键丨
 ## 被引用于
 
 - [第二章 · Excel 基础与进阶：你的第一个动手技能](/daishixiong/knowledge/02-excel基础与进阶.html)
-- ["[[【2024最新版】Excel全面升级！保姆级教程免费看！（上）]]"](/daishixiong/atoms/数据分析-excel-sumif与sumifs条件汇总.html)
-- ["[[三个让你再也不用加班的小技巧！学会自救，妈妈再也不用担心你996！如何不加班？]]"](/daishixiong/atoms/数据分析-求职-996自救三技巧.html)
-- ["[[三个让你再也不用加班的小技巧！学会自救，妈妈再也不用担心你996！如何不加班？]]"](/daishixiong/atoms/数据分析-职业认知-周中批量交付避加班.html)
+- [SUMIF 与 SUMIFS 条件汇总](/daishixiong/atoms/数据分析-excel-sumif与sumifs条件汇总.html)
+- [996 自救三技巧](/daishixiong/atoms/数据分析-求职-996自救三技巧.html)
+- [周中批量交付避加班](/daishixiong/atoms/数据分析-职业认知-周中批量交付避加班.html)

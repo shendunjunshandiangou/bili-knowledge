@@ -1,5 +1,5 @@
 ---
-title: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
+title: OpenAI 非营利控股结构与权力集中
 tags: "[公司治理, AI产业]"
 source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
 ---
@@ -30,5 +30,5 @@ OpenAI 的架构：非营利组织 OpenAI Inc（**没有股东、没有股东大
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[【深度硬核】马斯克收购Twitter完整解读 丨 毒丸计划 恶意收购]]", "[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-公司治理-董事会与股东角色分工.html)
-- ["[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]"](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)
+- [董事会与股东的角色分工](/xiaolin/atoms/财经商业分析-公司治理-董事会与股东角色分工.html)
+- [OpenAI 宫斗五日始末](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)

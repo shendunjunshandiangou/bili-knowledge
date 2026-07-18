@@ -1,5 +1,5 @@
 ---
-title: "\"[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]\""
+title: LVMH 帝国规模与竞争格局
 tags: "[公司案例, 产业]"
 source: "\"[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]\""
 ---
@@ -41,7 +41,7 @@ LVMH 市值近 4000 亿美元、为欧洲最大上市公司，1990–2020 年收
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]"](/xiaolin/atoms/财经商业分析-品牌-奢侈品幻想营销本质.html)
-- ["[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]"](/xiaolin/atoms/财经商业分析-并购-tiffany疫情压价收购案.html)
-- ["[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]"](/xiaolin/atoms/财经商业分析-并购-毒丸计划与gucci抵御阿尔诺.html)
-- ["[[【深度揭秘】欧洲第一商战，奢侈品帝国LVMH的崛起]]"](/xiaolin/atoms/财经商业分析-案例-阿尔诺鸠占鹊巢接管lvmh.html)
+- [奢侈品幻想营销本质](/xiaolin/atoms/财经商业分析-品牌-奢侈品幻想营销本质.html)
+- [Tiffany 疫情压价收购案](/xiaolin/atoms/财经商业分析-并购-tiffany疫情压价收购案.html)
+- [毒丸计划与 Gucci 抵御阿尔诺](/xiaolin/atoms/财经商业分析-并购-毒丸计划与gucci抵御阿尔诺.html)
+- [阿尔诺鸠占鹊巢接管 LVMH](/xiaolin/atoms/财经商业分析-案例-阿尔诺鸠占鹊巢接管lvmh.html)

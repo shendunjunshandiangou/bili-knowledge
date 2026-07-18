@@ -1,5 +1,5 @@
 ---
-title: "\"[[大厂SQL到底长啥样？]]\""
+title: 大厂取数三级路径
 tags: "[SQL, 数仓]"
 source: "\"[[大厂SQL到底长啥样？]]\""
 ---
@@ -39,6 +39,6 @@ source: "\"[[大厂SQL到底长啥样？]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-分区表与全量增量.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-数仓四层分层ods-dwd-dws-ads.html)
-- ["[[一没数据，二没权限，怎么积累分析经验？]]"](/daishixiong/atoms/数据分析-求职-零数据积累分析经验.html)
+- [分区表与全量增量](/daishixiong/atoms/数据分析-sql-分区表与全量增量.html)
+- [数仓四层分层 ODS-DWD-DWS-ADS](/daishixiong/atoms/数据分析-sql-数仓四层分层ods-dwd-dws-ads.html)
+- [零数据积累分析经验](/daishixiong/atoms/数据分析-求职-零数据积累分析经验.html)

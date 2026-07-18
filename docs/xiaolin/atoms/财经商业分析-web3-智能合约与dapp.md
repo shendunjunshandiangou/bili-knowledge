@@ -1,5 +1,5 @@
 ---
-title: "\"[[Web3.0到底是怎么回事儿？]]\""
+title: 智能合约与 DApp
 tags: "[Web3, 科技]"
 source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ---
@@ -26,5 +26,5 @@ source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-defi去中心化金融.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)
+- [DeFi 去中心化金融](/xiaolin/atoms/财经商业分析-web3-defi去中心化金融.html)
+- [GameFi 与 Play to Earn 可持续性](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)

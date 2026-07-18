@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+title: Anthropic资本合作伙伴格局
 tags: "[资本市场]"
 source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 ---
@@ -41,7 +41,7 @@ Anthropic 作为独立大模型公司，吸引谷歌、亚马逊、SpaceX 等巨
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
-- ["[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]"](/xiaolin/atoms/财经商业分析-ai应用-ai解决问题的四个层次.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-宏观指标-arr年化经常性收入.html)
-- ["[[AI巨头们之间的资本混战，到底是个什么情况？]]"](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)
+- [AI产业链四层结构](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
+- [AI解决问题的四个层次](/xiaolin/atoms/财经商业分析-ai应用-ai解决问题的四个层次.html)
+- [ARR年化经常性收入](/xiaolin/atoms/财经商业分析-宏观指标-arr年化经常性收入.html)
+- [OpenAI与微软投资关系](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)

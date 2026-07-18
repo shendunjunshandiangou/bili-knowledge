@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡Python搭看板⚡]]\", \"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\", \"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
+title: PyGWalker 拖拽出图
 tags: "[可视化, Python, Tableau]"
 source: "\"[[⚡Python搭看板⚡]]\", \"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\", \"[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]\""
 ---
@@ -40,6 +40,6 @@ pyg.walk(df)
 
 ## 被引用于
 
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-可视化-shiny看板搭建流程.html)
-- ["[[数据分析只用学4个工具？！！有哪些自学资料？如何自学？最短学习路径该怎么规划？SQL_Tableau_Python要学到什么程度？Python和R到底学哪个？]]"](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)
+- [Python 可视化主动学习选工具法](/daishixiong/atoms/数据分析-可视化-python主动学习选工具法.html)
+- [Shiny 看板搭建流程](/daishixiong/atoms/数据分析-可视化-shiny看板搭建流程.html)
+- [四工具路径与 Tableau 程度](/daishixiong/atoms/数据分析-可视化-四工具路径与tableau程度.html)

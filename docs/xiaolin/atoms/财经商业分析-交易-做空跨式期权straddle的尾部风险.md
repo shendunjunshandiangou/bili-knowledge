@@ -1,5 +1,5 @@
 ---
-title: "\"[[28岁小伙搞垮英国最古老银行——Nick Leeson]]\""
+title: 做空跨式期权（Short Straddle）的尾部风险
 tags: "[交易, 期权]"
 source: "\"[[28岁小伙搞垮英国最古老银行——Nick Leeson]]\""
 ---
@@ -27,5 +27,5 @@ source: "\"[[28岁小伙搞垮英国最古老银行——Nick Leeson]]\""
 ## 被引用于
 
 - [第六章 · 个人理财与风险认知](/xiaolin/knowledge/06-个人理财与风险认知.html)
-- ["[[28岁小伙搞垮英国最古老银行——Nick Leeson]]"](/xiaolin/atoms/财经商业分析-交易-亏损加倍下注的赌徒策略.html)
-- ["[[28岁小伙搞垮英国最古老银行——Nick Leeson]]"](/xiaolin/atoms/财经商业分析-案例-尼克里森搞垮巴林银行始末.html)
+- [亏损加倍下注的赌徒策略](/xiaolin/atoms/财经商业分析-交易-亏损加倍下注的赌徒策略.html)
+- [尼克·里森搞垮巴林银行始末](/xiaolin/atoms/财经商业分析-案例-尼克里森搞垮巴林银行始末.html)

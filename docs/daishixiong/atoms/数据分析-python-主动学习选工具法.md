@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡Python搭看板⚡]]\""
+title: 主动学习选工具法
 tags: "[Python]"
 source: "\"[[⚡Python搭看板⚡]]\""
 ---
@@ -35,4 +35,4 @@ source: "\"[[⚡Python搭看板⚡]]\""
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-python-pygwalker与shiny看板.html)
+- [PyGWalker 与 Shiny 看板](/daishixiong/atoms/数据分析-python-pygwalker与shiny看板.html)

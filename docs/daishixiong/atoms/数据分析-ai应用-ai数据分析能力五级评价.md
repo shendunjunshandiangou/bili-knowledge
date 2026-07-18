@@ -1,5 +1,5 @@
 ---
-title: "\"[[我们测了20款主流AI，第一名和最后一名，差别太大了]]\""
+title: AI数据分析能力五级评价
 tags: "[AI应用]"
 source: "\"[[我们测了20款主流AI，第一名和最后一名，差别太大了]]\""
 ---
@@ -31,4 +31,4 @@ source: "\"[[我们测了20款主流AI，第一名和最后一名，差别太大
 ## 被引用于
 
 - [第五章 · 业务思维与分析方法论](/daishixiong/knowledge/05-业务思维与分析方法论.html)
-- ["[[我们测了20款主流AI，第一名和最后一名，差别太大了]]"](/daishixiong/atoms/数据分析-ai应用-claude与描述性ai分析深度差异.html)
+- [Claude与描述性AI分析深度差异](/daishixiong/atoms/数据分析-ai应用-claude与描述性ai分析深度差异.html)

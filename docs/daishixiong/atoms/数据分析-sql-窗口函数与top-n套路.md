@@ -1,5 +1,5 @@
 ---
-title: "\"[[SQL到底要学到什么程度才够用？]]\", \"[[【戴师兄】SQL入门免费教程]]\""
+title: 窗口函数与 Top N 套路
 tags: "[SQL]"
 source: "\"[[SQL到底要学到什么程度才够用？]]\", \"[[【戴师兄】SQL入门免费教程]]\""
 ---
@@ -44,7 +44,7 @@ Top N 题通用套路：窗口函数先打标排名 → 再筛选排名第 N 的
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[【戴师兄】SQL入门免费教程]]"](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-数分sql学到什么程度.html)
-- ["[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
-- ["[[SQL真题，轻松拿捏！]]", "[[SQL到底要学到什么程度才够用？]]"](/daishixiong/atoms/数据分析-sql-连续登录套路题思路.html)
+- [SQL 入门课程知识框架](/daishixiong/atoms/数据分析-sql-sql入门课程知识框架.html)
+- [数分 SQL 学到什么程度](/daishixiong/atoms/数据分析-sql-数分sql学到什么程度.html)
+- [笔试面试套路题方法论](/daishixiong/atoms/数据分析-sql-笔试面试套路题方法论.html)
+- [连续登录套路题思路](/daishixiong/atoms/数据分析-sql-连续登录套路题思路.html)

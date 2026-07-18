@@ -1,5 +1,5 @@
 ---
-title: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\""
+title: 领域用户定位
 tags: "[Python]"
 source: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]\""
 ---
@@ -35,6 +35,6 @@ source: "\"[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据
 ## 被引用于
 
 - [第八章 · Python 与扩展工具](/daishixiong/knowledge/08-python与扩展工具.html)
-- ["[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]", "[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-python-pandas分析师定位.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-python-主动学习选工具法.html)
-- ["[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]"](/daishixiong/atoms/数据分析-python-面试笔试应对.html)
+- [Pandas 分析师定位](/daishixiong/atoms/数据分析-python-pandas分析师定位.html)
+- [主动学习选工具法](/daishixiong/atoms/数据分析-python-主动学习选工具法.html)
+- [面试笔试应对](/daishixiong/atoms/数据分析-python-面试笔试应对.html)

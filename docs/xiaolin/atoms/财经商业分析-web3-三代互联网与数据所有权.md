@@ -1,5 +1,5 @@
 ---
-title: "\"[[Web3.0到底是怎么回事儿？]]\""
+title: 三代互联网与数据所有权
 tags: "[Web3, 互联网]"
 source: "\"[[Web3.0到底是怎么回事儿？]]\""
 ---
@@ -26,5 +26,5 @@ Web1.0（1991 起）只读——用户只能看信息（新浪、搜狐）；Web
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-公链代币与股票类比.html)
-- ["[[Web3.0到底是怎么回事儿？]]"](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)
+- [公链代币与股票类比](/xiaolin/atoms/财经商业分析-web3-公链代币与股票类比.html)
+- [智能合约与 DApp](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)

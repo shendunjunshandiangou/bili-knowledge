@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，焦虑是骗局吗？]]\""
+title: AI学习主线四层模型
 tags: "[AI应用]"
 source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ---
@@ -32,4 +32,4 @@ source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ## 被引用于
 
 - [第五章 · 业务思维与分析方法论](/daishixiong/knowledge/05-业务思维与分析方法论.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai协作下属模式.html)
+- [AI协作下属模式](/daishixiong/atoms/数据分析-ai应用-ai协作下属模式.html)

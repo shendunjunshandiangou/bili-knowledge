@@ -1,5 +1,5 @@
 ---
-title: "\"[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]\""
+title: 消失的应用与软件K型分化
 tags: "[AI应用]"
 source: "\"[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]\""
 ---
@@ -37,6 +37,6 @@ Coding 被 AI 代替后，软件壁垒从开发能力转向「解决什么问题
 ## 被引用于
 
 - [第四章 · 公司与产业](/xiaolin/knowledge/04-公司与产业.html)
-- ["[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]"](/xiaolin/atoms/财经商业分析-ai应用-ai原住民与创作生态红利.html)
-- ["[[当办公遇上AI，会发生什么？]]"](/xiaolin/atoms/财经商业分析-ai应用-办公场景与生成式ai能力绝配.html)
-- ["[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]"](/xiaolin/atoms/财经商业分析-ai应用-闪应用与wish-coding-c端模式.html)
+- [AI原住民与创作生态红利](/xiaolin/atoms/财经商业分析-ai应用-ai原住民与创作生态红利.html)
+- [办公场景与生成式 AI 能力绝配](/xiaolin/atoms/财经商业分析-ai应用-办公场景与生成式ai能力绝配.html)
+- [闪应用与Wish Coding C端模式](/xiaolin/atoms/财经商业分析-ai应用-闪应用与wish-coding-c端模式.html)

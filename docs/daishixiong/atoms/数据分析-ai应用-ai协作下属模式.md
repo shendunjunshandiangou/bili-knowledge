@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，焦虑是骗局吗？]]\""
+title: AI协作下属模式
 tags: "[AI应用]"
 source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ---
@@ -28,6 +28,6 @@ source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ## 被引用于
 
 - [第五章 · 业务思维与分析方法论](/daishixiong/knowledge/05-业务思维与分析方法论.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai学习主线四层模型.html)
-- ["[[零基础如何用AI学数据分析？]]"](/daishixiong/atoms/数据分析-ai应用-分析师须懂全流程才能ai协作.html)
-- ["[[我是如何停止精神内耗的？摆脱完美主义，重新掌控自我！]]"](/daishixiong/atoms/数据分析-职业认知-完美主义与精神内耗.html)
+- [AI学习主线四层模型](/daishixiong/atoms/数据分析-ai应用-ai学习主线四层模型.html)
+- [分析师须懂全流程才能AI协作](/daishixiong/atoms/数据分析-ai应用-分析师须懂全流程才能ai协作.html)
+- [完美主义与精神内耗](/daishixiong/atoms/数据分析-职业认知-完美主义与精神内耗.html)

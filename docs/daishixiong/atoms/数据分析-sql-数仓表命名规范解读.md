@@ -1,5 +1,5 @@
 ---
-title: "\"[[大厂SQL到底长啥样？]]\""
+title: 数仓表命名规范解读
 tags: "[SQL, 数仓]"
 source: "\"[[大厂SQL到底长啥样？]]\""
 ---
@@ -44,5 +44,5 @@ source: "\"[[大厂SQL到底长啥样？]]\""
 ## 被引用于
 
 - [第三章 · SQL 取数：数据在数据库里，怎么拿出来](/daishixiong/knowledge/03-sql取数.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-分区表与全量增量.html)
-- ["[[大厂SQL到底长啥样？]]"](/daishixiong/atoms/数据分析-sql-数仓四层分层ods-dwd-dws-ads.html)
+- [分区表与全量增量](/daishixiong/atoms/数据分析-sql-分区表与全量增量.html)
+- [数仓四层分层 ODS-DWD-DWS-ADS](/daishixiong/atoms/数据分析-sql-数仓四层分层ods-dwd-dws-ads.html)

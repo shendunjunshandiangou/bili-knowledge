@@ -1,5 +1,5 @@
 ---
-title: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+title: GDP增长率与汇率换算陷阱
 tags: "[宏观指标]"
 source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ---
@@ -39,7 +39,7 @@ source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 ## 被引用于
 
 - [第二章 · 宏观经济与政策：读懂新闻里的「央妈降息」「GDP 5%」](/xiaolin/knowledge/02-宏观经济与政策.html)
-- ["[[十五五开局，两会给中国经济划了哪些重点？]]"](/xiaolin/atoms/财经商业分析-中国宏观-2026gdp目标4-5到5.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-gdp支出法公式cignx.html)
-- ["[[GDP是会骗人的 _ 一口气了解GDP]]"](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)
-- ["[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]"、"[[美元、日元、人民币…为什么涨_跌？ 丨 美元跌宕50年]]"](/xiaolin/atoms/财经商业分析-货币政策-土耳其埃尔多安逆周期降息.html)
+- [2026 GDP 目标 4.5%–5%](/xiaolin/atoms/财经商业分析-中国宏观-2026gdp目标4-5到5.html)
+- [GDP支出法公式CIGNX](/xiaolin/atoms/财经商业分析-宏观指标-gdp支出法公式cignx.html)
+- [人均GDP六种口径与调整](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)
+- [土耳其埃尔多安逆周期降息](/xiaolin/atoms/财经商业分析-货币政策-土耳其埃尔多安逆周期降息.html)

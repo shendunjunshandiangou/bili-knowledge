@@ -1,5 +1,5 @@
 ---
-title: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
+title: 敏捷 BI 与复杂报表
 tags: "[可视化, Tableau]"
 source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 ---
@@ -27,4 +27,4 @@ source: "\"[[戴师兄x喜乐君丨Tableau还是最优选吗？]]\""
 
 ## 被引用于
 
-- ["[[戴师兄x喜乐君丨Tableau还是最优选吗？]]"](/daishixiong/atoms/数据分析-可视化-bi工具选型标准.html)
+- [BI 工具选型标准](/daishixiong/atoms/数据分析-可视化-bi工具选型标准.html)

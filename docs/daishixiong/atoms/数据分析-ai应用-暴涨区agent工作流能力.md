@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI爆发后，企业还需要数据分析师吗？]]\""
+title: 暴涨区Agent工作流能力
 tags: "[AI应用]"
 source: "\"[[AI爆发后，企业还需要数据分析师吗？]]\""
 ---
@@ -34,9 +34,9 @@ source: "\"[[AI爆发后，企业还需要数据分析师吗？]]\""
 ## 被引用于
 
 - [第五章 · 业务思维与分析方法论](/daishixiong/knowledge/05-业务思维与分析方法论.html)
-- ["[[AI爆发后，企业还需要数据分析师吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai只能抬高下限不能抬高上限.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai学习主线四层模型.html)
-- ["[[AI时代，哪些技能最值钱？]]"](/daishixiong/atoms/数据分析-ai应用-豆包智能体办公提效.html)
-- ["[[AI爆发后，企业还需要数据分析师吗？]]"](/daishixiong/atoms/数据分析-求职-在职分析师ai提效路径.html)
-- ["[[AI爆发后，企业还需要数据分析师吗？]]"](/daishixiong/atoms/数据分析-求职-新人入行弯道超车策略.html)
-- ["[[AI爆发后，企业还需要数据分析师吗？]]"](/daishixiong/atoms/数据分析-职业认知-四层技能金字塔模型.html)
+- [AI只能抬高下限不能抬高上限](/daishixiong/atoms/数据分析-ai应用-ai只能抬高下限不能抬高上限.html)
+- [AI学习主线四层模型](/daishixiong/atoms/数据分析-ai应用-ai学习主线四层模型.html)
+- [豆包智能体办公提效](/daishixiong/atoms/数据分析-ai应用-豆包智能体办公提效.html)
+- [在职分析师AI提效路径](/daishixiong/atoms/数据分析-求职-在职分析师ai提效路径.html)
+- [新人入行弯道超车策略](/daishixiong/atoms/数据分析-求职-新人入行弯道超车策略.html)
+- [四层技能金字塔模型](/daishixiong/atoms/数据分析-职业认知-四层技能金字塔模型.html)

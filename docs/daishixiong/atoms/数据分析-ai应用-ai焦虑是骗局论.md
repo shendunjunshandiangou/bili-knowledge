@@ -1,5 +1,5 @@
 ---
-title: "\"[[AI时代，焦虑是骗局吗？]]\""
+title: AI焦虑是骗局论
 tags: "[AI应用]"
 source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ---
@@ -33,4 +33,4 @@ source: "\"[[AI时代，焦虑是骗局吗？]]\""
 ## 被引用于
 
 - [第一章 · 认知准备：数据分析是什么](/daishixiong/knowledge/01-认知准备-数据分析是什么.html)
-- ["[[AI时代，焦虑是骗局吗？]]"](/daishixiong/atoms/数据分析-ai应用-ai焦虑传导链路.html)
+- [AI焦虑传导链路](/daishixiong/atoms/数据分析-ai应用-ai焦虑传导链路.html)

@@ -1,5 +1,5 @@
 ---
-title: "\"[[⚡Python搭看板⚡]]\""
+title: Python 可视化主动学习选工具法
 tags: "[可视化, Python]"
 source: "\"[[⚡Python搭看板⚡]]\""
 ---
@@ -34,5 +34,5 @@ Python 可视化生态工具远多于教程覆盖（Matplotlib、PyGWalker、Shi
 
 ## 被引用于
 
-- ["[[⚡Python搭看板⚡]]", "[[非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学]]", "[[【戴师兄】数据分析有哪些必学工具？2023最新版！Tableau丨Power BI丨FineBI丨SQL丨影刀丨Excel丨Python丨课程教程自学攻略]]"](/daishixiong/atoms/数据分析-可视化-pygwalker拖拽出图.html)
-- ["[[⚡Python搭看板⚡]]"](/daishixiong/atoms/数据分析-可视化-shiny看板搭建流程.html)
+- [PyGWalker 拖拽出图](/daishixiong/atoms/数据分析-可视化-pygwalker拖拽出图.html)
+- [Shiny 看板搭建流程](/daishixiong/atoms/数据分析-可视化-shiny看板搭建流程.html)

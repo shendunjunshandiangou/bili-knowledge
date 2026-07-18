@@ -1,5 +1,5 @@
 ---
-title: "\"[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]\""
+title: FTX 崩盘与 SBF 用户资金挪用
 tags: "[案例, 加密货币]"
 source: "\"[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]\""
 ---
@@ -53,4 +53,4 @@ SBF 同时控制两家本应隔离的机构：
 ## 被引用于
 
 - [第三章 · 金融市场](/xiaolin/knowledge/03-金融市场.html)
-- ["[[一口气了解硅谷银行倒闭危机]]"](/xiaolin/atoms/财经商业分析-案例-silvergate与signature加密银行倒闭.html)
+- [Silvergate 与 Signature 加密银行倒闭](/xiaolin/atoms/财经商业分析-案例-silvergate与signature加密银行倒闭.html)
