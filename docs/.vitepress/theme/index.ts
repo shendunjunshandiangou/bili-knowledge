@@ -4,6 +4,7 @@ import BiliPlayer from './components/BiliPlayer.vue';
 import BackLink from './components/BackLink.vue';
 import HomeHero from './components/HomeHero.vue';
 import Layout from './Layout.vue';
+import './fonts.css';
 import './tokens.css';
 import './custom.css';
 

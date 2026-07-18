@@ -1,0 +1,37 @@
+/*
+ * 思源宋体（Noto Serif SC）· 自托管
+ * 文件来源：@fontsource/noto-serif-sc@5.2.9 · chinese-simplified 子集
+ * 二进制文件由 sync 从 assets/fonts/ 复制到 docs/public/fonts/
+ */
+
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-600-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-700-normal.woff2') format('woff2');
+}
