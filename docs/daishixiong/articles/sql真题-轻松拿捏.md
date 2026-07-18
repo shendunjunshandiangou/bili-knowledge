@@ -2,15 +2,7 @@
 title: SQL真题，轻松拿捏！
 ---
 
----
-来源: 00_raw/SQL真题，轻松拿捏！.md
-视频标题: SQL真题，轻松拿捏！
-UP主: 戴戴戴师兄
-视频链接: https://www.bilibili.com/video/BV1ti9MBuEXZ
-处理日期: 2026-07-19
-阶段: 01B_文章正文完成
-正文字数: 607
----
+<BiliPlayer :bvid="'BV1ti9MBuEXZ'" />
 
 > **摘要**：SQL 真题系列第一课，聚焦**表连接**——讲清为什么必须连表、LEFT JOIN 匹配过程，并通过三道基础真题实操。系列后续覆盖子查询、窗口函数、综合题。
 

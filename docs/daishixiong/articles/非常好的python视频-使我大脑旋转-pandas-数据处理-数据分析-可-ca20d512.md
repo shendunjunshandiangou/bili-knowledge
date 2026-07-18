@@ -1,16 +1,8 @@
 ---
-title: 非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学
+title: 非常好的Python视频，使我大脑旋转🧠💫|Pandas|数据处理|数据分析|可视化|基础知识|自学
 ---
 
----
-来源: 00_raw/非常好的Python视频，使我大脑旋转🧠💫_Pandas_数据处理_数据分析_可视化_基础知识_自学.md
-视频标题: 非常好的Python视频，使我大脑旋转🧠💫|Pandas|数据处理|数据分析|可视化|基础知识|自学
-UP主: 戴戴戴师兄
-视频链接: https://www.bilibili.com/video/BV1JhkZBiEGc
-处理日期: 2026-07-19
-阶段: 01B_文章正文完成
-正文字数: 484
----
+<BiliPlayer :bvid="'BV1JhkZBiEGc'" />
 
 > **摘要**（框架级，仅可视化章节）：Pandas 处理完数据后，领域用户应用 **PyGWalker** 在 Jupyter 中 Tableau 式拖拽出图，优于手写 Matplotlib；日常仍推荐 BI 工具作图。
 

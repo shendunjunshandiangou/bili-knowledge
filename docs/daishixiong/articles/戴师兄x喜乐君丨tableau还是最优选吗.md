@@ -2,15 +2,7 @@
 title: 戴师兄x喜乐君丨Tableau还是最优选吗？
 ---
 
----
-来源: 00_raw/戴师兄x喜乐君丨Tableau还是最优选吗？.md
-视频标题: 戴师兄x喜乐君丨Tableau还是最优选吗？
-UP主: 戴戴戴师兄
-视频链接: https://www.bilibili.com/video/BV1Dh4y1c7kG
-处理日期: 2026-07-19
-阶段: 01B_文章正文完成
-正文字数: 704
----
+<BiliPlayer :bvid="'BV1Dh4y1c7kG'" />
 
 > **摘要**：喜乐君（Tableau 畅销书作者、企业 BI 部署专家）与戴师兄对谈：Tableau 在华现状、购买部署成本、数据安全、BI 选型标准，以及敏捷 BI 与复杂报表之争。
 

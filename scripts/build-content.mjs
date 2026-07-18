@@ -106,13 +106,18 @@ function readVaultFile(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
+function normalizeContentNewlines(content) {
+  return content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+}
+
 function parseFrontmatter(content) {
+  const normalized = normalizeContentNewlines(content);
   const fm = {};
-  if (!content.startsWith('---\n')) return { fm, body: content };
-  const end = content.indexOf('\n---', 4);
+  if (!normalized.startsWith('---\n')) return { fm, body: content };
+  const end = normalized.indexOf('\n---', 4);
   if (end === -1) return { fm, body: content };
-  const raw = content.slice(4, end);
-  const body = content.slice(end + 4).replace(/^\n+/, '');
+  const raw = normalized.slice(4, end);
+  const body = normalized.slice(end + 4).replace(/^\n+/, '');
   for (const line of raw.split('\n')) {
     const idx = line.search(/[:：]/);
     if (idx === -1) continue;
@@ -124,10 +129,11 @@ function parseFrontmatter(content) {
 }
 
 function stripFrontmatter(content) {
-  if (!content.startsWith('---\n')) return content;
-  const end = content.indexOf('\n---', 4);
+  const normalized = normalizeContentNewlines(content);
+  if (!normalized.startsWith('---\n')) return content;
+  const end = normalized.indexOf('\n---', 4);
   if (end === -1) return content;
-  return content.slice(end + 4).replace(/^\n+/, '');
+  return normalized.slice(end + 4).replace(/^\n+/, '');
 }
 
 function extractFirstH1(body) {

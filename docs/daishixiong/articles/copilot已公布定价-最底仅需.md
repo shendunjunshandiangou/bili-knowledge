@@ -1,18 +1,11 @@
 ---
-title: Copilot 已公布定价：Excel 将被 AI 重构
----
-
----
-来源: 00_raw/Copilot已公布定价！最底仅需…….md
-视频标题: Copilot已公布定价！最底仅需……
-UP主: 戴戴戴师兄
-视频链接: https://www.bilibili.com/video/BV1Dh4y117Zu
-处理日期: 2026-07-19
-阶段: 01B_文章正文完成
-正文字数: 284
+title: Copilot已公布定价！最底仅需……
 ---
 
 # Copilot 已公布定价：Excel 将被 AI 重构
+
+<BiliPlayer :bvid="'BV1Dh4y117Zu'" />
+
 
 **摘要**：微软 Excel Copilot 付费版约 30 美元/月，可基于数据直接给结论并画图，将重构 Excel 学习与使用方式。业务人员取数门槛会大幅降低，传统手工数据处理价值下降。
 
