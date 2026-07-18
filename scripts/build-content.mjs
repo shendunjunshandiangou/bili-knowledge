@@ -19,6 +19,7 @@ const VAULTS = [
     description: '从宏观经济、金融市场到公司与产业，用故事化表达建立理解商业世界的完整框架。',
     tags: ['宏观经济', '金融市场', '公司产业'],
     illustration: 'finance-engraving.png',
+    avatar: 'avatar-xiaolin.jpg',
   },
   {
     key: 'daishixiong',
@@ -28,6 +29,7 @@ const VAULTS = [
     description: '围绕数据分析工具、业务思维、职业发展与 AI 协作，整理可落地的学习和工作方法。',
     tags: ['数据分析', '求职发展', 'AI 应用'],
     illustration: 'data-engraving.png',
+    avatar: 'avatar-daishixiong.jpg',
   },
 ];
 
@@ -525,6 +527,7 @@ function writeVaultManifest(vaultStats) {
       description: vault.description,
       tags: vault.tags,
       illustration: vault.illustration || 'knowledge-still-life.png',
+      avatar: vault.avatar || '',
       total: stats.total,
       counts: stats.counts,
     };

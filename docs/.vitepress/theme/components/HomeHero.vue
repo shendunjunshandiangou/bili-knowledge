@@ -121,11 +121,6 @@ onUnmounted(() => {
       </ol>
     </section>
 
-    <figure class="editorial-image" aria-label="知识整理静物">
-      <img :src="base + 'images/knowledge-still-life.png'" alt="打开的笔记本、书籍、钢笔与麦穗组成的知识整理静物" />
-      <figcaption><span>FIELD NOTES / 001</span><strong>知识不是被收藏的内容，<br />而是被重新组织的理解。</strong></figcaption>
-    </figure>
-
     <section id="libraries" class="vaults section-block">
       <img class="edge-wheat vault-wheat" :src="base + 'images/wheat-ornament.png'" alt="" aria-hidden="true" />
       <div class="section-heading row">
@@ -138,6 +133,11 @@ onUnmounted(() => {
       </div>
       <VaultCircularGallery :vaults="vaults" :base="base" />
     </section>
+
+    <figure class="editorial-image" aria-label="知识整理静物">
+      <img :src="base + 'images/knowledge-still-life.png'" alt="打开的笔记本、书籍、钢笔与麦穗组成的知识整理静物" />
+      <figcaption><span>FIELD NOTES / 001</span><strong>知识不是被收藏的内容，<br />而是被重新组织的理解。</strong></figcaption>
+    </figure>
 
     <section id="reading" class="reading-levels section-block">
       <div class="section-heading">

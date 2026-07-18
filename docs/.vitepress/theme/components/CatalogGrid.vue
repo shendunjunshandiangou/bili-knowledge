@@ -26,7 +26,10 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
           <img :src="base + 'images/' + (vault.key === 'xiaolin' ? 'finance-engraving.png' : 'data-engraving.png')" alt="" />
         </div>
         <div class="card-identity">
-          <span class="avatar-placeholder" aria-hidden="true">UP</span>
+          <span class="avatar-placeholder" aria-hidden="true">
+            <img v-if="vault.avatar" :src="base + 'images/' + vault.avatar" :alt="vault.name + ' 头像'" draggable="false" />
+            <template v-else>UP</template>
+          </span>
           <div>
             <p class="card-subject">{{ vault.subject }}</p>
             <h2>{{ vault.name }}</h2>
@@ -70,7 +73,8 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
 .card-illustration::after { content: 'ARCHIVE · FIELD NOTES'; position: absolute; right: 0; bottom: 10px; color: #a78d76; font: 8px var(--vp-font-family-mono); letter-spacing: .12em; }
 .card-illustration img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; mix-blend-mode: multiply; filter: sepia(.45) saturate(.55) contrast(.94); }
 .card-identity { display: flex; align-items: center; gap: 22px; margin-top: 18px; }
-.avatar-placeholder { display: grid; place-items: center; width: 74px; height: 74px; flex: 0 0 74px; border: 1px solid #bda991; border-radius: 50%; color: var(--vp-c-brand-1); background: linear-gradient(145deg, #f8f0e5, #dfd1bf); font: 700 13px var(--vp-font-family-mono); letter-spacing: .08em; box-shadow: inset 0 0 0 7px rgb(255 250 243 / .68); }
+.avatar-placeholder { display: grid; place-items: center; width: 74px; height: 74px; flex: 0 0 74px; overflow: hidden; border: 1px solid #bda991; border-radius: 50%; color: var(--vp-c-brand-1); background: linear-gradient(145deg, #f8f0e5, #dfd1bf); font: 700 13px var(--vp-font-family-mono); letter-spacing: .08em; box-shadow: inset 0 0 0 7px rgb(255 250 243 / .68); }
+.avatar-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; filter: sepia(.14) saturate(.9); }
 .card-subject { color: var(--vp-c-brand-1); font-size: 12px; font-weight: 650; }
 .card-identity h2 { margin-top: 6px; font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.15; letter-spacing: -.045em; white-space: nowrap; word-break: keep-all; writing-mode: horizontal-tb; }
 .card-content { margin-left: 96px; }

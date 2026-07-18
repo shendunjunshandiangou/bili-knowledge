@@ -8,6 +8,7 @@ type Vault = {
   description: string;
   tags: string[];
   illustration?: string;
+  avatar?: string;
   total: number;
   counts: { knowledge: number; articles: number; atoms: number };
 };
@@ -159,7 +160,10 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
           </div>
           <div class="gallery-card__body">
             <div class="gallery-card__identity">
-              <span class="gallery-card__avatar">{{ vault.name.slice(0, 1) }}</span>
+              <span class="gallery-card__avatar">
+                <img v-if="vault.avatar" :src="base + 'images/' + vault.avatar" :alt="vault.name + ' 头像'" draggable="false" />
+                <template v-else>{{ vault.name.slice(0, 1) }}</template>
+              </span>
               <div><p>{{ vault.subject }}</p><h3>{{ vault.name }}</h3></div>
             </div>
             <p class="gallery-card__description">{{ vault.description }}</p>
@@ -206,7 +210,8 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
 .gallery-card__illustration span { position: absolute; right: 0; bottom: 9px; color: #a18872; font: 8px var(--vp-font-family-mono); letter-spacing: .11em; }
 .gallery-card__body { position: relative; z-index: 4; padding: 30px 4px 24px; transform: translateZ(21px); }
 .gallery-card__identity { display: grid; grid-template-columns: 66px 1fr; align-items: center; gap: 20px; }
-.gallery-card__avatar { display: grid; place-items: center; width: 62px; height: 62px; border: 1px solid #bca78e; border-radius: 50%; color: var(--vp-c-brand-1); background: #eee2d3; box-shadow: inset 0 0 0 6px rgb(255 250 243 / .46); font-family: 'Noto Serif SC', 'Songti SC', serif; font-size: 23px; }
+.gallery-card__avatar { display: grid; place-items: center; width: 62px; height: 62px; overflow: hidden; border: 1px solid #bca78e; border-radius: 50%; color: var(--vp-c-brand-1); background: #eee2d3; box-shadow: inset 0 0 0 6px rgb(255 250 243 / .46); font-family: 'Noto Serif SC', 'Songti SC', serif; font-size: 23px; }
+.gallery-card__avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; filter: sepia(.14) saturate(.9); }
 .gallery-card__identity p { color: var(--vp-c-brand-1); font-size: 12px; font-weight: 650; }
 .gallery-card__identity h3 { margin-top: 5px; font-family: 'Noto Serif SC', 'Songti SC', serif; font-size: 34px; line-height: 1.15; letter-spacing: -.04em; }
 .gallery-card__description { margin-top: 19px; color: var(--vp-c-text-2); font-size: 13px; line-height: 1.85; }
