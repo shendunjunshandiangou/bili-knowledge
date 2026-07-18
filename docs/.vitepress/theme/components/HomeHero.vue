@@ -270,50 +270,81 @@ onUnmounted(() => {
 .home-footer { display: grid; grid-template-columns: 1fr 2fr auto; gap: 30px; align-items: center; padding: 36px 0 0; border-top: 1px solid var(--vp-c-divider); }
 .home-footer p { color: var(--vp-c-text-3); font-size: 13px; }
 .home-footer a { color: var(--vp-c-brand-1); font-size: 13px; font-weight: 650; }
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   .hero { min-height: auto; padding: 72px 0; }
   .hero-stage { padding-block: 30px; }
   .knowledge-object { width: min(720px, 92vw); }
-  .sheet-main { min-height: 0; padding: 28px 30px 26px; }
-  .sheet-body { grid-template-columns: 1fr; gap: 34px; padding: 42px 8px 30px; }
-  .sheet-copy { padding: 0 12px; }
-  .sheet-copy h1 { font-size: clamp(4rem, 12vw, 6.2rem); }
-  .sheet-panel { min-height: 330px; }
-  .sheet-meta { grid-template-columns: repeat(3, 1fr); padding-inline: 12px; }
+  .sheet-main { min-height: 0; padding: 28px 30px 26px; box-shadow: 0 18px 48px rgb(63 41 26 / .14), 0 2px 6px rgb(63 41 26 / .08); }
+  .sheet-back-one, .sheet-back-two { display: none; }
+  .link-backdrop { display: none; }
+  .sheet-body { grid-template-columns: 1fr; gap: 24px; padding: 32px 8px 24px; min-height: 0; }
+  .sheet-copy { padding: 0 8px; }
+  .sheet-copy h1 { font-size: clamp(2.1rem, 8.8vw, 3rem); line-height: 1.18; letter-spacing: -.04em; white-space: normal; }
+  .sheet-copy h1 .hollow-title {
+    color: var(--vp-c-brand-1);
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+  }
+  .sheet-description { margin-top: 18px; font-size: 16px; line-height: 1.75; }
+  .sheet-actions { margin-top: 24px; }
+  .sheet-panel {
+    min-height: 0;
+    padding: 16px 18px;
+    box-shadow: inset 0 0 0 4px #28211d;
+  }
+  .sheet-panel > strong { display: none; }
+  .sheet-network { display: none; }
+  .panel-label { margin: 0; font-size: 9px; }
+  .sheet-foot { margin-top: 0; padding-top: 0; border-top: 0; }
+  .sheet-meta { grid-template-columns: repeat(3, 1fr); padding-inline: 12px; gap: 16px; }
   .sheet-meta .sheet-note { display: none; }
-  .link-backdrop { inset-inline: -20px; opacity: .62; }
   .edge-wheat { opacity: .4; }
+  .section-block { padding: 56px 0; }
+  .workflow { margin-top: 24px; padding-inline: 24px; }
   .workflow-list { grid-template-columns: 1fr; }
   .workflow-list li { min-height: 0; border-left: 1px solid #4b3d34; border-bottom: 1px solid #4b3d34; }
   .workflow-list strong { margin-top: 16px; }
+  .workflow-display { gap: 14px; margin-bottom: 36px; font-size: clamp(2.4rem, 11vw, 3.6rem); }
+  .editorial-image { height: clamp(240px, 58vw, 360px); margin: 48px 0 12px; }
+  .editorial-image figcaption { left: 18px; right: 18px; bottom: 18px; padding: 18px 20px; }
+  .editorial-image figcaption strong { font-size: 18px; line-height: 1.5; }
   .level-list { grid-template-columns: 1fr; }
-  .level-list .level-card { min-height: 230px; border-right: 0; border-bottom: 1px solid var(--vp-c-divider); }
+  .level-list .level-card { min-height: 200px; border-right: 0; border-bottom: 1px solid var(--vp-c-divider); padding: 28px 24px 32px; }
   .level-list .level-card:last-child { border-bottom: 0; }
   .level-list .level-card > div { margin-top: 36px; }
-  .home-footer { grid-template-columns: 1fr; }
+  .level-list .level-card::after { display: none; }
+  .home-footer { grid-template-columns: 1fr; gap: 16px; padding-top: 24px; }
+  .section-heading { margin-bottom: 32px; }
+  .section-heading h2 { font-size: clamp(1.65rem, 7vw, 2.2rem); }
 }
 @media (max-width: 640px) {
-  .home-page { padding-inline: 20px; }
-  .hero { padding-block: 40px; }
-  .knowledge-object { width: 94vw; }
-  .sheet-main { padding: 24px 20px 22px; }
+  .home-page { padding-inline: 16px; padding-bottom: 48px; }
+  .hero { padding-block: 24px 32px; }
+  .hero-stage { padding-block: 12px; }
+  .knowledge-object { width: 100%; }
+  .sheet-main { padding: 18px 16px 16px; }
+  .sheet-main::before { inset: 6px; }
+  .sheet-main::after { width: 10px; opacity: .35; }
+  .sheet-head { gap: 8px; font-size: 9px; letter-spacing: .06em; }
   .sheet-head span:nth-of-type(2) { display: none; }
-  .sheet-body { padding-top: 34px; }
-  .sheet-copy h1 { font-size: clamp(3.3rem, 16vw, 5rem); }
-  .sheet-description { font-size: 15px; }
-  .sheet-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .sheet-panel { min-height: 300px; padding: 24px; }
-  .sheet-meta { gap: 10px; }
-  .sheet-meta dt { font-size: 19px; }
-  .link-backdrop { opacity: .48; }
-  .link-node b { display: none; }
-  .section-block { padding: 72px 0; }
-  .workflow { padding-inline: 24px; }
-  .workflow-display { gap: 14px; margin-bottom: 42px; font-size: clamp(3rem, 15vw, 5rem); }
-  .editorial-image { height: 430px; margin-top: 72px; }
-  .editorial-image figcaption { right: 18px; left: 18px; bottom: 18px; padding: 20px; }
+  .sheet-body { padding: 20px 4px 16px; gap: 18px; }
+  .document-kicker { font-size: 11px; letter-spacing: .1em; }
+  .sheet-copy h1 { margin-top: 14px; font-size: clamp(1.85rem, 9.2vw, 2.35rem); line-height: 1.22; }
+  .sheet-description { font-size: 15px; margin-top: 14px; }
+  .sheet-actions { align-items: stretch; flex-direction: column; gap: 12px; margin-top: 20px; }
+  .btn.primary { justify-content: center; gap: 12px; width: 100%; }
+  .sheet-panel { padding: 14px 16px; }
+  .sheet-meta { gap: 8px; padding: 18px 4px 0; }
+  .sheet-meta dt { font-size: 17px; }
+  .sheet-meta dd { font-size: 11px; }
+  .section-block { padding: 40px 0; }
+  .workflow { margin-top: 16px; padding-inline: 16px; }
+  .workflow-display { margin-bottom: 28px; font-size: clamp(2rem, 12vw, 2.8rem); }
+  .editorial-image { height: clamp(220px, 62vw, 300px); margin-top: 36px; }
+  .editorial-image figcaption strong { font-size: 16px; }
+  .section-heading.row { align-items: start; flex-direction: column; gap: 12px; }
   .edge-wheat { display: none; }
-  .section-heading.row { align-items: start; flex-direction: column; }
+  .level-list h3 { font-size: 22px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .section-block, .editorial-image { opacity: 1; transform: none; transition: none; }

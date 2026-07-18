@@ -300,17 +300,82 @@ html {
   scroll-margin-top: 88px;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
+/* Mobile adjustments — 仅 <900px，桌面端不变 */
+@media (max-width: 899px) {
+  html { scroll-padding-top: 64px; }
+
+  #intro,
+  #workflow,
+  #libraries,
+  #reading {
+    scroll-margin-top: 72px;
+  }
+
+  .VPDoc .container,
+  .VPDoc .content-container {
+    padding-inline: 16px;
+  }
+
+  .VPDoc.has-sidebar .content {
+    padding: 16px 16px 48px;
+  }
+
   .vp-doc h1 {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
   }
+
   .vp-doc h2 {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
   }
+
+  .vp-doc h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .vp-doc h4 {
+    font-size: 1.05rem;
+  }
+
   .vp-doc p,
   .vp-doc li {
     font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+  }
+
+  .vp-doc td,
+  .vp-doc th {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .vp-doc pre {
+    overflow-x: auto;
+    font-size: 13px;
+  }
+
+  .VPDocFooter {
+    margin-top: 2rem;
+  }
+
+  .VPDocFooter .pager-link {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .bili-player {
+    margin-inline: -4px;
+    border-radius: 8px !important;
   }
 }
 

@@ -128,11 +128,12 @@ function goBack() {
   transform: translateY(8px);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 899px) {
   .back-float-btn {
-    right: 16px;
-    bottom: 76px;
-    padding: 7px 12px;
+    right: 12px;
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    padding: 10px 12px;
+    box-shadow: 0 2px 10px rgb(55 38 27 / .18);
   }
   .back-float-btn .label {
     display: none;

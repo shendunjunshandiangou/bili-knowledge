@@ -58,6 +58,8 @@ function onWheel(event: WheelEvent) {
 
 function onPointerDown(event: PointerEvent) {
   if (!viewport.value || (event.pointerType === 'mouse' && event.button !== 0)) return;
+  // 触屏只用原生横向滚动，避免拖拽与页面纵向滑动冲突
+  if (event.pointerType === 'touch') return;
   dragging.value = true;
   pointerStart = event.clientX;
   previousPointerX = event.clientX;
@@ -227,17 +229,28 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
 .vault-gallery__progress i { display: block; width: 100%; height: 100%; transform-origin: left; background: var(--vp-c-brand-1); }
 .vault-gallery__controls > span { color: #8d7a6a; font: 10px var(--vp-font-family-mono); white-space: nowrap; }
 .vault-gallery__hint { margin-top: 2px; color: #978679; font: 9px var(--vp-font-family-mono); letter-spacing: .06em; text-align: center; }
-@media (max-width: 760px) {
-  .vault-gallery { width: calc(100% + 40px); margin-inline: -20px; }
-  .vault-gallery__viewport { padding: 24px 20px 48px; }
-  .vault-gallery__track { gap: 16px; }
-  .gallery-card { flex-basis: min(84vw, 430px); min-height: 570px; padding: 26px; grid-template-rows: auto 190px 1fr auto; }
-  .gallery-card__illustration img { height: 166px; }
-  .gallery-card__identity { grid-template-columns: 54px 1fr; gap: 15px; }
-  .gallery-card__avatar { width: 52px; height: 52px; font-size: 19px; }
-  .gallery-card__identity h3 { font-size: 28px; }
-  .gallery-card__description { font-size: 12px; }
+@media (max-width: 899px) {
+  .vault-gallery { width: calc(100% + 32px); margin-inline: -16px; }
+  .vault-gallery__viewport { padding: 16px 16px 32px; cursor: default; touch-action: pan-x pan-y; }
+  .vault-gallery__track { gap: 14px; }
+  .gallery-card {
+    flex-basis: min(88vw, 360px);
+    min-height: 0;
+    padding: 22px 20px 20px;
+    grid-template-rows: auto 140px 1fr auto;
+    transform: none !important;
+    box-shadow: 0 10px 28px rgb(63 41 26 / .08);
+  }
+  .gallery-card__glare { display: none; }
+  .gallery-card__illustration { margin-top: 14px; }
+  .gallery-card__illustration img { height: 120px; opacity: .82; }
+  .gallery-card__illustration span { display: none; }
+  .gallery-card__body { padding: 20px 2px 16px; }
+  .gallery-card__identity h3 { font-size: 24px; }
+  .gallery-card__description { font-size: 12px; line-height: 1.7; margin-top: 12px; }
+  .gallery-card__footer { gap: 10px; padding-top: 14px; font-size: 9px; }
   .gallery-card__footer span:nth-child(2) { display: none; }
+  .vault-gallery__hint { font-size: 8px; padding-inline: 8px; line-height: 1.5; }
 }
 @media (hover: none), (prefers-reduced-motion: reduce) {
   .gallery-card { transform: none !important; transition: border-color 180ms ease, box-shadow 180ms ease; }

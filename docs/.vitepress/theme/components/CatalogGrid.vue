@@ -90,17 +90,23 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
 .catalog-note { display: flex; gap: 24px; margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--vp-c-divider); }
 .catalog-note span { color: var(--vp-c-brand-1); font-size: 12px; font-weight: 700; }
 .catalog-note p { color: var(--vp-c-text-3); font-size: 13px; }
-@media (max-width: 700px) {
-  .catalog-page { padding: 56px 20px 72px; }
-  .catalog-header { grid-template-columns: 1fr; }
+@media (max-width: 899px) {
+  .catalog-page { padding: 32px 16px 56px; }
+  .catalog-header { grid-template-columns: 1fr; gap: 12px; padding-bottom: 32px; }
   .catalog-header > * { grid-column: 1; }
-  .catalog-header h1 { font-size: clamp(3rem, 17vw, 5rem); }
-  .catalog-grid { grid-template-columns: 1fr; }
-  .catalog-card { min-height: 440px; padding: 28px; }
-  .card-identity { margin-top: 38px; }
-  .avatar-placeholder { width: 58px; height: 58px; flex-basis: 58px; }
-  .card-content { margin-left: 0; }
-  .card-stats, .card-action { width: 100%; margin-left: 0; }
+  .catalog-header h1 { font-size: clamp(2.2rem, 11vw, 3rem); white-space: normal; line-height: 1.05; }
+  .catalog-header > p:not(.catalog-kicker) { align-self: start; font-size: 15px; line-height: 1.7; }
+  .catalog-count { justify-self: start; }
+  .catalog-grid { grid-template-columns: 1fr; gap: 16px; }
+  .catalog-card { min-height: 0; padding: 22px 20px 24px; }
+  .card-illustration { height: 120px; margin-top: 12px; }
+  .card-identity { margin-top: 20px; gap: 14px; }
+  .avatar-placeholder { width: 52px; height: 52px; flex-basis: 52px; }
+  .card-identity h2 { font-size: clamp(22px, 7vw, 28px); white-space: normal; }
+  .card-content { margin-left: 0; margin-top: 14px; }
+  .card-description { font-size: 13px; line-height: 1.7; }
+  .card-stats, .card-action { width: 100%; margin-left: 0; margin-top: 16px; }
+  .catalog-note { margin-top: 40px; flex-direction: column; gap: 8px; }
 }
 
 @media (min-width: 701px) and (max-width: 980px) {
