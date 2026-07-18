@@ -2,6 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import { useData } from 'vitepress';
 import vaults from '../../vaults.generated.json';
+import { shouldPlayHomeIntro } from '../composables/usePageMotion';
 import LineSidebar from './LineSidebar.vue';
 import VaultCircularGallery from './VaultCircularGallery.vue';
 
@@ -15,6 +16,7 @@ const sections = [
   { id: 'reading', index: '04', label: '阅读层级' },
 ];
 const activeSection = ref('intro');
+const playHeroIntro = ref(false);
 let revealObserver: IntersectionObserver | null = null;
 
 function updateActiveSection() {
@@ -28,6 +30,7 @@ function updateActiveSection() {
 }
 
 onMounted(() => {
+  playHeroIntro.value = shouldPlayHomeIntro();
   updateActiveSection();
   window.addEventListener('scroll', updateActiveSection, { passive: true });
   window.addEventListener('resize', updateActiveSection, { passive: true });
@@ -49,7 +52,7 @@ onUnmounted(() => {
 <template>
   <main class="home-page">
     <LineSidebar :items="sections" :active-id="activeSection" />
-    <section id="intro" class="hero">
+    <section id="intro" class="hero" :class="{ 'hero--intro': playHeroIntro }">
       <img class="edge-wheat hero-wheat" :src="base + 'images/wheat-ornament.png'" alt="" aria-hidden="true" />
       <div class="link-backdrop" aria-hidden="true">
         <i class="link-line line-1"></i><i class="link-line line-2"></i>
@@ -162,6 +165,28 @@ onUnmounted(() => {
 <style scoped>
 .home-page { box-sizing: border-box; width: 100%; max-width: 1480px; margin: 0 auto; padding: 0 38px 72px; color: var(--vp-c-text-1); }
 .hero { position: relative; min-height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: center; padding: 70px 0 56px; isolation: isolate; }
+.hero--intro .document-kicker,
+.hero--intro .sheet-copy h1,
+.hero--intro .sheet-description,
+.hero--intro .sheet-actions,
+.hero--intro .sheet-panel,
+.hero--intro .sheet-meta > div {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: hero-stagger-in 560ms var(--kb-motion-ease-out) forwards;
+}
+.hero--intro .document-kicker { animation-delay: 60ms; }
+.hero--intro .sheet-copy h1 { animation-delay: 130ms; }
+.hero--intro .sheet-description { animation-delay: 210ms; }
+.hero--intro .sheet-actions { animation-delay: 280ms; }
+.hero--intro .sheet-panel { animation-delay: 340ms; }
+.hero--intro .sheet-meta > div:nth-child(1) { animation-delay: 400ms; }
+.hero--intro .sheet-meta > div:nth-child(2) { animation-delay: 460ms; }
+.hero--intro .sheet-meta > div:nth-child(3) { animation-delay: 520ms; }
+.hero--intro .sheet-meta > div:nth-child(4) { animation-delay: 580ms; }
+@keyframes hero-stagger-in {
+  to { opacity: 1; transform: translateY(0); }
+}
 .edge-wheat { position: absolute; z-index: 2; width: clamp(120px, 12vw, 190px); height: auto; pointer-events: none; filter: sepia(.28) saturate(.72) contrast(.92); opacity: .72; }
 .hero-wheat { right: 24px; top: 90px; transform: rotate(12deg); transform-origin: bottom center; }
 .link-backdrop { position: absolute; z-index: -1; inset: 22px -4vw 18px; overflow: hidden; pointer-events: none; opacity: .78; mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 82%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 82%, transparent 100%); }
@@ -358,5 +383,15 @@ onUnmounted(() => {
 }
 @media (prefers-reduced-motion: reduce) {
   .section-block, .editorial-image { opacity: 1; transform: none; transition: none; }
+  .hero--intro .document-kicker,
+  .hero--intro .sheet-copy h1,
+  .hero--intro .sheet-description,
+  .hero--intro .sheet-actions,
+  .hero--intro .sheet-panel,
+  .hero--intro .sheet-meta > div {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }
 </style>

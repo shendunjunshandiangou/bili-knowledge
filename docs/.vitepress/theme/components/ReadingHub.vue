@@ -1,13 +1,26 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useData } from 'vitepress';
+import { computed, onMounted, onUnmounted } from 'vue';
+import { useData, useRouter } from 'vitepress';
 import vaults from '../../vaults.generated.json';
+import { navigateWithMotion } from '../composables/usePageMotion';
+import { useScrollReveal } from '../composables/useScrollReveal';
 
 type SectionKey = 'knowledge' | 'articles' | 'atoms';
 
 const props = defineProps<{ sectionKey: SectionKey }>();
 const { site } = useData();
+const router = useRouter();
 const base = computed(() => site.value.base || '/bili-knowledge/');
+const { observe, disconnect } = useScrollReveal();
+
+function onVaultClick(event: MouseEvent, href: string) {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+  event.preventDefault();
+  void navigateWithMotion(router, href);
+}
+
+onMounted(() => observe());
+onUnmounted(() => disconnect());
 
 const sections = {
   knowledge: {
@@ -38,7 +51,7 @@ const current = computed(() => sections[props.sectionKey]);
 
 <template>
   <main class="reading-hub">
-    <header class="reading-header">
+    <header class="reading-header" data-reveal>
       <p>{{ current.kicker }} / {{ current.index }}</p>
       <h1>{{ current.title }}</h1>
       <div class="reading-intro">
@@ -52,7 +65,10 @@ const current = computed(() => sections[props.sectionKey]);
         v-for="(vault, index) in vaults"
         :key="vault.key"
         class="vault-option"
+        data-reveal
+        :data-reveal-delay="String(Math.min(index, 3))"
         :href="base + vault.key + '/' + props.sectionKey + '/'"
+        @click="onVaultClick($event, base + vault.key + '/' + props.sectionKey + '/')"
       >
         <div class="option-top">
           <span>{{ String(index + 1).padStart(2, '0') }}</span>
@@ -64,7 +80,7 @@ const current = computed(() => sections[props.sectionKey]);
       </a>
     </section>
 
-    <nav class="depth-nav" aria-label="其他阅读深度">
+    <nav class="depth-nav" aria-label="其他阅读深度" data-reveal>
       <span>其他阅读深度</span>
       <a
         v-for="(section, key) in sections"
@@ -85,7 +101,7 @@ const current = computed(() => sections[props.sectionKey]);
 .reading-intro p { color: var(--vp-c-text-2); font-size: 17px; line-height: 1.85; }
 .reading-intro span { display: block; margin-top: 20px; color: var(--vp-c-brand-1); font-size: 13px; font-weight: 650; }
 .vault-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding: 48px 0 72px; }
-.vault-option { display: flex; flex-direction: column; min-height: 330px; padding: 38px; border: 1px solid #bca78e; color: var(--vp-c-text-1); background: #f1e6d6; box-shadow: 0 14px 34px rgb(63 41 26 / .06); transition: transform 200ms, border-color 200ms, box-shadow 200ms; }
+.vault-option { display: flex; flex-direction: column; min-height: 330px; padding: 38px; border: 1px solid #bca78e; color: var(--vp-c-text-1); background: #f1e6d6; box-shadow: 0 14px 34px rgb(63 41 26 / .06); transition: transform var(--kb-motion-base), border-color var(--kb-motion-base), box-shadow var(--kb-motion-base); }
 .vault-option:hover { transform: translateY(-3px); border-color: var(--vp-c-brand-1); box-shadow: var(--vp-shadow-2); }
 .option-top { display: flex; justify-content: space-between; color: var(--vp-c-text-3); font: 11px var(--vp-font-family-mono); }
 .vault-option > p { margin-top: 70px; color: var(--vp-c-brand-1); font-size: 12px; font-weight: 650; }

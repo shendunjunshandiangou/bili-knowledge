@@ -1,15 +1,31 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useData } from 'vitepress';
+import { computed, onMounted, onUnmounted } from 'vue';
+import { useData, useRouter } from 'vitepress';
 import vaults from '../../vaults.generated.json';
+import { navigateWithMotion } from '../composables/usePageMotion';
+import { useScrollReveal } from '../composables/useScrollReveal';
 
 const { site } = useData();
+const router = useRouter();
 const base = computed(() => site.value.base || '/bili-knowledge/');
+const { observe, disconnect } = useScrollReveal();
+
+function onCardClick(event: MouseEvent, href: string) {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+  event.preventDefault();
+  const card = event.currentTarget as HTMLElement;
+  card.classList.add('is-activating');
+  window.setTimeout(() => card.classList.remove('is-activating'), 180);
+  void navigateWithMotion(router, href);
+}
+
+onMounted(() => observe());
+onUnmounted(() => disconnect());
 </script>
 
 <template>
   <main class="catalog-page">
-    <header class="catalog-header">
+    <header class="catalog-header" data-reveal>
       <p class="catalog-kicker">KNOWLEDGE DIRECTORY</p>
       <h1>知识目录</h1>
       <p>从一个 UP 主进入一套完整的知识框架。每个知识库都包含体系文章、逐视频文章与可独立检索的原子笔记。</p>
@@ -17,7 +33,16 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
     </header>
 
     <div class="catalog-grid">
-      <a v-for="(vault, index) in vaults" :key="vault.key" class="catalog-card" :href="base + vault.key + '/'">
+      <a
+        v-for="(vault, index) in vaults"
+        :key="vault.key"
+        class="catalog-card"
+        data-reveal
+        :data-reveal-delay="String(Math.min(index, 3))"
+        :style="{ '--vault-avatar-vt': `vault-avatar-${vault.key}` }"
+        :href="base + vault.key + '/'"
+        @click="onCardClick($event, base + vault.key + '/')"
+      >
         <div class="card-topline">
           <span>{{ String(index + 1).padStart(2, '0') }}</span>
           <span>{{ vault.total }} PAGES</span>
@@ -26,7 +51,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
           <img :src="base + 'images/' + (vault.illustration || 'knowledge-still-life.png')" alt="" />
         </div>
         <div class="card-identity">
-          <span class="avatar-placeholder" aria-hidden="true">
+          <span class="avatar-placeholder" aria-hidden="true" :style="{ viewTransitionName: `vault-avatar-${vault.key}` }">
             <img v-if="vault.avatar" :src="base + 'images/' + vault.avatar" :alt="vault.name + ' 头像'" draggable="false" />
             <template v-else>UP</template>
           </span>
@@ -48,7 +73,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
       </a>
     </div>
 
-    <footer class="catalog-note">
+    <footer class="catalog-note" data-reveal>
       <span>持续扩展</span>
       <p>后续新增的 UP 主与主题知识库会自动加入此目录。</p>
     </footer>
@@ -68,6 +93,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
 .catalog-card { position: relative; display: flex; flex-direction: column; min-width: 0; min-height: 680px; padding: 44px; overflow: hidden; border: 1px solid #bca78e; background-color: #f1e6d6; background-image: repeating-linear-gradient(0deg, rgb(87 57 38 / .018) 0 1px, transparent 1px 4px), radial-gradient(circle at 18% 16%, rgb(255 255 255 / .48), transparent 34%); writing-mode: horizontal-tb; box-shadow: 0 14px 34px rgb(63 41 26 / .07); transition: transform var(--kb-motion-base), border-color var(--kb-motion-base), box-shadow var(--kb-motion-base); }
 .catalog-card::before { content: ''; position: absolute; inset: 10px; border: 1px solid rgb(119 84 59 / .15); pointer-events: none; }
 .catalog-card:hover { transform: translateY(-3px); border-color: var(--vp-c-brand-1); box-shadow: 0 16px 48px rgb(38 64 91 / .08); }
+.catalog-card.is-activating { transform: translateY(-1px) scale(0.992); transition: transform 140ms var(--kb-motion-ease-out); }
 .card-topline { display: flex; align-items: center; justify-content: space-between; color: var(--vp-c-text-3); font: 11px var(--vp-font-family-mono); letter-spacing: .05em; }
 .card-illustration { position: relative; height: 220px; margin: 34px 0 22px; border-bottom: 1px solid #cdbba6; }
 .card-illustration::after { content: 'ARCHIVE · FIELD NOTES'; position: absolute; right: 0; bottom: 10px; color: #a78d76; font: 8px var(--vp-font-family-mono); letter-spacing: .12em; }

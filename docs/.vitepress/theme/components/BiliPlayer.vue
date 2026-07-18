@@ -34,7 +34,7 @@ const src = computed(() => {
   overflow: hidden;
   background: var(--vp-c-bg-soft);
   box-shadow: var(--vp-shadow-3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform var(--kb-motion-base), box-shadow var(--kb-motion-base);
 }
 
 .bili-player:hover {

@@ -37,6 +37,10 @@
   --kb-radius-lg: 10px;
   --kb-motion-fast: 150ms;
   --kb-motion-base: 200ms;
+  --kb-motion-slow: 320ms;
+  --kb-motion-enter: 480ms;
+  --kb-motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --kb-motion-ease-soft: cubic-bezier(0.2, 0.72, 0.18, 1);
   --vp-shadow-1: 0 1px 2px rgb(55 38 27 / 0.05);
   --vp-shadow-2: 0 8px 24px rgb(55 38 27 / 0.08);
   --vp-shadow-3: 0 24px 64px rgb(55 38 27 / 0.13);
