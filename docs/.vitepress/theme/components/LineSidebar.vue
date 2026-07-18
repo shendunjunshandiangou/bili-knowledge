@@ -91,7 +91,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateEffects));
 .line-sidebar {
   position: fixed;
   z-index: 30;
-  left: max(10px, calc(50vw - 930px));
+  right: max(10px, calc(50vw - 930px));
   top: 50%;
   width: 82px;
   padding: 18px 0;
@@ -102,7 +102,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateEffects));
 .line-sidebar::before {
   content: '';
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -110,10 +110,11 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateEffects));
 }
 .line-sidebar__caption {
   display: block;
-  margin: 0 0 12px 14px;
+  margin: 0 14px 12px 0;
   color: #a18d7c;
   font: 8px var(--vp-font-family-mono);
   letter-spacing: .2em;
+  text-align: right;
 }
 .line-sidebar__item {
   --effect: 0;
@@ -121,28 +122,32 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateEffects));
   --marker: .44;
   position: relative;
   display: grid;
-  grid-template-columns: 22px 15px 1fr;
+  grid-template-columns: 1fr 15px 22px;
+  grid-template-areas: 'label index marker';
   align-items: center;
   min-height: 42px;
   color: color-mix(in srgb, #8e7b6b calc(100% - var(--effect) * 38%), #2b241f calc(var(--effect) * 38%));
   text-decoration: none;
-  transform: translateX(var(--shift));
+  text-align: right;
+  transform: translateX(calc(var(--shift) * -1));
   transition: transform 180ms cubic-bezier(.2,.75,.25,1), color 180ms ease;
   will-change: transform;
 }
 .line-sidebar__marker {
+  grid-area: marker;
+  justify-self: end;
   display: block;
   width: 22px;
   height: 1px;
   transform: scaleX(var(--marker));
-  transform-origin: left center;
+  transform-origin: right center;
   background: color-mix(in srgb, #b9a691 calc(100% - var(--effect) * 45%), var(--vp-c-brand-1) calc(var(--effect) * 45%));
   transition: transform 180ms cubic-bezier(.2,.75,.25,1), background 180ms ease;
 }
 .line-sidebar__marker::before {
   content: '';
   position: absolute;
-  left: -3px;
+  right: -3px;
   top: -3px;
   width: 7px;
   height: 7px;
@@ -153,9 +158,11 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateEffects));
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 .line-sidebar__index {
+  grid-area: index;
   font: 9px var(--vp-font-family-mono);
 }
 .line-sidebar strong {
+  grid-area: label;
   opacity: var(--effect);
   font-family: 'Noto Serif SC', 'Songti SC', serif;
   font-size: 10px;

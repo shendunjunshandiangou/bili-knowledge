@@ -18,7 +18,7 @@ const VAULTS = [
     subject: '财经商业分析',
     description: '从宏观经济、金融市场到公司与产业，用故事化表达建立理解商业世界的完整框架。',
     tags: ['宏观经济', '金融市场', '公司产业'],
-    illustration: 'finance-engraving.png',
+    illustration: 'finance-lineart.png',
     avatar: 'avatar-xiaolin.jpg',
   },
   {
@@ -28,7 +28,7 @@ const VAULTS = [
     subject: '数据分析与职场',
     description: '围绕数据分析工具、业务思维、职业发展与 AI 协作，整理可落地的学习和工作方法。',
     tags: ['数据分析', '求职发展', 'AI 应用'],
-    illustration: 'data-engraving.png',
+    illustration: 'data-lineart.png',
     avatar: 'avatar-daishixiong.jpg',
   },
 ];

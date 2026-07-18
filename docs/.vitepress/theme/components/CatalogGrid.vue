@@ -23,7 +23,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
           <span>{{ vault.total }} PAGES</span>
         </div>
         <div class="card-illustration" aria-hidden="true">
-          <img :src="base + 'images/' + (vault.key === 'xiaolin' ? 'finance-engraving.png' : 'data-engraving.png')" alt="" />
+          <img :src="base + 'images/' + (vault.illustration || 'knowledge-still-life.png')" alt="" />
         </div>
         <div class="card-identity">
           <span class="avatar-placeholder" aria-hidden="true">
@@ -71,7 +71,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
 .card-topline { display: flex; align-items: center; justify-content: space-between; color: var(--vp-c-text-3); font: 11px var(--vp-font-family-mono); letter-spacing: .05em; }
 .card-illustration { position: relative; height: 220px; margin: 34px 0 22px; border-bottom: 1px solid #cdbba6; }
 .card-illustration::after { content: 'ARCHIVE · FIELD NOTES'; position: absolute; right: 0; bottom: 10px; color: #a78d76; font: 8px var(--vp-font-family-mono); letter-spacing: .12em; }
-.card-illustration img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; mix-blend-mode: multiply; filter: sepia(.45) saturate(.55) contrast(.94); }
+.card-illustration img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; opacity: .88; }
 .card-identity { display: flex; align-items: center; gap: 22px; margin-top: 18px; }
 .avatar-placeholder { display: grid; place-items: center; width: 74px; height: 74px; flex: 0 0 74px; overflow: hidden; border: 1px solid #bda991; border-radius: 50%; color: var(--vp-c-brand-1); background: linear-gradient(145deg, #f8f0e5, #dfd1bf); font: 700 13px var(--vp-font-family-mono); letter-spacing: .08em; box-shadow: inset 0 0 0 7px rgb(255 250 243 / .68); }
 .avatar-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; filter: sepia(.14) saturate(.9); }
