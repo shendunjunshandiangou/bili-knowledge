@@ -342,7 +342,10 @@ html {
     padding-bottom: 48px;
   }
 
-  .vp-doc .home-page,
+  .vp-doc .home-page {
+    padding-inline: 8px;
+  }
+
   .vp-doc .catalog-page {
     padding-inline: 12px;
   }
