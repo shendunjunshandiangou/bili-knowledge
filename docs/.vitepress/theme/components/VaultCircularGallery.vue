@@ -230,8 +230,8 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
 .vault-gallery__controls > span { color: #8d7a6a; font: 10px var(--vp-font-family-mono); white-space: nowrap; }
 .vault-gallery__hint { margin-top: 2px; color: #978679; font: 9px var(--vp-font-family-mono); letter-spacing: .06em; text-align: center; }
 @media (max-width: 899px) {
-  .vault-gallery { width: calc(100% + 32px); margin-inline: -16px; }
-  .vault-gallery__viewport { padding: 16px 16px 32px; cursor: default; touch-action: pan-x pan-y; }
+  .vault-gallery { width: 100%; margin-inline: 0; }
+  .vault-gallery__viewport { padding: 16px 0 32px; cursor: default; touch-action: pan-x pan-y; }
   .vault-gallery__track { gap: 14px; }
   .gallery-card {
     flex-basis: min(88vw, 360px);

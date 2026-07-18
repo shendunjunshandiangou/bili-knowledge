@@ -178,7 +178,7 @@ onUnmounted(() => {
 .line-5 { right: 8.5%; top: 35.5%; width: 20%; transform: rotate(203deg); }.line-6 { right: 8.5%; top: 35.5%; width: 20%; transform: rotate(126deg); }
 .line-7 { right: 17.5%; top: 68.5%; width: 24%; transform: rotate(143deg); }.line-8 { right: 26.5%; top: 18.5%; width: 22%; transform: rotate(35deg); }
 .hero-stage { position: relative; width: 100%; padding: 42px 0; }
-.knowledge-object { position: relative; z-index: 3; width: min(1320px, 94vw); margin: 0 auto; }
+.knowledge-object { position: relative; z-index: 3; width: 100%; max-width: 1320px; margin: 0 auto; }
 .knowledge-sheet { border: 1px solid #bfae99; background: #f7efe3; }
 .sheet-back-one, .sheet-back-two { position: absolute; inset: 12px 4px -8px; box-shadow: var(--vp-shadow-2); }
 .sheet-back-one { transform: rotate(-1.9deg) translate(-12px, 8px); background: #d6c6b3; }
@@ -273,7 +273,7 @@ onUnmounted(() => {
 @media (max-width: 899px) {
   .hero { min-height: auto; padding: 72px 0; }
   .hero-stage { padding-block: 30px; }
-  .knowledge-object { width: min(720px, 92vw); }
+  .knowledge-object { width: 100%; max-width: none; }
   .sheet-main { min-height: 0; padding: 28px 30px 26px; box-shadow: 0 18px 48px rgb(63 41 26 / .14), 0 2px 6px rgb(63 41 26 / .08); }
   .sheet-back-one, .sheet-back-two { display: none; }
   .link-backdrop { display: none; }
@@ -318,7 +318,7 @@ onUnmounted(() => {
   .section-heading h2 { font-size: clamp(1.65rem, 7vw, 2.2rem); }
 }
 @media (max-width: 640px) {
-  .home-page { padding-inline: 16px; padding-bottom: 48px; }
+  .home-page { padding-inline: 0; padding-bottom: 48px; }
   .hero { padding-block: 24px 32px; }
   .hero-stage { padding-block: 12px; }
   .knowledge-object { width: 100%; }

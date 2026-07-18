@@ -151,6 +151,20 @@ html {
 .VPDoc:not(.has-sidebar):has(.catalog-page) .content-container {
   width: 100%;
   max-width: none;
+  padding-inline: 0;
+}
+
+/* 展示型页面去掉 VitePress 默认 content 左右 padding，避免与组件内边距叠加 */
+.VPDoc:not(.has-sidebar):has(.home-page) .content,
+.VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+  padding-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+  .VPDoc:not(.has-sidebar):has(.home-page) .content,
+  .VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+    padding-bottom: 128px;
+  }
 }
 
 .vp-doc p,
@@ -311,13 +325,42 @@ html {
     scroll-margin-top: 72px;
   }
 
-  .VPDoc .container,
-  .VPDoc .content-container {
-    padding-inline: 16px;
+  /* 去掉 VitePress + 组件的多层左右 padding，只保留一层 */
+  .VPDoc:not(.has-sidebar) {
+    padding: 12px 0 48px;
+  }
+
+  .VPDoc:not(.has-sidebar) .container,
+  .VPDoc:not(.has-sidebar) .content,
+  .VPDoc:not(.has-sidebar) .content-container {
+    padding-inline: 0;
+    max-width: none;
+  }
+
+  .VPDoc:not(.has-sidebar):has(.home-page) .content,
+  .VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+    padding-bottom: 48px;
+  }
+
+  .vp-doc .home-page,
+  .vp-doc .catalog-page {
+    padding-inline: 12px;
+  }
+
+  .VPDoc.has-sidebar {
+    padding: 0 0 48px;
+  }
+
+  .VPDoc.has-sidebar .container {
+    padding-inline: 0;
   }
 
   .VPDoc.has-sidebar .content {
-    padding: 16px 16px 48px;
+    padding: 8px 14px 40px;
+  }
+
+  .VPDoc.has-sidebar .content-container {
+    padding-inline: 0;
   }
 
   .vp-doc h1 {

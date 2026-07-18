@@ -91,7 +91,7 @@ const base = computed(() => site.value.base || '/bili-knowledge/');
 .catalog-note span { color: var(--vp-c-brand-1); font-size: 12px; font-weight: 700; }
 .catalog-note p { color: var(--vp-c-text-3); font-size: 13px; }
 @media (max-width: 899px) {
-  .catalog-page { padding: 32px 16px 56px; }
+  .catalog-page { padding: 24px 0 48px; }
   .catalog-header { grid-template-columns: 1fr; gap: 12px; padding-bottom: 32px; }
   .catalog-header > * { grid-column: 1; }
   .catalog-header h1 { font-size: clamp(2.2rem, 11vw, 3rem); white-space: normal; line-height: 1.05; }
