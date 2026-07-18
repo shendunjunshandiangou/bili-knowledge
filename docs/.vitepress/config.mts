@@ -11,9 +11,10 @@ const sidebar = fs.existsSync(sidebarPath)
 
 export default defineConfig({
   title: 'B站知识库',
-  description: '小Lin说、戴师兄知识库站点',
+  description: '把 B 站视频整理成可阅读、可搜索、可连接的结构化知识库',
   lang: 'zh-CN',
   base: '/bili-knowledge/',
+  appearance: false,
   lastUpdated: true,
   ignoreDeadLinks: true,
   markdown: {
@@ -22,15 +23,35 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '小Lin说', link: '/xiaolin/' },
-      { text: '戴师兄', link: '/daishixiong/' },
-      { text: '来源声明', link: '/about' },
+      { text: '知识目录', link: '/catalog' },
+      { text: '关于', link: '/about' },
     ],
     sidebar,
     socialLinks: [],
     search: {
       provider: 'local',
       options: {
+        // 三层内容高度重叠：体系长文和逐视频文章索引标题/章节，
+        // 原子卡片索引概念名与“一句话定义”。搜索仍可定位知识概念，
+        // 同时避免浏览器下载数份重复正文。
+        _render: (src, env, md) => {
+          if (/\/(?:knowledge|articles)\//.test(env.relativePath)) {
+            const headings = src
+              .split('\n')
+              .filter((line) => /^#{1,4}\s+/.test(line))
+              .join('\n\n');
+            return md.render(headings, env);
+          }
+
+          if (/\/atoms\//.test(env.relativePath)) {
+            const title = src.match(/^#\s+.+$/m)?.[0] ?? '';
+            const definition =
+              src.match(/^##\s+一句话定义\s*$([\s\S]*?)(?=^##\s+|$(?![\s\S]))/m)?.[1]?.trim() ?? '';
+            return md.render([title, definition].filter(Boolean).join('\n\n'), env);
+          }
+
+          return md.render(src, env);
+        },
         translations: {
           button: {
             buttonText: '搜索',
@@ -73,6 +94,11 @@ export default defineConfig({
     },
   },
   vite: {
+    build: {
+      // 本站以大量 Markdown 页面为主。提高警告阈值，避免把正常的内容索引
+      // 误报成应用代码膨胀；真正的视觉组件仍保持独立分包。
+      chunkSizeWarningLimit: 900,
+    },
     resolve: {
       alias: {
         '@theme': path.join(__dirname, 'theme'),

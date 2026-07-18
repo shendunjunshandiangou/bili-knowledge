@@ -1,0 +1,42 @@
+/*
+ * 视觉系统入口
+ * 后续调整整站风格时，优先修改这里；组件布局与细节仍放在 custom.css。
+ * 当前变量保持既有视觉不变，只把设计决策集中起来。
+ */
+
+:root {
+  /* Typography */
+  --vp-font-family-base: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Hiragino Sans GB', 'Helvetica Neue', Arial, sans-serif;
+  --vp-font-family-mono: 'SFMono-Regular', 'Sarasa Mono SC', 'Noto Sans Mono CJK SC', Consolas, Menlo, Courier, monospace;
+
+  /* Brand */
+  --vp-c-brand-1: #9a603f;
+  --vp-c-brand-2: #70412d;
+  --vp-c-brand-3: #bd8663;
+  --vp-c-brand-soft: rgba(154, 96, 63, 0.10);
+  --vp-c-brand-accent: #b77953;
+
+  /* Surfaces and text */
+  --vp-c-bg: #eee7dc;
+  --vp-c-bg-alt: #e6ddcf;
+  --vp-c-bg-soft: #e7ddd0;
+  --vp-c-bg-elv: #f5eee4;
+  --vp-nav-bg-color: #1f1a17;
+  --vp-c-divider: #cfc2b1;
+  --vp-c-divider-soft: #ddd2c3;
+  --vp-c-text-1: #241f1b;
+  --vp-c-text-2: #6a5e55;
+  --vp-c-text-3: #94877b;
+  --vp-c-tip-1: #0ea5e9;
+  --vp-c-tip-soft: rgba(14, 165, 233, 0.12);
+
+  /* Shape, motion and elevation */
+  --kb-radius-sm: 4px;
+  --kb-radius-md: 6px;
+  --kb-radius-lg: 10px;
+  --kb-motion-fast: 150ms;
+  --kb-motion-base: 200ms;
+  --vp-shadow-1: 0 1px 2px rgb(55 38 27 / 0.05);
+  --vp-shadow-2: 0 8px 24px rgb(55 38 27 / 0.08);
+  --vp-shadow-3: 0 24px 64px rgb(55 38 27 / 0.13);
+}

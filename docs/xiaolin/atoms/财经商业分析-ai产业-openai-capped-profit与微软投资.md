@@ -1,7 +1,7 @@
 ---
 title: OpenAI capped-profit 与微软投资
 tags: "[AI产业, 资本市场]"
-source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]\""
+source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战...]]\""
 ---
 
 # OpenAI capped-profit 与微软投资

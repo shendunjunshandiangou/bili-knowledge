@@ -1,7 +1,7 @@
 ---
 title: ChatGPT RLHF 训练机制
 tags: "[AI产业]"
-source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战....]]\""
+source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战...]]\""
 ---
 
 # ChatGPT RLHF 训练机制

@@ -8,30 +8,65 @@ const repoRoot = path.resolve(__dirname, '..', '..');
 const siteRoot = path.resolve(__dirname, '..');
 const docsRoot = path.resolve(siteRoot, 'docs');
 const vpRoot = path.resolve(docsRoot, '.vitepress');
+const staticRoot = path.resolve(siteRoot, 'assets');
 
 const VAULTS = [
   {
     key: 'xiaolin',
     name: '小Lin说',
     dir: '小Lin说-财经商业分析',
+    subject: '财经商业分析',
+    description: '从宏观经济、金融市场到公司与产业，用故事化表达建立理解商业世界的完整框架。',
+    tags: ['宏观经济', '金融市场', '公司产业'],
+    illustration: 'finance-engraving.png',
   },
   {
     key: 'daishixiong',
     name: '戴师兄',
     dir: '戴师兄-数据分析',
+    subject: '数据分析与职场',
+    description: '围绕数据分析工具、业务思维、职业发展与 AI 协作，整理可落地的学习和工作方法。',
+    tags: ['数据分析', '求职发展', 'AI 应用'],
+    illustration: 'data-engraving.png',
   },
 ];
 
 const SOURCE_SECTIONS = [
-  { key: 'knowledge', dir: '04_knowledge', title: '体系化阅读' },
-  { key: 'articles', dir: '01_articles', title: '逐视频文章' },
-  { key: 'atoms', dir: '02_atoms', title: '原子卡片库' },
+  {
+    key: 'knowledge',
+    dir: '04_knowledge',
+    title: '体系化阅读',
+    shortDescription: '从完整框架开始，适合系统学习一个领域。',
+    description: '把多个视频里的知识重新组织进一套完整框架，去掉重复表达，并补上概念之间的连接。适合第一次进入一个领域，按章节建立整体认知。',
+    guide: '建议从第一章开始顺序阅读；如果已经有基础，也可以直接从感兴趣的章节进入。',
+  },
+  {
+    key: 'articles',
+    dir: '01_articles',
+    title: '逐视频文章',
+    shortDescription: '保留单期视频的上下文，适合回看具体观点。',
+    description: '以一条视频为单位，将口语内容整理成可阅读的文章，尽量保留原视频的叙事顺序、案例和论证过程。适合按视频标题查找，或回看某一期的完整观点。',
+    guide: '按标题选择感兴趣的视频文章；文章页内会保留原视频入口，方便对照观看。',
+  },
+  {
+    key: 'atoms',
+    dir: '02_atoms',
+    title: '原子笔记',
+    shortDescription: '直接定位一个概念，适合搜索、引用与继续探索。',
+    description: '把文章拆成可以独立解释、独立搜索和独立引用的知识点。每张笔记只回答一个清晰的问题，并通过双链连接回相关内容。',
+    guide: '适合通过顶部搜索直接定位概念，也可以按主题分组浏览并继续追踪关联笔记。',
+  },
 ];
 
 const ALLOWED_HTML_TAGS = new Set(['br', 'sub', 'sup']);
 
 function ensureDir(p) {
   if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true });
+}
+
+function copyStaticAssets() {
+  if (!fs.existsSync(staticRoot)) return;
+  fs.cpSync(staticRoot, path.join(docsRoot, 'public'), { recursive: true });
 }
 
 function removeExt(name) {
@@ -120,7 +155,9 @@ function buildVaultSlugMap(vaultDir) {
     const dir = path.join(vaultDir, section.dir);
     if (!fs.existsSync(dir)) continue;
     for (const file of fs.readdirSync(dir)) {
-      if (!file.endsWith('.md') || file.startsWith('_')) continue;
+      // 内容标题可以合法地以下划线开头（例如“_十五五_ 规划…”），
+      // SOURCE_SECTIONS 已限定为内容目录，不应再把它误判为内部文件。
+      if (!file.endsWith('.md')) continue;
       const filePath = path.join(dir, file);
       const base = removeExt(file);
       const slug = toSlug(base);
@@ -221,7 +258,7 @@ function processVault(vault, globalSlugMap) {
     if (!fs.existsSync(srcDir)) continue;
 
     for (const file of fs.readdirSync(srcDir)) {
-      if (!file.endsWith('.md') || file.startsWith('_')) continue;
+      if (!file.endsWith('.md')) continue;
       const filePath = path.join(srcDir, file);
       const base = removeExt(file);
       const slug = toSlug(base);
@@ -325,13 +362,61 @@ function writeVaultIndex(vault, sections) {
   fs.writeFileSync(outPath, content, 'utf8');
 }
 
+function writeVaultSectionIndexes(vault, sections) {
+  for (const { section, files } of sections) {
+    const outPath = path.join(docsRoot, vault.key, section.key, 'index.md');
+    const sorted = [...files].sort((a, b) => {
+      if (section.key === 'knowledge') return a.fileBase.localeCompare(b.fileBase, 'zh-CN');
+      return a.title.localeCompare(b.title, 'zh-CN');
+    });
+
+    const links = sorted
+      .map((file) => `- [${file.title}](./${file.slug}.html)`)
+      .join('\n');
+    const content = `---\ntitle: ${vault.name} · ${section.title}\n---\n\n# ${section.title}\n\n> ${section.shortDescription}\n\n${section.description}\n\n## 怎么使用\n\n${section.guide}\n\n## ${vault.name}的内容\n\n共 **${files.length}** 篇。\n\n${links || '内容正在整理中。'}\n`;
+    fs.writeFileSync(outPath, content, 'utf8');
+  }
+}
+
+function writeReadingIndexes() {
+  const readingDir = path.join(docsRoot, 'reading');
+  ensureDir(readingDir);
+  for (const section of SOURCE_SECTIONS) {
+    const content = `---\ntitle: ${section.title}\naside: false\nsidebar: false\n---\n\n<script setup>\nimport ReadingHub from '../.vitepress/theme/components/ReadingHub.vue'\n</script>\n\n<ReadingHub section-key="${section.key}" />\n`;
+    fs.writeFileSync(path.join(readingDir, `${section.key}.md`), content, 'utf8');
+  }
+}
+
 function writeHomeIndex(vaultStats) {
   const content = `---\ntitle: B 站知识库\naside: false\nsidebar: false\n---\n\n<script setup>\nimport HomeHero from './.vitepress/theme/components/HomeHero.vue'\n</script>\n\n<HomeHero />\n`;
   fs.writeFileSync(path.join(docsRoot, 'index.md'), content, 'utf8');
 }
 
+function writeCatalogIndex() {
+  const content = `---\ntitle: 知识目录\naside: false\nsidebar: false\n---\n\n<script setup>\nimport CatalogGrid from './.vitepress/theme/components/CatalogGrid.vue'\n</script>\n\n<CatalogGrid />\n`;
+  fs.writeFileSync(path.join(docsRoot, 'catalog.md'), content, 'utf8');
+}
+
+function writeVaultManifest(vaultStats) {
+  const manifest = vaultStats.map((stats) => {
+    const vault = VAULTS.find((item) => item.key === stats.key);
+    return {
+      key: vault.key,
+      name: vault.name,
+      subject: vault.subject,
+      description: vault.description,
+      tags: vault.tags,
+      illustration: vault.illustration || 'knowledge-still-life.png',
+      total: stats.total,
+      counts: stats.counts,
+    };
+  });
+  fs.writeFileSync(path.join(vpRoot, 'vaults.generated.json'), JSON.stringify(manifest, null, 2), 'utf8');
+}
+
 function writeAboutPage() {
-  const content = `---\ntitle: 来源声明\n---\n\n# 来源声明\n\n本站内容全部整理自 B 站 UP 主公开视频，仅用于个人学习、检索与知识管理：\n\n- **小Lin说**：财经商业分析类视频\n- **戴师兄**：数据分析与职场成长类视频\n\n本站不拥有原视频内容的版权，不用于商业用途。若原 UP 主或相关权利方认为任何内容不合适，请联系删除。\n\n## 技术说明\n\n- 使用 [VitePress](https://vitepress.dev/) 生成静态站点\n- 知识库整理流程见原仓库说明\n`;
+  const vaultList = VAULTS.map((vault) => `- **${vault.name}**：${vault.subject}`).join('\n');
+  const content = `---\ntitle: 来源声明\n---\n\n# 来源声明\n\n本站内容全部整理自 B 站 UP 主公开视频，仅用于个人学习、检索与知识管理：\n\n${vaultList}\n\n本站不拥有原视频内容的版权，不用于商业用途。若原 UP 主或相关权利方认为任何内容不合适，请联系删除。\n\n## 技术说明\n\n- 使用 [VitePress](https://vitepress.dev/) 生成静态站点\n- 知识库整理流程见原仓库说明\n`;
   fs.writeFileSync(path.join(docsRoot, 'about.md'), content, 'utf8');
 }
 
@@ -415,6 +500,8 @@ function main() {
     fs.rmSync(p, { recursive: true, force: true });
   }
 
+  copyStaticAssets();
+
   const globalSlugMap = buildGlobalSlugMap(VAULTS);
   writeSlugMap(globalSlugMap);
 
@@ -425,13 +512,18 @@ function main() {
     const result = processVault(vault, globalSlugMap);
     processedResults.push(result);
     writeVaultIndex(vault, result.sections);
+    writeVaultSectionIndexes(vault, result.sections);
     const total = result.sections.reduce((sum, s) => sum + s.files.length, 0);
     const details = result.sections.map((s) => `${s.section.title} ${s.files.length}`).join(' / ');
-    vaultStats.push({ key: vault.key, name: vault.name, total, details });
+    const counts = Object.fromEntries(result.sections.map((s) => [s.section.key, s.files.length]));
+    vaultStats.push({ key: vault.key, name: vault.name, total, details, counts });
     console.log(`[${vault.name}] processed ${total} pages: ${details}`);
   }
 
   writeHomeIndex(vaultStats);
+  writeReadingIndexes();
+  writeCatalogIndex();
+  writeVaultManifest(vaultStats);
   writeAboutPage();
   writeSidebar(VAULTS, processedResults);
 

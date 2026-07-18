@@ -1,7 +1,7 @@
 ---
 title: Excel Copilot 定价与重构
 tags: "[AI应用]"
-source: "\"[[Copilot已公布定价！最底仅需…….md]]\""
+source: "\"[[Copilot已公布定价！最底仅需……]]\""
 ---
 
 # Excel Copilot 定价与重构
