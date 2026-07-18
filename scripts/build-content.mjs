@@ -242,6 +242,112 @@ function inferAtomGroup(fileBase) {
   return parts[0] || '其他';
 }
 
+const ARTICLE_GROUP_RULES = {
+  xiaolin: [
+    { name: '一口气系列', order: 1, test: (t) => /^一口气/.test(t) || /【年度总结】/.test(t) },
+    {
+      name: '国家与地区',
+      order: 2,
+      test: (t) =>
+        /日本|印度|英国|迪拜|卡塔尔|以色列|巴勒斯坦|越南|韩国|斯里兰卡|伊朗|土耳其|阿根廷|米莱|伯明翰|俄罗斯|乌克兰|希腊|美国大选|特朗普|哈里斯|瑞士信贷|国库/.test(
+          t
+        ),
+    },
+    {
+      name: '金融市场',
+      order: 3,
+      test: (t) =>
+        /股票|基金|投资|做空|华尔街|比特币|黄金|期货|爆仓|金融|银行|硅谷|汇率|美元|稳定币|Web3|洗钱|赌球|LTCM|麦道夫|庞氏|信托|债券|雪球|期权|上市|退市|A股|外汇|碳市场|税/.test(
+          t
+        ),
+    },
+    {
+      name: '宏观经济',
+      order: 4,
+      test: (t) =>
+        /经济|GDP|通胀|降息|央行|关税|国债|货币|化债|财政|人口|老龄化|十五五|宏观|利率|能源危机|全球能源/.test(t),
+    },
+    {
+      name: '公司与产业',
+      order: 5,
+      test: (t) =>
+        /公司|产业|特斯拉|苹果|英伟达|三星|恒大|可乐|百事|游戏|汽车|电动|折叠屏|芯片|内存|医药|药价|洗碗机|零售|蜜雪|办公|石油|原油|鸿蒙|饮品|LVMH|奢侈品|奥运会|养老|收购|暴雪|微软|动视|帕梅拉|精密制造|购物|商业王国|90后/.test(
+          t
+        ),
+    },
+    {
+      name: '商业案例',
+      order: 6,
+      test: (t) =>
+        /案例|丑闻|崩盘|危机|破产|骗局|闪崩|血亏|资本战|避税|安然|内幕|亏钱|暴雷|许家印|闪崩|庞氏|麦道夫|LTCM/.test(t),
+    },
+    { name: 'AI 与科技', order: 7, test: (t) => /AI|ChatGPT|Anthropic|人工智能|智能/.test(t) },
+    { name: '职场成长', order: 8, test: (t) => /简历|情商|老板|职场|工作|投行|体验|向上管理/.test(t) },
+    {
+      name: '深度专题',
+      order: 9,
+      test: (t) =>
+        /^【/.test(t) ||
+        /【深度|【揭秘|【硬核|【干货|【剧场|【精彩|【商业|【特别|【奇闻|【实用|【信托|【书单|【全是干货/.test(t),
+    },
+  ],
+  daishixiong: [
+    { name: '求职与面试', order: 1, test: (t) => /求职|面试|简历|校招|社招|跳槽|HR|面经|投简历|找实习|系统求职|豆包模拟/.test(t) },
+    {
+      name: '数据分析工具',
+      order: 2,
+      test: (t) => /Excel|SQL|Tableau|Python|Power BI|PowerBI|爬虫|可视化|pandas|EXCEL|Tableau光速/.test(t),
+    },
+    { name: 'AI 应用', order: 3, test: (t) => /AI|Copilot|ChatGPT|大模型|智能/.test(t) },
+    {
+      name: '职业认知',
+      order: 4,
+      test: (t) =>
+        /职场|职业规划|分析师|薪资|就业|打工人|转行|工作体验|跃迁|晋升|大厂|数分|算法工程师|权限|经验|读书|邪修/.test(
+          t
+        ),
+    },
+    { name: '业务实战', order: 5, test: (t) => /电商|直播|业务|运营|数据产品/.test(t) },
+  ],
+};
+
+const ARTICLE_GROUP_FALLBACK = { name: '其他', order: 99 };
+
+function inferArticleGroup(vaultKey, title, fileBase) {
+  const text = `${title || ''} ${fileBase || ''}`.replace(/^【戴师兄】/, '');
+  const rules = ARTICLE_GROUP_RULES[vaultKey] || [];
+  for (const rule of rules) {
+    if (rule.test(text)) return rule.name;
+  }
+  return ARTICLE_GROUP_FALLBACK.name;
+}
+
+function getArticleGroupOrder(vaultKey, groupName) {
+  const rules = ARTICLE_GROUP_RULES[vaultKey] || [];
+  const rule = rules.find((item) => item.name === groupName);
+  if (rule) return rule.order;
+  if (groupName === ARTICLE_GROUP_FALLBACK.name) return ARTICLE_GROUP_FALLBACK.order;
+  return 50;
+}
+
+function groupArticleFiles(vaultKey, files) {
+  const groups = new Map();
+  for (const file of files) {
+    const group = inferArticleGroup(vaultKey, file.title, file.fileBase);
+    if (!groups.has(group)) groups.set(group, []);
+    groups.get(group).push(file);
+  }
+  const groupKeys = [...groups.keys()].sort((a, b) => {
+    const orderDiff = getArticleGroupOrder(vaultKey, a) - getArticleGroupOrder(vaultKey, b);
+    if (orderDiff !== 0) return orderDiff;
+    return a.localeCompare(b, 'zh-CN');
+  });
+  return groupKeys.map((group) => ({
+    group,
+    files: [...groups.get(group)].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN')),
+  }));
+}
+
 function processVault(vault, globalSlugMap) {
   const vaultDir = path.join(repoRoot, '知识库', vault.dir);
   const outVaultDir = path.join(docsRoot, vault.key);
@@ -365,15 +471,27 @@ function writeVaultIndex(vault, sections) {
 function writeVaultSectionIndexes(vault, sections) {
   for (const { section, files } of sections) {
     const outPath = path.join(docsRoot, vault.key, section.key, 'index.md');
-    const sorted = [...files].sort((a, b) => {
-      if (section.key === 'knowledge') return a.fileBase.localeCompare(b.fileBase, 'zh-CN');
-      return a.title.localeCompare(b.title, 'zh-CN');
-    });
+    let body = '';
 
-    const links = sorted
-      .map((file) => `- [${file.title}](./${file.slug}.html)`)
-      .join('\n');
-    const content = `---\ntitle: ${vault.name} · ${section.title}\n---\n\n# ${section.title}\n\n> ${section.shortDescription}\n\n${section.description}\n\n## 怎么使用\n\n${section.guide}\n\n## ${vault.name}的内容\n\n共 **${files.length}** 篇。\n\n${links || '内容正在整理中。'}\n`;
+    if (section.key === 'articles') {
+      const grouped = groupArticleFiles(vault.key, files);
+      body = grouped
+        .map(({ group, files: groupFiles }) => {
+          const links = groupFiles
+            .map((file) => `- [${file.title}](./${file.slug}.html)`)
+            .join('\n');
+          return `### ${group}\n\n${links}`;
+        })
+        .join('\n\n');
+    } else {
+      const sorted = [...files].sort((a, b) => {
+        if (section.key === 'knowledge') return a.fileBase.localeCompare(b.fileBase, 'zh-CN');
+        return a.title.localeCompare(b.title, 'zh-CN');
+      });
+      body = sorted.map((file) => `- [${file.title}](./${file.slug}.html)`).join('\n');
+    }
+
+    const content = `---\ntitle: ${vault.name} · ${section.title}\n---\n\n# ${section.title}\n\n> ${section.shortDescription}\n\n${section.description}\n\n## 怎么使用\n\n${section.guide}\n\n## ${vault.name}的内容\n\n共 **${files.length}** 篇。\n\n${body || '内容正在整理中。'}\n`;
     fs.writeFileSync(outPath, content, 'utf8');
   }
 }
@@ -451,11 +569,15 @@ function writeSidebar(vaults, processedResults) {
           items: sorted.map((f) => ({ text: f.title, link: `${sectionPrefix}${f.slug}.html` })),
         });
       } else if (s.section.key === 'articles') {
-        const sorted = [...s.files].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
+        const grouped = groupArticleFiles(result.vault.key, s.files);
         items.push({
           text: s.section.title,
           collapsed: true,
-          items: sorted.map((f) => ({ text: f.title, link: `${sectionPrefix}${f.slug}.html` })),
+          items: grouped.map(({ group, files }) => ({
+            text: group,
+            collapsed: true,
+            items: files.map((f) => ({ text: f.title, link: `${sectionPrefix}${f.slug}.html` })),
+          })),
         });
       } else if (s.section.key === 'atoms') {
         const groups = new Map();

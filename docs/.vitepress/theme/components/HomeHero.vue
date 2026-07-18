@@ -76,7 +76,7 @@ onUnmounted(() => {
             <div class="sheet-body">
               <div class="sheet-copy">
                 <p class="document-kicker">B 站视频 · 结构化知识系统</p>
-                <h1>视频知识库<br /><em>结构化工厂</em></h1>
+                <h1>视频知识库<br /><span class="hollow-title">结构化工厂</span></h1>
                 <p class="sheet-description">把散落在视频里的表达，整理成可以阅读、搜索和继续连接的长期知识资产。</p>
                 <div class="sheet-actions">
                   <a class="btn primary" :href="base + 'catalog'">进入知识目录 <span>→</span></a>
@@ -192,6 +192,14 @@ onUnmounted(() => {
 .sheet-copy { display: flex; flex-direction: column; justify-content: center; padding: 12px 0 20px 22px; }
 .document-kicker { color: var(--vp-c-brand-1); font: 700 13px var(--vp-font-family-mono); letter-spacing: .15em; }
 .sheet-copy h1 { margin-top: 22px; font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', Georgia, serif; font-size: clamp(4.3rem, 7.2vw, 7.2rem); font-weight: 700; line-height: .96; letter-spacing: -.07em; white-space: nowrap; }
+.sheet-copy h1 .hollow-title {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #8f5f3f;
+  text-stroke: 1.5px #8f5f3f;
+  paint-order: stroke fill;
+  letter-spacing: -.06em;
+}
 .sheet-copy h1 em { color: var(--vp-c-brand-1); font-style: normal; font-weight: inherit; }
 .sheet-description { max-width: 560px; margin-top: 30px; color: #62564d; font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif; font-size: 19px; line-height: 1.85; }
 .sheet-actions { display: flex; align-items: center; gap: 26px; margin-top: 36px; }
