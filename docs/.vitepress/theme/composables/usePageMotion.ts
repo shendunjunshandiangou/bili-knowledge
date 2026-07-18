@@ -1,7 +1,8 @@
 import { nextTick } from 'vue';
 
-const HOME_INTRO_KEY = 'bili-knowledge-home-intro-v2';
+const HOME_INTRO_KEY = 'bili-knowledge-home-intro-v3';
 const ENTER_MS = 420;
+const ENTER_MS_REDUCED = 160;
 
 type MotionRouter = {
   go: (href: string) => void | Promise<void>;
@@ -17,6 +18,10 @@ function isMobileViewport() {
   return window.matchMedia('(max-width: 899px)').matches;
 }
 
+function syncMotionReducedClass() {
+  document.documentElement.classList.toggle('motion-reduced', prefersReducedMotion());
+}
+
 export function shouldPlayHomeIntro() {
   try {
     if (sessionStorage.getItem(HOME_INTRO_KEY)) return false;
@@ -29,14 +34,14 @@ export function shouldPlayHomeIntro() {
 
 function triggerRouteEnter(direction: 'forward' | 'back' = 'forward') {
   const root = document.documentElement;
-  root.classList.remove('route-leave', 'route-enter', 'route-enter-back');
-  if (prefersReducedMotion()) return;
+  const duration = prefersReducedMotion() ? ENTER_MS_REDUCED : ENTER_MS;
 
+  root.classList.remove('route-leave', 'route-enter', 'route-enter-back');
   void root.offsetWidth;
   root.classList.add(direction === 'back' ? 'route-enter-back' : 'route-enter');
   window.setTimeout(() => {
     root.classList.remove('route-enter', 'route-enter-back');
-  }, ENTER_MS);
+  }, duration);
 }
 
 function decorateArticleReveal() {
@@ -46,8 +51,6 @@ function decorateArticleReveal() {
   doc.querySelectorAll('.kb-reveal').forEach((node) => {
     node.classList.remove('kb-reveal', 'kb-reveal-delay-0', 'kb-reveal-delay-1', 'kb-reveal-delay-2', 'kb-reveal-delay-3', 'is-visible');
   });
-
-  if (prefersReducedMotion()) return;
 
   const targets = [
     doc.querySelector('.vp-doc > div > h1:first-of-type'),
@@ -67,11 +70,12 @@ export function setupPageMotion(router: MotionRouter) {
 
   let navigatingBack = false;
 
+  syncMotionReducedClass();
+  window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', syncMotionReducedClass);
+
   const originalBefore = router.onBeforeRouteChange;
   router.onBeforeRouteChange = (to: string) => {
-    if (!prefersReducedMotion()) {
-      document.documentElement.classList.add('route-leave');
-    }
+    document.documentElement.classList.add('route-leave');
     return originalBefore?.(to);
   };
 
@@ -97,6 +101,7 @@ export function setupPageMotion(router: MotionRouter) {
 export async function navigateWithMotion(router: MotionRouter, href: string) {
   const go = () => Promise.resolve(router.go(href));
 
+  // 增强动效：View Transition 在 reduced-motion / 移动端跳过
   if (prefersReducedMotion() || isMobileViewport() || typeof document.startViewTransition !== 'function') {
     await go();
     return;

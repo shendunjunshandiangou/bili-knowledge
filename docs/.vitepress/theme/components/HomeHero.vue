@@ -395,16 +395,34 @@ onUnmounted(() => {
   .level-list h3 { font-size: 22px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .section-block, .editorial-image { opacity: 1; transform: none; transition: none; }
+  .section-block, .editorial-image {
+    transform: none;
+    transition: opacity 180ms ease;
+  }
+
   .hero--intro .document-kicker,
   .hero--intro .sheet-copy h1,
   .hero--intro .sheet-description,
   .hero--intro .sheet-actions,
   .hero--intro .sheet-panel,
   .hero--intro .sheet-meta > div {
-    opacity: 1;
+    opacity: 0;
     transform: none;
-    animation: none;
+    animation: hero-fade-basic 320ms ease forwards;
   }
+
+  .hero--intro .document-kicker { animation-delay: 40ms; }
+  .hero--intro .sheet-copy h1 { animation-delay: 80ms; }
+  .hero--intro .sheet-description { animation-delay: 120ms; }
+  .hero--intro .sheet-actions { animation-delay: 160ms; }
+  .hero--intro .sheet-panel { animation-delay: 200ms; }
+  .hero--intro .sheet-meta > div:nth-child(1) { animation-delay: 240ms; }
+  .hero--intro .sheet-meta > div:nth-child(2) { animation-delay: 280ms; }
+  .hero--intro .sheet-meta > div:nth-child(3) { animation-delay: 320ms; }
+  .hero--intro .sheet-meta > div:nth-child(4) { animation-delay: 360ms; }
+}
+
+@keyframes hero-fade-basic {
+  to { opacity: 1; }
 }
 </style>

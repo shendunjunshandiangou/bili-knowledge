@@ -23,11 +23,6 @@ export function useScrollReveal(options: IntersectionObserverInit = {}) {
     const nodes = root.querySelectorAll<HTMLElement>(selector);
     if (nodes.length === 0) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      nodes.forEach((node) => node.classList.add('is-visible'));
-      return;
-    }
-
     observer?.disconnect();
     observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
