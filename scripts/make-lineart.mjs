@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const imgDir = path.resolve(__dirname, '..', 'assets', 'images');
+const sourceDir = path.resolve(__dirname, '..', 'assets', 'sources');
 
 // 纸色亮度以上视为背景（完全透明），墨色亮度以下视为实线（完全不透明）
 const PAPER_LUM = 0.72;
@@ -14,7 +15,8 @@ const ALPHA_CUTOFF = 0.07; // 低于此值直接归零，去掉纸纹噪点
 const INK = { r: 38, g: 32, b: 27 }; // #26201b，接近主题墨色
 
 async function toLineArt(input, output) {
-  const { data, info } = await sharp(path.join(imgDir, input))
+  const inputPath = path.isAbsolute(input) ? input : path.join(imgDir, input);
+  const { data, info } = await sharp(inputPath)
     .grayscale()
     .normalise()
     .raw()
@@ -42,4 +44,4 @@ async function toLineArt(input, output) {
 
 await toLineArt('finance-engraving.png', 'finance-lineart.png');
 await toLineArt('data-engraving.png', 'data-lineart.png');
-await toLineArt('dabing-lineart-source.png', 'dabing-lineart.png');
+await toLineArt(path.join(sourceDir, 'dabing-lineart-source.png'), 'dabing-lineart.png');
