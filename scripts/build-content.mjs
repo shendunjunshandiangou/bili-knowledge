@@ -126,18 +126,36 @@ function readVaultFile(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
+function stripBom(content) {
+  return content.charCodeAt(0) === 0xfeff ? content.slice(1) : content;
+}
+
 function normalizeContentNewlines(content) {
-  return content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  return stripBom(content).replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+}
+
+function isPipelineFrontmatterBlock(raw) {
+  return /(?:^|\n)(章节|来源大纲|原子笔记数|处理日期|阶段|来源文章|视频标题|来源|标签|tags)[:：]/m.test(raw);
+}
+
+function stripLeadingFrontmatterBlock(content) {
+  const normalized = normalizeContentNewlines(content);
+  if (!normalized.startsWith('---\n')) return normalized;
+  const end = normalized.indexOf('\n---', 4);
+  if (end === -1) return normalized;
+  const raw = normalized.slice(4, end);
+  if (!isPipelineFrontmatterBlock(raw)) return normalized;
+  return normalized.slice(end + 4).replace(/^\n+/, '');
 }
 
 function parseFrontmatter(content) {
   const normalized = normalizeContentNewlines(content);
   const fm = {};
-  if (!normalized.startsWith('---\n')) return { fm, body: content };
+  if (!normalized.startsWith('---\n')) return { fm, body: stripLeadingFrontmatterBlock(normalized) };
   const end = normalized.indexOf('\n---', 4);
-  if (end === -1) return { fm, body: content };
+  if (end === -1) return { fm, body: stripLeadingFrontmatterBlock(normalized) };
   const raw = normalized.slice(4, end);
-  const body = normalized.slice(end + 4).replace(/^\n+/, '');
+  const body = stripLeadingFrontmatterBlock(normalized.slice(end + 4).replace(/^\n+/, ''));
   for (const line of raw.split('\n')) {
     const idx = line.search(/[:：]/);
     if (idx === -1) continue;
@@ -149,11 +167,28 @@ function parseFrontmatter(content) {
 }
 
 function stripFrontmatter(content) {
-  const normalized = normalizeContentNewlines(content);
-  if (!normalized.startsWith('---\n')) return content;
-  const end = normalized.indexOf('\n---', 4);
-  if (end === -1) return content;
-  return normalized.slice(end + 4).replace(/^\n+/, '');
+  return stripLeadingFrontmatterBlock(normalizeContentNewlines(content));
+}
+
+function cleanFmValue(value) {
+  if (!value) return '';
+  let s = String(value).trim();
+  if ((s.startsWith('"') && s.endsWith('"')) || (s.startsWith("'") && s.endsWith("'"))) {
+    s = s.slice(1, -1);
+  }
+  return s.replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1').trim();
+}
+
+function resolveTitle(sectionKey, fm, h1, base) {
+  const candidates =
+    sectionKey === 'atoms'
+      ? [fm['title'], h1, base]
+      : [fm['title'], fm['章节'], fm['视频标题'], fm['来源文章'], h1, base];
+  for (const candidate of candidates) {
+    const cleaned = cleanFmValue(candidate);
+    if (cleaned) return cleaned;
+  }
+  return base;
 }
 
 function extractFirstH1(body) {
@@ -407,11 +442,7 @@ function processVault(vault, globalSlugMap) {
       const content = readVaultFile(filePath);
       const { fm, body: rawBody } = parseFrontmatter(content);
       const h1 = extractFirstH1(rawBody) || base;
-      // 原子卡片：H1 才是概念名；来源文章只是视频双链，不能当侧边栏标题
-      const title =
-        section.key === 'atoms'
-          ? fm['title'] || h1 || base
-          : fm['title'] || fm['视频标题'] || fm['来源文章'] || h1 || base;
+      const title = resolveTitle(section.key, fm, h1, base);
 
       let escapedBody = escapeVueBody(rawBody);
       let processedBody = wikilinkReplacer(escapedBody, globalSlugMap);
