@@ -505,31 +505,54 @@ function writeVaultIndex(vault, sections) {
 }
 
 function writeVaultSectionIndexes(vault, sections) {
-  for (const { section, files } of sections) {
+  for (const { section } of sections) {
     const outPath = path.join(docsRoot, vault.key, section.key, 'index.md');
-    let body = '';
-
-    if (section.key === 'articles') {
-      const grouped = groupArticleFiles(vault.key, files);
-      body = grouped
-        .map(({ group, files: groupFiles }) => {
-          const links = groupFiles
-            .map((file) => `- [${file.title}](./${file.slug}.html)`)
-            .join('\n');
-          return `### ${group}\n\n${links}`;
-        })
-        .join('\n\n');
-    } else {
-      const sorted = [...files].sort((a, b) => {
-        if (section.key === 'knowledge') return a.fileBase.localeCompare(b.fileBase, 'zh-CN');
-        return a.title.localeCompare(b.title, 'zh-CN');
-      });
-      body = sorted.map((file) => `- [${file.title}](./${file.slug}.html)`).join('\n');
-    }
-
-    const content = `---\ntitle: ${vault.name} · ${section.title}\n---\n\n# ${section.title}\n\n> ${section.shortDescription}\n\n${section.description}\n\n## 怎么使用\n\n${section.guide}\n\n## ${vault.name}的内容\n\n共 **${files.length}** 篇。\n\n${body || '内容正在整理中。'}\n`;
+    const content = `---\ntitle: ${vault.name} · ${section.title}\naside: false\nsidebar: false\n---\n\n<script setup>\nimport SectionHub from '../../.vitepress/theme/components/SectionHub.vue'\n</script>\n\n<SectionHub vault-key="${vault.key}" section-key="${section.key}" />\n`;
     fs.writeFileSync(outPath, content, 'utf8');
   }
+}
+
+function writeSectionIndexManifest(processedResults) {
+  const manifest = {};
+  for (const result of processedResults) {
+    const vaultKey = result.vault.key;
+    manifest[vaultKey] = {};
+    for (const { section, files } of result.sections) {
+      if (section.key === 'articles') {
+        const grouped = groupArticleFiles(vaultKey, files);
+        manifest[vaultKey][section.key] = {
+          total: files.length,
+          groups: grouped.map(({ group, files: groupFiles }) => ({
+            name: group,
+            items: groupFiles.map((f) => ({ slug: f.slug, title: f.title })),
+          })),
+        };
+      } else if (section.key === 'atoms') {
+        const groups = new Map();
+        for (const f of files) {
+          const g = inferAtomGroup(f.fileBase);
+          if (!groups.has(g)) groups.set(g, []);
+          groups.get(g).push({ slug: f.slug, title: f.title });
+        }
+        const groupKeys = [...groups.keys()].sort((a, b) => a.localeCompare(b, 'zh-CN'));
+        manifest[vaultKey][section.key] = {
+          total: files.length,
+          groups: groupKeys.map((name) => ({
+            name,
+            items: [...groups.get(name)].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN')),
+          })),
+        };
+      } else {
+        const sorted = [...files].sort((a, b) => a.fileBase.localeCompare(b.fileBase, 'zh-CN'));
+        manifest[vaultKey][section.key] = {
+          total: files.length,
+          items: sorted.map((f) => ({ slug: f.slug, title: f.title, fileBase: f.fileBase })),
+        };
+      }
+    }
+  }
+  ensureDir(vpRoot);
+  fs.writeFileSync(path.join(vpRoot, 'section-indexes.generated.json'), JSON.stringify(manifest, null, 2), 'utf8');
 }
 
 function writeReadingIndexes() {
@@ -683,6 +706,7 @@ function main() {
   writeReadingIndexes();
   writeCatalogIndex();
   writeVaultManifest(vaultStats);
+  writeSectionIndexManifest(processedResults);
   writeAboutPage();
   writeSidebar(VAULTS, processedResults);
 

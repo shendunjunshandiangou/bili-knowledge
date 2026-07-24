@@ -131,7 +131,9 @@ html {
 }
 
 .vp-doc:has(.home-page),
-.vp-doc:has(.catalog-page) {
+.vp-doc:has(.catalog-page),
+.vp-doc:has(.reading-hub),
+.vp-doc:has(.section-hub) {
   line-height: 1.8;
   color: var(--vp-c-text-1);
 }
@@ -141,14 +143,20 @@ html {
 
 /* 首页与目录是展示型页面，使用宽版布局；普通文章继续保留窄版阅读宽度。 */
 .VPDoc:not(.has-sidebar):has(.home-page) .container,
-.VPDoc:not(.has-sidebar):has(.catalog-page) .container {
+.VPDoc:not(.has-sidebar):has(.catalog-page) .container,
+.VPDoc:not(.has-sidebar):has(.reading-hub) .container,
+.VPDoc:not(.has-sidebar):has(.section-hub) .container {
   max-width: 1600px;
 }
 
 .VPDoc:not(.has-sidebar):has(.home-page) .content,
 .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
+.VPDoc:not(.has-sidebar):has(.reading-hub) .content,
+.VPDoc:not(.has-sidebar):has(.section-hub) .content,
 .VPDoc:not(.has-sidebar):has(.home-page) .content-container,
-.VPDoc:not(.has-sidebar):has(.catalog-page) .content-container {
+.VPDoc:not(.has-sidebar):has(.catalog-page) .content-container,
+.VPDoc:not(.has-sidebar):has(.reading-hub) .content-container,
+.VPDoc:not(.has-sidebar):has(.section-hub) .content-container {
   width: 100%;
   max-width: none;
   padding-inline: 0;
@@ -156,13 +164,17 @@ html {
 
 /* 展示型页面去掉 VitePress 默认 content 左右 padding，避免与组件内边距叠加 */
 .VPDoc:not(.has-sidebar):has(.home-page) .content,
-.VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+.VPDoc:not(.has-sidebar):has(.catalog-page) .content,
+.VPDoc:not(.has-sidebar):has(.reading-hub) .content,
+.VPDoc:not(.has-sidebar):has(.section-hub) .content {
   padding-bottom: 96px;
 }
 
 @media (min-width: 768px) {
   .VPDoc:not(.has-sidebar):has(.home-page) .content,
-  .VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+  .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
+  .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
+  .VPDoc:not(.has-sidebar):has(.section-hub) .content {
     padding-bottom: 128px;
   }
 }
@@ -343,7 +355,9 @@ html {
   }
 
   .VPDoc:not(.has-sidebar):has(.home-page) .content,
-  .VPDoc:not(.has-sidebar):has(.catalog-page) .content {
+  .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
+  .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
+  .VPDoc:not(.has-sidebar):has(.section-hub) .content {
     padding-bottom: 48px;
   }
 
@@ -351,7 +365,9 @@ html {
     padding-inline: 8px;
   }
 
-  .vp-doc .catalog-page {
+  .vp-doc .catalog-page,
+  .vp-doc .reading-hub,
+  .vp-doc .section-hub {
     padding-inline: 12px;
   }
 

@@ -41,7 +41,7 @@ function triggerRouteEnter(direction: 'forward' | 'back' = 'forward') {
 
 function decorateArticleReveal() {
   const doc = document.querySelector('.vp-doc');
-  if (!doc || doc.querySelector('.home-page, .catalog-page, .reading-hub')) return;
+  if (!doc || doc.querySelector('.home-page, .catalog-page, .reading-hub, .section-hub')) return;
 
   doc.querySelectorAll('.kb-reveal').forEach((node) => {
     node.classList.remove('kb-reveal', 'kb-reveal-delay-0', 'kb-reveal-delay-1', 'kb-reveal-delay-2', 'kb-reveal-delay-3', 'is-visible');
