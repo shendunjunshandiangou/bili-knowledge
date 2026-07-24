@@ -31,12 +31,21 @@ onMounted(() => {
   updateActiveSection();
   window.addEventListener('scroll', updateActiveSection, { passive: true });
   window.addEventListener('resize', updateActiveSection, { passive: true });
+
+  const revealTargets = document.querySelectorAll('.home-page .section-block, .home-page .editorial-image');
+  const isMobile = window.matchMedia('(max-width: 899px)').matches;
+
+  if (isMobile || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealTargets.forEach((element) => element.classList.add('is-visible'));
+    return;
+  }
+
   revealObserver = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (entry.isIntersecting) entry.target.classList.add('is-visible');
     }
   }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.home-page .section-block, .home-page .editorial-image').forEach((element) => revealObserver?.observe(element));
+  revealTargets.forEach((element) => revealObserver?.observe(element));
 });
 
 onUnmounted(() => {
@@ -273,6 +282,15 @@ onUnmounted(() => {
 @media (max-width: 899px) {
   .hero { min-height: auto; padding: 40px 0 24px; }
   .hero-stage { padding-block: 12px; }
+  .section-block, .editorial-image { opacity: 1; transform: none; transition: none; }
+  .sheet-copy h1,
+  .sheet-description,
+  .sheet-meta dt,
+  .section-heading h2,
+  .level-list h3,
+  .gallery-card__identity h3 {
+    font-family: 'Songti SC', 'STSong', 'SimSun', serif;
+  }
   .knowledge-object { width: 100%; max-width: none; }
   /* 外边距交给 .home-page；卡片内只留一层 16px */
   .sheet-main {

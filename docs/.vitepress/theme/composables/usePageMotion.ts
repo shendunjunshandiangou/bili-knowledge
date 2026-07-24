@@ -47,7 +47,7 @@ function decorateArticleReveal() {
     node.classList.remove('kb-reveal', 'kb-reveal-delay-0', 'kb-reveal-delay-1', 'kb-reveal-delay-2', 'kb-reveal-delay-3', 'is-visible');
   });
 
-  if (prefersReducedMotion()) return;
+  if (prefersReducedMotion() || isMobileViewport()) return;
 
   const targets = [
     doc.querySelector('.vp-doc > div > h1:first-of-type'),

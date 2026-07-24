@@ -17,6 +17,30 @@ export default defineConfig({
   appearance: false,
   lastUpdated: false,
   ignoreDeadLinks: true,
+  head: [
+    [
+      'link',
+      {
+        rel: 'preload',
+        href: '/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-400-normal.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: '',
+        media: '(min-width: 900px)',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'preload',
+        href: '/bili-knowledge/fonts/noto-serif-sc-chinese-simplified-600-normal.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: '',
+        media: '(min-width: 900px)',
+      },
+    ],
+  ],
   markdown: {
     lineNumbers: false,
   },

@@ -41,3 +41,10 @@
   --vp-shadow-2: 0 8px 24px rgb(55 38 27 / 0.08);
   --vp-shadow-3: 0 24px 64px rgb(55 38 27 / 0.13);
 }
+
+/* 移动端优先系统宋体，首屏不等 webfont */
+@media (max-width: 899px) {
+  :root {
+    --vp-font-family-serif: 'Songti SC', 'STSong', 'SimSun', serif;
+  }
+}

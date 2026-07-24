@@ -77,11 +77,18 @@ function ensureDir(p) {
 }
 
 function copyStaticAssets() {
+  const publicRoot = path.join(docsRoot, 'public');
+  ensureDir(publicRoot);
+
   const imagesRoot = path.join(staticRoot, 'images');
-  const publicImages = path.join(docsRoot, 'public', 'images');
-  if (!fs.existsSync(imagesRoot)) return;
-  ensureDir(path.join(docsRoot, 'public'));
-  fs.cpSync(imagesRoot, publicImages, { recursive: true });
+  if (fs.existsSync(imagesRoot)) {
+    fs.cpSync(imagesRoot, path.join(publicRoot, 'images'), { recursive: true });
+  }
+
+  const fontsRoot = path.join(staticRoot, 'fonts');
+  if (fs.existsSync(fontsRoot)) {
+    fs.cpSync(fontsRoot, path.join(publicRoot, 'fonts'), { recursive: true });
+  }
 }
 
 function removeExt(name) {
