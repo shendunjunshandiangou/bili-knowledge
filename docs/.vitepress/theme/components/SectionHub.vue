@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useData } from 'vitepress';
 import vaults from '../../vaults.generated.json';
 import sectionIndexes from '../../section-indexes.generated.json';
@@ -13,6 +13,8 @@ const props = defineProps<{
 
 const { site } = useData();
 const base = computed(() => site.value.base || '/bili-knowledge/');
+
+const PAGE_SIZE = 40;
 
 const sections = {
   knowledge: {
@@ -49,6 +51,46 @@ function chapterNo(title: string, fileBase?: string) {
   const source = fileBase || title;
   const match = source.match(/^(\d+)/);
   return match ? match[1].padStart(2, '0') : '';
+}
+
+const expandedGroups = ref<Set<string>>(new Set());
+const visibleCounts = ref<Record<string, number>>({});
+
+function isExpanded(groupName: string) {
+  return expandedGroups.value.has(groupName);
+}
+
+function toggleGroup(groupName: string, total: number) {
+  const next = new Set(expandedGroups.value);
+  if (next.has(groupName)) {
+    next.delete(groupName);
+  } else {
+    next.add(groupName);
+    if (!visibleCounts.value[groupName]) {
+      visibleCounts.value = {
+        ...visibleCounts.value,
+        [groupName]: Math.min(PAGE_SIZE, total),
+      };
+    }
+  }
+  expandedGroups.value = next;
+}
+
+function visibleItems(groupName: string, items: { slug: string; title: string }[]) {
+  const limit = visibleCounts.value[groupName] ?? PAGE_SIZE;
+  return items.slice(0, limit);
+}
+
+function hasMore(groupName: string, total: number) {
+  return (visibleCounts.value[groupName] ?? PAGE_SIZE) < total;
+}
+
+function loadMore(groupName: string, total: number) {
+  const current = visibleCounts.value[groupName] ?? PAGE_SIZE;
+  visibleCounts.value = {
+    ...visibleCounts.value,
+    [groupName]: Math.min(current + PAGE_SIZE, total),
+  };
 }
 </script>
 
@@ -134,17 +176,35 @@ function chapterNo(title: string, fileBase?: string) {
         <span>共 {{ indexData.total }} 篇</span>
       </div>
       <div class="group-list">
-        <details v-for="group in indexData.groups" :key="group.name" class="group-block" open>
-          <summary>
+        <section
+          v-for="group in indexData.groups"
+          :key="group.name"
+          class="group-block"
+          :class="{ open: isExpanded(group.name) }"
+        >
+          <button
+            type="button"
+            class="group-summary"
+            :aria-expanded="isExpanded(group.name)"
+            @click="toggleGroup(group.name, group.items.length)"
+          >
             <span class="group-name">{{ group.name }}</span>
-            <span class="group-count">{{ group.items.length }} 篇</span>
-          </summary>
-          <ul>
-            <li v-for="item in group.items" :key="item.slug">
+            <span class="group-meta">
+              <span class="group-count">{{ group.items.length }} 篇</span>
+              <span class="group-chevron" aria-hidden="true">{{ isExpanded(group.name) ? '−' : '+' }}</span>
+            </span>
+          </button>
+          <ul v-if="isExpanded(group.name)">
+            <li v-for="item in visibleItems(group.name, group.items)" :key="item.slug">
               <a :href="prefix + item.slug + '.html'">{{ item.title }}</a>
             </li>
+            <li v-if="hasMore(group.name, group.items.length)" class="group-more">
+              <button type="button" @click="loadMore(group.name, group.items.length)">
+                加载更多（还剩 {{ group.items.length - (visibleCounts[group.name] ?? PAGE_SIZE) }} 篇）
+              </button>
+            </li>
           </ul>
-        </details>
+        </section>
       </div>
     </section>
 
@@ -404,20 +464,49 @@ function chapterNo(title: string, fileBase?: string) {
 .group-block {
   border: 1px solid #cdbba6;
   background: #f1e6d6;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 52px;
 }
 
-.group-block summary {
+.group-summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  width: 100%;
   padding: 14px 16px;
+  border: 0;
+  color: inherit;
+  text-align: left;
   cursor: pointer;
-  list-style: none;
+  background: transparent;
+  font: inherit;
 }
 
-.group-block summary::-webkit-details-marker {
-  display: none;
+.group-summary:hover {
+  background: rgb(255 250 243 / 0.35);
+}
+
+.group-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.group-chevron {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cdbba6;
+  color: var(--vp-c-brand-1);
+  font: 700 14px/1 var(--vp-font-family-mono);
+  background: rgb(255 250 243 / 0.55);
+}
+
+.group-block.open .group-chevron {
+  background: rgb(255 250 243 / 0.85);
 }
 
 .group-name {
@@ -451,6 +540,27 @@ function chapterNo(title: string, fileBase?: string) {
 
 .group-block a:hover {
   color: var(--vp-c-brand-1);
+}
+
+.group-more {
+  border-top: 1px solid rgb(207 194 177 / 0.45) !important;
+}
+
+.group-more button {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  border: 0;
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 650;
+  text-align: left;
+  cursor: pointer;
+  background: rgb(255 250 243 / 0.35);
+}
+
+.group-more button:hover {
+  background: rgb(255 250 243 / 0.65);
 }
 
 .section-footer {
