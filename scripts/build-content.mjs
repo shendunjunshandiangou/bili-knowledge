@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { validateVaultSources } from './validate-vault.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..', '..');
@@ -702,6 +703,14 @@ function writeSidebar(vaults, processedResults) {
 }
 
 function main() {
+  const validation = validateVaultSources();
+  if (validation.bomFiles.length || validation.fenceIssues.length) {
+    console.error('\n[sync] 知识库源文件校验失败，请先修复后再 sync。');
+    console.error('  运行：cd site && npm run validate');
+    console.error('  自动去 BOM：cd site && npm run validate -- --fix-bom\n');
+    process.exit(1);
+  }
+
   ensureDir(docsRoot);
 
   for (const entry of fs.readdirSync(docsRoot)) {

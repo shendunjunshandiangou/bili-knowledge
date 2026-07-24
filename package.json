@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "validate": "node scripts/validate-vault.mjs",
     "sync": "node scripts/build-content.mjs",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
