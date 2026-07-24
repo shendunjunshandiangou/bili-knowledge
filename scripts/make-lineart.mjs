@@ -42,3 +42,4 @@ async function toLineArt(input, output) {
 
 await toLineArt('finance-engraving.png', 'finance-lineart.png');
 await toLineArt('data-engraving.png', 'data-lineart.png');
+await toLineArt('dabing-lineart-source.png', 'dabing-lineart.png');
