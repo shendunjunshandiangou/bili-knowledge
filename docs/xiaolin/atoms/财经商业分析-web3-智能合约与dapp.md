@@ -1,7 +1,6 @@
 ---
 title: 智能合约与 DApp
-tags: "[Web3, 科技]"
-source: "\"[[Web3.0到底是怎么回事儿？]]\""
+tags: "[财经商业分析]"
 ---
 
 # 智能合约与 DApp
@@ -16,9 +15,9 @@ source: "\"[[Web3.0到底是怎么回事儿？]]\""
 - 底层应用延伸：区块链物联网、链上链下数据连接（预言机）、去中心化存储等方向也在发展。
 
 ## 相关原子
-- [财经商业分析-Web3-三代互联网与数据所有权](/xiaolin/atoms/财经商业分析-web3-三代互联网与数据所有权.html)
-- [财经商业分析-Web3-GameFi与PlayToEarn可持续性](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)
-- [财经商业分析-元宇宙-NFT虚拟资产确权](/xiaolin/atoms/财经商业分析-元宇宙-nft虚拟资产确权.html)
+- [财经商业分析-web3-三代互联网与数据所有权](/xiaolin/atoms/财经商业分析-web3-三代互联网与数据所有权.html)
+- [财经商业分析-web3-gamefi与playtoearn可持续性](/xiaolin/atoms/财经商业分析-web3-gamefi与playtoearn可持续性.html)
+- [财经商业分析-元宇宙-nft虚拟资产确权](/xiaolin/atoms/财经商业分析-元宇宙-nft虚拟资产确权.html)
 
 
 ---

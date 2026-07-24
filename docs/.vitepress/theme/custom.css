@@ -7,163 +7,6 @@ html {
   html { scroll-behavior: auto; }
 }
 
-/* ── Global route transitions ── */
-html.route-leave .VPDoc > .container > .content {
-  opacity: 0.55;
-  transform: translateY(10px);
-  transition:
-    opacity var(--kb-motion-base) var(--kb-motion-ease-out),
-    transform var(--kb-motion-base) var(--kb-motion-ease-out);
-}
-
-html.route-enter .VPDoc > .container > .content,
-html.route-enter-back .VPDoc > .container > .content {
-  animation: kb-route-enter 420ms var(--kb-motion-ease-out) both;
-}
-
-html.route-enter-back .VPDoc > .container > .content {
-  animation-name: kb-route-enter-back;
-}
-
-@keyframes kb-route-enter {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes kb-route-enter-back {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ── Scroll reveal utility ── */
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(16px);
-  transition:
-    opacity var(--kb-motion-enter) var(--kb-motion-ease-out),
-    transform var(--kb-motion-enter) var(--kb-motion-ease-out);
-}
-
-[data-reveal].is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-[data-reveal][data-reveal-delay='1'] { transition-delay: 80ms; }
-[data-reveal][data-reveal-delay='2'] { transition-delay: 160ms; }
-[data-reveal][data-reveal-delay='3'] { transition-delay: 240ms; }
-
-@media (max-width: 899px) {
-  [data-reveal] { transform: translateY(8px); }
-}
-
-/* ── Article page reveal ── */
-.kb-reveal {
-  opacity: 0;
-  transform: translateY(12px);
-  transition:
-    opacity var(--kb-motion-enter) var(--kb-motion-ease-out),
-    transform var(--kb-motion-enter) var(--kb-motion-ease-out);
-}
-
-.kb-reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.kb-reveal-delay-1 { transition-delay: 70ms; }
-.kb-reveal-delay-2 { transition-delay: 140ms; }
-.kb-reveal-delay-3 { transition-delay: 210ms; }
-
-/* ── View Transitions: UP 主卡片 → 知识库 ── */
-.gallery-card__avatar,
-.catalog-card .avatar-placeholder {
-  view-transition-name: var(--vault-avatar-vt, none);
-}
-
-.gallery-card.is-activating {
-  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) scale(0.985) !important;
-  transition: transform 140ms var(--kb-motion-ease-out) !important;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: var(--kb-motion-slow);
-  animation-timing-function: var(--kb-motion-ease-out);
-}
-
-::view-transition-old(root) {
-  animation-name: kb-vt-fade-out;
-}
-
-::view-transition-new(root) {
-  animation-name: kb-vt-fade-in;
-}
-
-@keyframes kb-vt-fade-out {
-  to { opacity: 0; }
-}
-
-@keyframes kb-vt-fade-in {
-  from { opacity: 0; }
-}
-
-/* 分级降级：reduced-motion 下保留基础淡入，禁用位移与 View Transition */
-@media (prefers-reduced-motion: reduce) {
-  html.route-leave .VPDoc > .container > .content {
-    opacity: 0.82;
-    transform: none;
-    transition: opacity 120ms ease;
-  }
-
-  html.route-enter .VPDoc > .container > .content,
-  html.route-enter-back .VPDoc > .container > .content {
-    animation: kb-route-enter-fade 160ms ease both;
-    transform: none;
-  }
-
-  [data-reveal],
-  .kb-reveal {
-    transform: none;
-    transition: opacity 180ms ease;
-  }
-
-  [data-reveal][data-reveal-delay='1'] { transition-delay: 40ms; }
-  [data-reveal][data-reveal-delay='2'] { transition-delay: 80ms; }
-  [data-reveal][data-reveal-delay='3'] { transition-delay: 120ms; }
-
-  .kb-reveal-delay-1 { transition-delay: 35ms; }
-  .kb-reveal-delay-2 { transition-delay: 70ms; }
-  .kb-reveal-delay-3 { transition-delay: 105ms; }
-
-  .gallery-card.is-activating {
-    transform: none !important;
-  }
-
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation: none !important;
-  }
-}
-
-@keyframes kb-route-enter-fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 /* Dark archive navigation */
 .VPNav {
   border-bottom: 1px solid #4a392f;
@@ -458,6 +301,10 @@ html.route-enter-back .VPDoc > .container > .content {
 /* Better button defaults */
 button {
   font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #intro,

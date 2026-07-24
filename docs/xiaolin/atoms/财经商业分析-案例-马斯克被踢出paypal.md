@@ -1,7 +1,6 @@
 ---
 title: 马斯克被踢出 PayPal
-tags: "[案例, 公司治理]"
-source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]\""
+tags: "[财经商业分析]"
 ---
 
 # 马斯克被踢出 PayPal
@@ -18,9 +17,9 @@ source: "\"[[一个公司到底谁说了算？ 丨 OpenAI背后权力的游戏]]
 
 ## 相关原子
 
-- [财经商业分析-案例-OpenAI宫斗五日始末](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)
+- [财经商业分析-案例-openai宫斗五日始末](/xiaolin/atoms/财经商业分析-案例-openai宫斗五日始末.html)
 - [财经商业分析-公司治理-不可替代性即隐性股权](/xiaolin/atoms/财经商业分析-公司治理-不可替代性即隐性股权.html)
-- [财经商业分析-公司治理-马斯克SpaceX控制权结构](/xiaolin/atoms/财经商业分析-公司治理-马斯克spacex控制权结构.html)
+- [财经商业分析-公司治理-马斯克spacex控制权结构](/xiaolin/atoms/财经商业分析-公司治理-马斯克spacex控制权结构.html)
 
 
 ---

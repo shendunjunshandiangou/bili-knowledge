@@ -1,7 +1,6 @@
 ---
 title: GameFi 与 Play to Earn 可持续性
-tags: "[Web3, 游戏产业]"
-source: "\"[[Web3.0到底是怎么回事儿？]]\""
+tags: "[财经商业分析]"
 ---
 
 # GameFi 与 Play to Earn 可持续性
@@ -16,8 +15,8 @@ Web3 游戏自带经济体系——原生代币做流通货币、皮肤装备土
 - **本质**：当收益依赖新增资金流入而非游戏创造的真实娱乐价值，即滑向庞氏结构；判断任何 X to Earn 项目都可套用此判据。
 
 ## 相关原子
-- [财经商业分析-Web3-智能合约与DApp](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)
-- [财经商业分析-Web3-公链代币与股票类比](/xiaolin/atoms/财经商业分析-web3-公链代币与股票类比.html)
+- [财经商业分析-web3-智能合约与dapp](/xiaolin/atoms/财经商业分析-web3-智能合约与dapp.html)
+- [财经商业分析-web3-公链代币与股票类比](/xiaolin/atoms/财经商业分析-web3-公链代币与股票类比.html)
 - [财经商业分析-元宇宙-元宇宙概念起源与雪崩](/xiaolin/atoms/财经商业分析-元宇宙-元宇宙概念起源与雪崩.html)
 
 

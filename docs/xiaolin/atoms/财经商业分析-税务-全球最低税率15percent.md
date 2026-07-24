@@ -1,7 +1,6 @@
 ---
 title: 全球最低税率 15%（Global Minimum Tax）
-tags: "[税务, 金融监管]"
-source: "\"[[【硬核】苹果海外千亿税款如何避税 丨 欧美政府税收反击战]]\""
+tags: "[财经商业分析]"
 ---
 
 # 全球最低税率 15%（Global Minimum Tax）

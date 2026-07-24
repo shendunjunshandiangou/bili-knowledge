@@ -1,7 +1,6 @@
 ---
 title: 消失的应用与软件K型分化
-tags: "[AI应用]"
-source: "\"[[Anthropic估值暴涨背后，普通人有什么AI时代的红利？]]\""
+tags: "[财经商业分析]"
 ---
 
 # 消失的应用与软件K型分化
@@ -28,8 +27,8 @@ Coding 被 AI 代替后，软件壁垒从开发能力转向「解决什么问题
 
 ## 相关原子
 
-- [财经商业分析-AI应用-闪应用与Wish Coding C端模式](/xiaolin/atoms/财经商业分析-ai应用-闪应用与wish-coding-c端模式.html)
-- [财经商业分析-AI应用-AI原住民与创作生态红利](/xiaolin/atoms/财经商业分析-ai应用-ai原住民与创作生态红利.html)
+- [财经商业分析-ai应用-闪应用与wish-coding-c端模式](/xiaolin/atoms/财经商业分析-ai应用-闪应用与wish-coding-c端模式.html)
+- [财经商业分析-ai应用-ai原住民与创作生态红利](/xiaolin/atoms/财经商业分析-ai应用-ai原住民与创作生态红利.html)
 
 
 ---

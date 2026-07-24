@@ -1,7 +1,6 @@
 ---
 title: Twitter到SpaceX债务继承链
-tags: "[资本市场]"
-source: "\"[[SpaceX上市，背后在玩什么资本游戏_]]\""
+tags: "[财经商业分析]"
 ---
 
 # Twitter到SpaceX债务继承链
@@ -35,8 +34,8 @@ source: "\"[[SpaceX上市，背后在玩什么资本游戏_]]\""
 
 ## 相关原子
 
-- [财经商业分析-资本市场-过桥贷款与IPO承销博弈](/xiaolin/atoms/财经商业分析-资本市场-过桥贷款与ipo承销博弈.html)
-- [财经商业分析-公司案例-SpaceX三大业务板块](/xiaolin/atoms/财经商业分析-公司案例-spacex三大业务板块.html)
+- [财经商业分析-资本市场-过桥贷款与ipo承销博弈](/xiaolin/atoms/财经商业分析-资本市场-过桥贷款与ipo承销博弈.html)
+- [财经商业分析-公司案例-spacex三大业务板块](/xiaolin/atoms/财经商业分析-公司案例-spacex三大业务板块.html)
 
 
 ---

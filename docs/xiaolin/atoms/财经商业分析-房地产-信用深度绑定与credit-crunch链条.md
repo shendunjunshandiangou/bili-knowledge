@@ -1,7 +1,6 @@
 ---
 title: 信用深度绑定与 credit crunch 链条
-tags: "[房地产, 银行, 宏观危机]"
-source: "\"[[关于房地产，你不一定需要知道的事儿]]\""
+tags: "[财经商业分析]"
 ---
 
 # 信用深度绑定与 credit crunch 链条

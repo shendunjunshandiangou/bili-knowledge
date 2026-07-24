@@ -1,7 +1,6 @@
 ---
 title: GPU 与 CPU 并行计算差异
-tags: "[芯片产业]"
-source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
+tags: "[财经商业分析]"
 ---
 
 # GPU 与 CPU 并行计算差异
@@ -19,8 +18,8 @@ CPU 擅顺序复杂逻辑（像精准单发喷枪），GPU 为海量简单并行
 
 ## 相关原子
 
-- [财经商业分析-芯片产业-CUDA与GPGPU生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
-- [财经商业分析-芯片产业-ImageNet AlexNet与GPU算力转折](/xiaolin/atoms/财经商业分析-芯片产业-imagenet-alexnet与gpu算力转折.html)
+- [财经商业分析-芯片产业-cuda与gpgpu生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
+- [财经商业分析-芯片产业-imagenet-alexnet与gpu算力转折](/xiaolin/atoms/财经商业分析-芯片产业-imagenet-alexnet与gpu算力转折.html)
 
 
 ---

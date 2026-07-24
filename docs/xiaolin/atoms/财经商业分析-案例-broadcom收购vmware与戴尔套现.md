@@ -1,7 +1,6 @@
 ---
 title: Broadcom 收购 VMware 与戴尔套现
-tags: "[案例, 并购]"
-source: "\"[[【特别篇】2022全球财经大事件，你猜有谁上榜了？]]\""
+tags: "[财经商业分析]"
 ---
 
 # Broadcom 收购 VMware 与戴尔套现

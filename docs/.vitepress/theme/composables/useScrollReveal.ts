@@ -6,22 +6,16 @@ const DEFAULT_OPTIONS: IntersectionObserverInit = {
 export function useScrollReveal(options: IntersectionObserverInit = {}) {
   let observer: IntersectionObserver | null = null;
 
-  function revealIfVisible(node: Element) {
-    const rect = node.getBoundingClientRect();
-    const viewport = window.innerHeight || document.documentElement.clientHeight;
-    if (rect.top < viewport * 0.92 && rect.bottom > viewport * 0.08) {
-      node.classList.add('is-visible');
-      observer?.unobserve(node);
-      return true;
-    }
-    return false;
-  }
-
   function observe(root: ParentNode = document, selector = '[data-reveal]') {
     if (typeof window === 'undefined') return;
 
     const nodes = root.querySelectorAll<HTMLElement>(selector);
     if (nodes.length === 0) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      nodes.forEach((node) => node.classList.add('is-visible'));
+      return;
+    }
 
     observer?.disconnect();
     observer = new IntersectionObserver((entries) => {
@@ -32,10 +26,7 @@ export function useScrollReveal(options: IntersectionObserverInit = {}) {
       }
     }, { ...DEFAULT_OPTIONS, ...options });
 
-    nodes.forEach((node) => {
-      if (revealIfVisible(node)) return;
-      observer?.observe(node);
-    });
+    nodes.forEach((node) => observer?.observe(node));
   }
 
   function disconnect() {

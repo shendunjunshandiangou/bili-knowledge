@@ -1,7 +1,6 @@
 ---
 title: Match Fixing 操纵比赛
-tags: "[体育博彩]"
-source: "\"[[一口气了解赌球]]\""
+tags: "[财经商业分析]"
 ---
 
 # Match Fixing 操纵比赛

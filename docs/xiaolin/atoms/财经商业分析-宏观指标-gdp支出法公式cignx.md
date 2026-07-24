@@ -1,7 +1,6 @@
 ---
 title: GDP支出法公式CIGNX
-tags: "[宏观指标]"
-source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+tags: "[财经商业分析]"
 ---
 
 # GDP支出法公式CIGNX
@@ -27,8 +26,8 @@ GDP = C + I + G + NX
 
 ## 相关原子
 
-- [财经商业分析-宏观指标-GDP三种核算方法](/xiaolin/atoms/财经商业分析-宏观指标-gdp三种核算方法.html)
-- [财经商业分析-宏观指标-GDP增长率与汇率换算陷阱](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)
+- [财经商业分析-宏观指标-gdp三种核算方法](/xiaolin/atoms/财经商业分析-宏观指标-gdp三种核算方法.html)
+- [财经商业分析-宏观指标-gdp增长率与汇率换算陷阱](/xiaolin/atoms/财经商业分析-宏观指标-gdp增长率与汇率换算陷阱.html)
 
 
 ---

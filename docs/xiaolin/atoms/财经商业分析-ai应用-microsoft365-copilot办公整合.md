@@ -1,7 +1,6 @@
 ---
 title: Microsoft 365 Copilot 办公整合
-tags: "[AI应用]"
-source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
+tags: "[财经商业分析]"
 ---
 
 # Microsoft 365 Copilot 办公整合
@@ -19,8 +18,8 @@ source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\"
 
 ## 相关原子
 
-- [财经商业分析-AI应用-生成式AI定义与颠覆性](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)
-- [财经商业分析-AI应用-AI套路性工作与失业风险](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
+- [财经商业分析-ai应用-生成式ai定义与颠覆性](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)
+- [财经商业分析-ai应用-ai套路性工作与失业风险](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
 
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: Spoofing 诱骗交易
-tags: "[市场操纵, 金融监管]"
-source: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
+tags: "[财经商业分析]"
 ---
 
 # Spoofing 诱骗交易
@@ -18,8 +17,8 @@ Spoofing（诱骗交易）指挂出大量不打算成交的订单制造虚假供
 
 ## 相关原子
 - [财经商业分析-市场微观结构-盘口挂单量与供需信号](/xiaolin/atoms/财经商业分析-市场微观结构-盘口挂单量与供需信号.html)
-- [财经商业分析-案例-2010美股闪崩FlashCrash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
-- [财经商业分析-案例-Sarao卧室交易员传奇](/xiaolin/atoms/财经商业分析-案例-sarao卧室交易员传奇.html)
+- [财经商业分析-案例-2010美股闪崩flashcrash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
+- [财经商业分析-案例-sarao卧室交易员传奇](/xiaolin/atoms/财经商业分析-案例-sarao卧室交易员传奇.html)
 
 
 ---

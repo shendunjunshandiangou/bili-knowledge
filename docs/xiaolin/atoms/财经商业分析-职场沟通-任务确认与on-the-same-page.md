@@ -1,7 +1,6 @@
 ---
 title: 任务确认与 On the Same Page
-tags: "[职场沟通]"
-source: "\"[[【高情商】如何搞定老板，向上管理]]\""
+tags: "[财经商业分析]"
 ---
 
 # 任务确认与 On the Same Page

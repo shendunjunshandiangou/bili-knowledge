@@ -1,7 +1,6 @@
 ---
 title: Nikola One 发布会模型车骗局
-tags: "[案例]"
-source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+tags: "[财经商业分析]"
 ---
 
 # Nikola One 发布会模型车骗局
@@ -37,9 +36,9 @@ source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]
 
 ## 相关原子
 
-- [财经商业分析-案例-Nikola氢能源卡车商业定位](/xiaolin/atoms/财经商业分析-案例-nikola氢能源卡车商业定位.html)
-- [财经商业分析-案例-Nikola滑坡视频造假手法](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
-- [财经商业分析-案例-Nikola技术空洞与第三方采购](/xiaolin/atoms/财经商业分析-案例-nikola技术空洞与第三方采购.html)
+- [财经商业分析-案例-nikola氢能源卡车商业定位](/xiaolin/atoms/财经商业分析-案例-nikola氢能源卡车商业定位.html)
+- [财经商业分析-案例-nikola滑坡视频造假手法](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
+- [财经商业分析-案例-nikola技术空洞与第三方采购](/xiaolin/atoms/财经商业分析-案例-nikola技术空洞与第三方采购.html)
 
 
 ---

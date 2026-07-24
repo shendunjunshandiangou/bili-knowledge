@@ -1,7 +1,6 @@
 ---
 title: 微软 Bing 整合与谷歌 Code Red
-tags: "[AI产业, 平台经济]"
-source: "\"[[一口气搞清楚ChatGPT _ 牛X在哪？谁会失业？巨头商战...]]\""
+tags: "[财经商业分析]"
 ---
 
 # 微软 Bing 整合与谷歌 Code Red
@@ -23,8 +22,8 @@ ChatGPT 威胁谷歌 93% 搜索垄断与 60% 广告收入；微软借 Bing+ChatG
 
 ## 相关原子
 
-- [财经商业分析-AI产业-OpenAI capped-profit与微软投资](/xiaolin/atoms/财经商业分析-ai产业-openai-capped-profit与微软投资.html)
-- [财经商业分析-AI应用-AI套路性工作与失业风险](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
+- [财经商业分析-ai产业-openai-capped-profit与微软投资](/xiaolin/atoms/财经商业分析-ai产业-openai-capped-profit与微软投资.html)
+- [财经商业分析-ai应用-ai套路性工作与失业风险](/xiaolin/atoms/财经商业分析-ai应用-ai套路性工作与失业风险.html)
 
 
 ---

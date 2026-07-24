@@ -3,7 +3,6 @@ import DefaultTheme from 'vitepress/theme'
 import BackLink from './components/BackLink.vue'
 import SidebarResizer from './components/SidebarResizer.vue'
 import ClickSpark from './components/ClickSpark.vue'
-import PageMotion from './components/PageMotion.vue'
 import VaultSidebarNav from './components/VaultSidebarNav.vue'
 
 const { Layout } = DefaultTheme
@@ -15,7 +14,6 @@ const { Layout } = DefaultTheme
       <ClickSpark />
       <BackLink />
       <SidebarResizer />
-      <PageMotion />
     </template>
     <template #sidebar-nav-before>
       <VaultSidebarNav />

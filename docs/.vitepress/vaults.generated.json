@@ -36,5 +36,24 @@
       "articles": 127,
       "atoms": 342
     }
+  },
+  {
+    "key": "dabing",
+    "name": "大冰连麦",
+    "subject": "连麦沟通技法",
+    "description": "从大冰直播连麦中提炼可复用的沟通模式：怎么听、怎么问、怎么回应，以及职场、情感与人生成长中的真实案例。",
+    "tags": [
+      "连麦互动",
+      "沟通技法",
+      "人生成长"
+    ],
+    "illustration": "dabing-lineart.png",
+    "avatar": "avatar-dabing.jpg",
+    "total": 513,
+    "counts": {
+      "knowledge": 7,
+      "articles": 127,
+      "atoms": 379
+    }
   }
 ]

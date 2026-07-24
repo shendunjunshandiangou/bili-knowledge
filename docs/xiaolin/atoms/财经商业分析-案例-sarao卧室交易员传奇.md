@@ -1,7 +1,6 @@
 ---
 title: Sarao 卧室交易员传奇
-tags: "[案例, 交易]"
-source: "\"[[【揭秘】卧室男子导致史上最大股市“闪崩”，他是怎么玩的？]]\""
+tags: "[财经商业分析]"
 ---
 
 # Sarao 卧室交易员传奇
@@ -18,8 +17,8 @@ Navinder Singh Sarao：印度裔英国自闭症交易天才，在父母家卧室
 - 案例意味：监管本想钓华尔街巨鳄、结果抓到毛头小子；天才、荒诞与制度盲区交织的真实故事。
 
 ## 相关原子
-- [财经商业分析-市场操纵-Spoofing诱骗交易](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
-- [财经商业分析-案例-2010美股闪崩FlashCrash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
+- [财经商业分析-市场操纵-spoofing诱骗交易](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
+- [财经商业分析-案例-2010美股闪崩flashcrash](/xiaolin/atoms/财经商业分析-案例-2010美股闪崩flashcrash.html)
 
 
 ---

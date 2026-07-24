@@ -1,7 +1,6 @@
 ---
 title: Alpaca 低成本大模型微调
-tags: "[AI应用]"
-source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\""
+tags: "[财经商业分析]"
 ---
 
 # Alpaca 低成本大模型微调
@@ -18,8 +17,8 @@ source: "\"[[人工智能发展到什么程度了？是不是太快了点？]]\"
 
 ## 相关原子
 
-- [财经商业分析-AI应用-生成式AI定义与颠覆性](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)
-- [财经商业分析-AI应用-Microsoft365 Copilot办公整合](/xiaolin/atoms/财经商业分析-ai应用-microsoft365-copilot办公整合.html)
+- [财经商业分析-ai应用-生成式ai定义与颠覆性](/xiaolin/atoms/财经商业分析-ai应用-生成式ai定义与颠覆性.html)
+- [财经商业分析-ai应用-microsoft365-copilot办公整合](/xiaolin/atoms/财经商业分析-ai应用-microsoft365-copilot办公整合.html)
 
 
 ---

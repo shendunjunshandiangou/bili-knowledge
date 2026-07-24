@@ -1,7 +1,6 @@
 ---
 title: 多邻国绿猫头鹰 IP 网络共创
-tags: "[品牌, 教育科技]"
-source: "\"[[对话多邻国创始人 丨 大佬也要向华尔街低头_]]\""
+tags: "[财经商业分析]"
 ---
 
 # 多邻国绿猫头鹰 IP 网络共创
@@ -18,7 +17,7 @@ source: "\"[[对话多邻国创始人 丨 大佬也要向华尔街低头_]]\""
 - 商业效果：全球用户大量二创、官方下场自黑互动，衍生 Lily、Dolly、Eddie（存疑）等 IP；在中国与美团、瑞幸、QQ 音乐等联名（含"多儿去世"营销事件），品牌被视为"很酷"。
 
 ## 相关原子
-- [财经商业分析-教育科技-Duolingo游戏化与Freemium模式](/xiaolin/atoms/财经商业分析-教育科技-duolingo游戏化与freemium模式.html)
+- [财经商业分析-教育科技-duolingo游戏化与freemium模式](/xiaolin/atoms/财经商业分析-教育科技-duolingo游戏化与freemium模式.html)
 - [财经商业分析-营销-自传播三要素与裂变](/xiaolin/atoms/财经商业分析-营销-自传播三要素与裂变.html)
 
 

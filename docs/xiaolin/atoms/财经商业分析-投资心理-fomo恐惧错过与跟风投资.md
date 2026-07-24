@@ -1,7 +1,6 @@
 ---
 title: FOMO 恐惧错过与跟风投资
-tags: "[投资心理]"
-source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+tags: "[财经商业分析]"
 ---
 
 # FOMO 恐惧错过与跟风投资
@@ -33,8 +32,8 @@ FOMO（Fear of Missing Out，害怕错过）指投资人在新风口涌入时因
 
 ## 相关原子
 
-- [财经商业分析-案例-Nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
-- [财经商业分析-资本市场-SPAC借壳上市机制](/xiaolin/atoms/财经商业分析-资本市场-spac借壳上市机制.html)
+- [财经商业分析-案例-nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
+- [财经商业分析-资本市场-spac借壳上市机制](/xiaolin/atoms/财经商业分析-资本市场-spac借壳上市机制.html)
 
 
 ---

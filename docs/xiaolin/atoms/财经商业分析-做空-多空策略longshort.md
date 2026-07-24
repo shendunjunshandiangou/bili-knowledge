@@ -1,7 +1,6 @@
 ---
 title: 多空策略 Long/Short
-tags: "[做空, 投资策略]"
-source: "\"[[【硬核加长版】真正的做空]]\""
+tags: "[财经商业分析]"
 ---
 
 # 多空策略 Long/Short

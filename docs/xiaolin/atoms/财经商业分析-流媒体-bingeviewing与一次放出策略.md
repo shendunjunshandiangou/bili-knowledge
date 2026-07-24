@@ -1,7 +1,6 @@
 ---
 title: Binge Viewing 与一次放出策略
-tags: "[流媒体, 用户行为]"
-source: "\"[[【硬核商业分析】Netflix《鱿鱼游戏》背后最大赢家，网飞的崛起之路]]\""
+tags: "[财经商业分析]"
 ---
 
 # Binge Viewing 与一次放出策略

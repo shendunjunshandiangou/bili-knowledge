@@ -1,7 +1,6 @@
 ---
 title: AI产业链四层结构
-tags: "[AI产业]"
-source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+tags: "[财经商业分析]"
 ---
 
 # AI产业链四层结构
@@ -23,9 +22,9 @@ source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 
 ## 相关原子
 
-- [财经商业分析-资本市场-OpenAI与微软投资关系](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)
-- [财经商业分析-资本市场-Anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
-- [财经商业分析-芯片产业-英伟达AI生态投资与备胎策略](/xiaolin/atoms/财经商业分析-芯片产业-英伟达ai生态投资与备胎策略.html)
+- [财经商业分析-资本市场-openai与微软投资关系](/xiaolin/atoms/财经商业分析-资本市场-openai与微软投资关系.html)
+- [财经商业分析-资本市场-anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
+- [财经商业分析-芯片产业-英伟达ai生态投资与备胎策略](/xiaolin/atoms/财经商业分析-芯片产业-英伟达ai生态投资与备胎策略.html)
 
 
 ---

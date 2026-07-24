@@ -1,7 +1,6 @@
 ---
 title: 邀约收购（Tender Offer）的胁迫逻辑
-tags: "[并购]"
-source: "\"[[【深度硬核】马斯克收购Twitter完整解读 丨 毒丸计划 恶意收购]]\""
+tags: "[财经商业分析]"
 ---
 
 # 邀约收购（Tender Offer）的胁迫逻辑

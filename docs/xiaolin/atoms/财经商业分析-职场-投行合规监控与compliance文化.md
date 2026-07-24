@@ -1,7 +1,6 @@
 ---
 title: 投行合规监控与 Compliance 文化
-tags: "[职场, 投行, 金融监管]"
-source: "\"[[华尔街投行JPMorgan工作是一种什么样的体验]]\""
+tags: "[财经商业分析]"
 ---
 
 # 投行合规监控与 Compliance 文化
@@ -17,8 +16,8 @@ source: "\"[[华尔街投行JPMorgan工作是一种什么样的体验]]\""
 
 ## 相关原子
 - [财经商业分析-职场-投行交易大厅生态与作息节奏](/xiaolin/atoms/财经商业分析-职场-投行交易大厅生态与作息节奏.html)
-- [财经商业分析-金融监管-投行Legal Reserve法律准备金](/xiaolin/atoms/财经商业分析-金融监管-投行legal-reserve法律准备金.html)
-- [财经商业分析-市场操纵-Spoofing诱骗交易](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
+- [财经商业分析-金融监管-投行legal-reserve法律准备金](/xiaolin/atoms/财经商业分析-金融监管-投行legal-reserve法律准备金.html)
+- [财经商业分析-市场操纵-spoofing诱骗交易](/xiaolin/atoms/财经商业分析-市场操纵-spoofing诱骗交易.html)
 
 
 ---

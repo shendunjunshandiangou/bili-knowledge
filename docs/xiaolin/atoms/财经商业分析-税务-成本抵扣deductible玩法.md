@@ -1,7 +1,6 @@
 ---
 title: 成本抵扣（deductible）玩法
-tags: "[税务]"
-source: "\"[[巴菲特、贝索斯交税竟然不到1%？聊聊避税]]\""
+tags: "[财经商业分析]"
 ---
 
 # 成本抵扣（deductible）玩法

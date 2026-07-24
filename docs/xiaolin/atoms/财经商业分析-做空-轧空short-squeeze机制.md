@@ -1,7 +1,6 @@
 ---
 title: 轧空 short squeeze 机制
-tags: "[做空, 金融市场]"
-source: "\"[[【硬核加长版】真正的做空]]\""
+tags: "[财经商业分析]"
 ---
 
 # 轧空 short squeeze 机制

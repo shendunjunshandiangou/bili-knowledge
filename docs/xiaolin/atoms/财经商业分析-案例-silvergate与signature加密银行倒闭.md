@@ -1,7 +1,6 @@
 ---
 title: Silvergate 与 Signature 加密银行倒闭
-tags: "[案例, 银行, 加密货币]"
-source: "\"[[一口气了解硅谷银行倒闭危机]]\""
+tags: "[财经商业分析]"
 ---
 
 # Silvergate 与 Signature 加密银行倒闭
@@ -20,7 +19,7 @@ source: "\"[[一口气了解硅谷银行倒闭危机]]\""
 
 - [财经商业分析-案例-硅谷银行48小时倒闭始末](/xiaolin/atoms/财经商业分析-案例-硅谷银行48小时倒闭始末.html)
 - [财经商业分析-银行-中小银行客户集中双刃剑与羊群挤兑](/xiaolin/atoms/财经商业分析-银行-中小银行客户集中双刃剑与羊群挤兑.html)
-- [财经商业分析-案例-FTX崩盘与SBF用户资金挪用](/xiaolin/atoms/财经商业分析-案例-ftx崩盘与sbf用户资金挪用.html)
+- [财经商业分析-案例-ftx崩盘与sbf用户资金挪用](/xiaolin/atoms/财经商业分析-案例-ftx崩盘与sbf用户资金挪用.html)
 
 
 ---

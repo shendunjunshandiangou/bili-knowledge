@@ -1,7 +1,6 @@
 ---
 title: Hindenburg Research 做空 Nikola
-tags: "[案例]"
-source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+tags: "[财经商业分析]"
 ---
 
 # Hindenburg Research 做空 Nikola
@@ -35,9 +34,9 @@ source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]
 
 ## 相关原子
 
-- [财经商业分析-案例-Nikola滑坡视频造假手法](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
-- [财经商业分析-案例-Milton刑事诉讼与Nikola崩盘](/xiaolin/atoms/财经商业分析-案例-milton刑事诉讼与nikola崩盘.html)
-- [财经商业分析-案例-Nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
+- [财经商业分析-案例-nikola滑坡视频造假手法](/xiaolin/atoms/财经商业分析-案例-nikola滑坡视频造假手法.html)
+- [财经商业分析-案例-milton刑事诉讼与nikola崩盘](/xiaolin/atoms/财经商业分析-案例-milton刑事诉讼与nikola崩盘.html)
+- [财经商业分析-案例-nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
 
 
 ---

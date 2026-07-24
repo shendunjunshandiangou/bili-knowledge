@@ -31,6 +31,16 @@ const VAULTS = [
     illustration: 'data-lineart.png',
     avatar: 'avatar-daishixiong.jpg',
   },
+  {
+    key: 'dabing',
+    name: '大冰连麦',
+    dir: '大冰-沟通技法',
+    subject: '连麦沟通技法',
+    description: '从大冰直播连麦中提炼可复用的沟通模式：怎么听、怎么问、怎么回应，以及职场、情感与人生成长中的真实案例。',
+    tags: ['连麦互动', '沟通技法', '人生成长'],
+    illustration: 'dabing-lineart.png',
+    avatar: 'avatar-dabing.jpg',
+  },
 ];
 
 const SOURCE_SECTIONS = [
@@ -316,6 +326,14 @@ const ARTICLE_GROUP_RULES = {
         ),
     },
     { name: '业务实战', order: 5, test: (t) => /电商|直播|业务|运营|数据产品/.test(t) },
+  ],
+  dabing: [
+    { name: '沟通技法', order: 1, test: (t) => /沟通|说话|闲聊|公式|抄作业|语言|听声识人|识人|回应|连麦规则|教学|构筑内核/.test(t) },
+    { name: '职场生存', order: 2, test: (t) => /职场|单位|办公室|体制内|公务员|失业|裸辞|自媒体|起号|斗争|忍辱|大忌|跳槽|面试|薪资|大厂/.test(t) },
+    { name: '情感婚恋', order: 3, test: (t) => /恋爱|分手|情侣|男朋友|订婚|结婚|离婚|七年|感情|出家|选男朋友|睡服/.test(t) },
+    { name: '亲子家庭', order: 4, test: (t) => /孩子|家长|妈妈|儿子|女儿|家庭|父母|逼到|教师|同学欺负|无条件/.test(t) },
+    { name: '人生成长', order: 5, test: (t) => /破局|意义|厌世|迷茫|成长|挣钱|内核|阶层|张雪峰|财富自由|转场|路径依赖/.test(t) },
+    { name: '连麦名场面', order: 6, test: (t) => /连麦|封神|高能|精彩|名场面|抬走|黑粉|破防|震惊|在线|整不会|蚌埠|翘嘴/.test(t) },
   ],
 };
 

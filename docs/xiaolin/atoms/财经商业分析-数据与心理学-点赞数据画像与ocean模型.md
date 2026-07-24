@@ -1,7 +1,6 @@
 ---
 title: 点赞数据画像与 OCEAN 模型
-tags: "[数据与心理学]"
-source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
+tags: "[财经商业分析]"
 ---
 
 # 点赞数据画像与 OCEAN 模型
@@ -16,8 +15,8 @@ source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
 - 普适性：同样的机制适用于一切行为流数据——刷短视频的每次浏览、滑动、点赞都在持续生成性格画像，「平台比你自己还了解你自己」。
 
 ## 相关原子
-- [财经商业分析-案例-剑桥分析Facebook数据泄露事件](/xiaolin/atoms/财经商业分析-案例-剑桥分析facebook数据泄露事件.html)
-- [财经商业分析-数据与心理学-MicroTargeting精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
+- [财经商业分析-案例-剑桥分析facebook数据泄露事件](/xiaolin/atoms/财经商业分析-案例-剑桥分析facebook数据泄露事件.html)
+- [财经商业分析-数据与心理学-microtargeting精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
 
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: 剑桥分析 Facebook 数据泄露事件
-tags: "[案例, 数据与心理学, 数据隐私]"
-source: "\"[[你是如何被大数据+心理学操控的？｜脸书丑闻]]\""
+tags: "[财经商业分析]"
 ---
 
 # 剑桥分析 Facebook 数据泄露事件
@@ -17,9 +16,9 @@ Cambridge Analytica（CA，SCL 的子公司）通过剑桥学者科根的问卷 
 - 启示：单个用户数据看似微不足道，但「给每一滴水都施加一点力，就可能改变整个洪流的方向」。
 
 ## 相关原子
-- [财经商业分析-数据与心理学-心理战PsyOps与选举咨询](/xiaolin/atoms/财经商业分析-数据与心理学-心理战psyops与选举咨询.html)
-- [财经商业分析-数据与心理学-点赞数据画像与OCEAN模型](/xiaolin/atoms/财经商业分析-数据与心理学-点赞数据画像与ocean模型.html)
-- [财经商业分析-数据与心理学-MicroTargeting精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
+- [财经商业分析-数据与心理学-心理战psyops与选举咨询](/xiaolin/atoms/财经商业分析-数据与心理学-心理战psyops与选举咨询.html)
+- [财经商业分析-数据与心理学-点赞数据画像与ocean模型](/xiaolin/atoms/财经商业分析-数据与心理学-点赞数据画像与ocean模型.html)
+- [财经商业分析-数据与心理学-microtargeting精准政治广告](/xiaolin/atoms/财经商业分析-数据与心理学-microtargeting精准政治广告.html)
 
 
 ---

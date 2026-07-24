@@ -1,7 +1,6 @@
 ---
 title: Trevor Milton 与 Nikola 创始背景
-tags: "[案例]"
-source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+tags: "[财经商业分析]"
 ---
 
 # Trevor Milton 与 Nikola 创始背景
@@ -23,8 +22,8 @@ Nikola 创始人 Trevor Milton（1982 年生）市场营销专业出身，创办
 
 ## 相关原子
 
-- [财经商业分析-案例-Nikola氢能源卡车商业定位](/xiaolin/atoms/财经商业分析-案例-nikola氢能源卡车商业定位.html)
-- [财经商业分析-案例-Nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
+- [财经商业分析-案例-nikola氢能源卡车商业定位](/xiaolin/atoms/财经商业分析-案例-nikola氢能源卡车商业定位.html)
+- [财经商业分析-案例-nikola融资估值与套现时间线](/xiaolin/atoms/财经商业分析-案例-nikola融资估值与套现时间线.html)
 
 
 ---

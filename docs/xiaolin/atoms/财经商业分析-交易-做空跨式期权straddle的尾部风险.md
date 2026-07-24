@@ -1,7 +1,6 @@
 ---
 title: 做空跨式期权（Short Straddle）的尾部风险
-tags: "[交易, 期权]"
-source: "\"[[28岁小伙搞垮英国最古老银行——Nick Leeson]]\""
+tags: "[财经商业分析]"
 ---
 
 # 做空跨式期权（Short Straddle）的尾部风险

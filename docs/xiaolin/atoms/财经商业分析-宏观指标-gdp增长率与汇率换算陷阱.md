@@ -1,7 +1,6 @@
 ---
 title: GDP增长率与汇率换算陷阱
-tags: "[宏观指标]"
-source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
+tags: "[财经商业分析]"
 ---
 
 # GDP增长率与汇率换算陷阱
@@ -30,8 +29,8 @@ source: "\"[[GDP是会骗人的 _ 一口气了解GDP]]\""
 
 ## 相关原子
 
-- [财经商业分析-宏观指标-人均GDP六种口径与调整](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)
-- [财经商业分析-宏观指标-GDP支出法公式CIGNX](/xiaolin/atoms/财经商业分析-宏观指标-gdp支出法公式cignx.html)
+- [财经商业分析-宏观指标-人均gdp六种口径与调整](/xiaolin/atoms/财经商业分析-宏观指标-人均gdp六种口径与调整.html)
+- [财经商业分析-宏观指标-gdp支出法公式cignx](/xiaolin/atoms/财经商业分析-宏观指标-gdp支出法公式cignx.html)
 
 
 ---

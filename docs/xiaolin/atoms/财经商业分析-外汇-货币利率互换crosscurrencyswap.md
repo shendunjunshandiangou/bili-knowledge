@@ -1,7 +1,6 @@
 ---
 title: 货币利率互换（Cross Currency Swap）
-tags: "[外汇, 衍生品]"
-source: "\"[[【硬核】一口气了解外汇]]\""
+tags: "[财经商业分析]"
 ---
 
 # 货币利率互换（Cross Currency Swap）

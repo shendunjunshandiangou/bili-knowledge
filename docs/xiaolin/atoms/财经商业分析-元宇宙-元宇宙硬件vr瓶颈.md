@@ -1,7 +1,6 @@
 ---
 title: 元宇宙硬件 VR 瓶颈
-tags: "[元宇宙]"
-source: "\"[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]\""
+tags: "[财经商业分析]"
 ---
 
 # 元宇宙硬件 VR 瓶颈
@@ -19,8 +18,8 @@ source: "\"[[关于元宇宙，你必须知道的那些事儿｜NFT Metaverse]]\
 
 ## 相关原子
 
-- [财经商业分析-元宇宙-Meta改名机遇与无奈](/xiaolin/atoms/财经商业分析-元宇宙-meta改名机遇与无奈.html)
-- [财经商业分析-游戏产业-VR头显与元宇宙布局](/xiaolin/atoms/财经商业分析-游戏产业-vr头显与元宇宙布局.html)
+- [财经商业分析-元宇宙-meta改名机遇与无奈](/xiaolin/atoms/财经商业分析-元宇宙-meta改名机遇与无奈.html)
+- [财经商业分析-游戏产业-vr头显与元宇宙布局](/xiaolin/atoms/财经商业分析-游戏产业-vr头显与元宇宙布局.html)
 
 
 ---

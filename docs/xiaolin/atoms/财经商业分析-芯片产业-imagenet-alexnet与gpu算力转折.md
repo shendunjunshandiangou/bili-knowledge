@@ -1,7 +1,6 @@
 ---
 title: ImageNet AlexNet 与 GPU 算力转折
-tags: "[芯片产业, AI]"
-source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
+tags: "[财经商业分析]"
 ---
 
 # ImageNet AlexNet 与 GPU 算力转折
@@ -19,8 +18,8 @@ source: "\"[[一口气了解英伟达，芯片新王凭什么是他？]]\""
 
 ## 相关原子
 
-- [财经商业分析-芯片产业-GPU与CPU并行计算差异](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
-- [财经商业分析-芯片产业-CUDA与GPGPU生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
+- [财经商业分析-芯片产业-gpu与cpu并行计算差异](/xiaolin/atoms/财经商业分析-芯片产业-gpu与cpu并行计算差异.html)
+- [财经商业分析-芯片产业-cuda与gpgpu生态护城河](/xiaolin/atoms/财经商业分析-芯片产业-cuda与gpgpu生态护城河.html)
 
 
 ---

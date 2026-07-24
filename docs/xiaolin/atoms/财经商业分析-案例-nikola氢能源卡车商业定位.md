@@ -1,7 +1,6 @@
 ---
 title: Nikola 氢能源卡车商业定位
-tags: "[案例]"
-source: "\"[[【奇闻】新能源汽车惊天骗局｜风口上的电动汽猪]]\""
+tags: "[财经商业分析]"
 ---
 
 # Nikola 氢能源卡车商业定位
@@ -35,8 +34,8 @@ Milton 在天然气卡车市场反应平平后 pivot 到氢燃料电池，并选
 
 ## 相关原子
 
-- [财经商业分析-案例-Trevor Milton与Nikola创始背景](/xiaolin/atoms/财经商业分析-案例-trevor-milton与nikola创始背景.html)
-- [财经商业分析-案例-Nikola One发布会模型车骗局](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
+- [财经商业分析-案例-trevor-milton与nikola创始背景](/xiaolin/atoms/财经商业分析-案例-trevor-milton与nikola创始背景.html)
+- [财经商业分析-案例-nikola-one发布会模型车骗局](/xiaolin/atoms/财经商业分析-案例-nikola-one发布会模型车骗局.html)
 
 
 ---

@@ -1,13 +1,12 @@
 import { nextTick } from 'vue';
 
-const HOME_INTRO_KEY = 'bili-knowledge-home-intro-v3';
-const ENTER_MS = 420;
-const ENTER_MS_REDUCED = 160;
+const HOME_INTRO_KEY = 'bili-knowledge-home-intro-played';
+const ENTER_MS = 320;
 
 type MotionRouter = {
-  go: (href: string) => void | Promise<void>;
+  go: (href: string) => void;
   onBeforeRouteChange?: (to: string) => unknown;
-  onAfterRouteChange?: (to: string) => unknown;
+  onAfterRouteChange?: () => unknown;
 };
 
 function prefersReducedMotion() {
@@ -16,10 +15,6 @@ function prefersReducedMotion() {
 
 function isMobileViewport() {
   return window.matchMedia('(max-width: 899px)').matches;
-}
-
-function syncMotionReducedClass() {
-  document.documentElement.classList.toggle('motion-reduced', prefersReducedMotion());
 }
 
 export function shouldPlayHomeIntro() {
@@ -34,14 +29,14 @@ export function shouldPlayHomeIntro() {
 
 function triggerRouteEnter(direction: 'forward' | 'back' = 'forward') {
   const root = document.documentElement;
-  const duration = prefersReducedMotion() ? ENTER_MS_REDUCED : ENTER_MS;
-
   root.classList.remove('route-leave', 'route-enter', 'route-enter-back');
+  if (prefersReducedMotion()) return;
+
   void root.offsetWidth;
   root.classList.add(direction === 'back' ? 'route-enter-back' : 'route-enter');
   window.setTimeout(() => {
     root.classList.remove('route-enter', 'route-enter-back');
-  }, duration);
+  }, ENTER_MS);
 }
 
 function decorateArticleReveal() {
@@ -51,6 +46,8 @@ function decorateArticleReveal() {
   doc.querySelectorAll('.kb-reveal').forEach((node) => {
     node.classList.remove('kb-reveal', 'kb-reveal-delay-0', 'kb-reveal-delay-1', 'kb-reveal-delay-2', 'kb-reveal-delay-3', 'is-visible');
   });
+
+  if (prefersReducedMotion()) return;
 
   const targets = [
     doc.querySelector('.vp-doc > div > h1:first-of-type'),
@@ -70,22 +67,21 @@ export function setupPageMotion(router: MotionRouter) {
 
   let navigatingBack = false;
 
-  syncMotionReducedClass();
-  window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', syncMotionReducedClass);
-
   const originalBefore = router.onBeforeRouteChange;
   router.onBeforeRouteChange = (to: string) => {
-    document.documentElement.classList.add('route-leave');
+    if (!prefersReducedMotion()) {
+      document.documentElement.classList.add('route-leave');
+    }
     return originalBefore?.(to);
   };
 
   const originalAfter = router.onAfterRouteChange;
-  router.onAfterRouteChange = (to: string) => {
+  router.onAfterRouteChange = () => {
     document.documentElement.classList.remove('route-leave');
     triggerRouteEnter(navigatingBack ? 'back' : 'forward');
     navigatingBack = false;
     nextTick(() => decorateArticleReveal());
-    return originalAfter?.(to);
+    return originalAfter?.();
   };
 
   window.addEventListener('kb-nav-back', () => {
@@ -99,19 +95,16 @@ export function setupPageMotion(router: MotionRouter) {
 }
 
 export async function navigateWithMotion(router: MotionRouter, href: string) {
-  const go = () => Promise.resolve(router.go(href));
+  const go = () => router.go(href);
 
-  // 增强动效：View Transition 在 reduced-motion / 移动端跳过
   if (prefersReducedMotion() || isMobileViewport() || typeof document.startViewTransition !== 'function') {
-    await go();
+    go();
     return;
   }
 
   try {
-    await document.startViewTransition(async () => {
-      await go();
-    }).finished;
+    await document.startViewTransition(go).finished;
   } catch {
-    await go();
+    go();
   }
 }

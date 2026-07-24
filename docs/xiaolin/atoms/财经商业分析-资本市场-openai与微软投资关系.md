@@ -1,7 +1,6 @@
 ---
 title: OpenAI与微软投资关系
-tags: "[资本市场]"
-source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
+tags: "[财经商业分析]"
 ---
 
 # OpenAI与微软投资关系
@@ -29,9 +28,9 @@ source: "\"[[AI巨头们之间的资本混战，到底是个什么情况？]]\""
 
 ## 相关原子
 
-- [财经商业分析-AI产业-AI产业链四层结构](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
-- [财经商业分析-资本市场-Anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
-- [财经商业分析-资本市场-AI捆绑投资与系统性风险](/xiaolin/atoms/财经商业分析-资本市场-ai捆绑投资与系统性风险.html)
+- [财经商业分析-ai产业-ai产业链四层结构](/xiaolin/atoms/财经商业分析-ai产业-ai产业链四层结构.html)
+- [财经商业分析-资本市场-anthropic资本合作伙伴格局](/xiaolin/atoms/财经商业分析-资本市场-anthropic资本合作伙伴格局.html)
+- [财经商业分析-资本市场-ai捆绑投资与系统性风险](/xiaolin/atoms/财经商业分析-资本市场-ai捆绑投资与系统性风险.html)
 
 
 ---

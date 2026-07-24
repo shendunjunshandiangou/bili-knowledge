@@ -261,7 +261,6 @@ function goBack() {
   saveStack()
   if (!prev) return
   navigatingBack = true
-  window.dispatchEvent(new CustomEvent('kb-nav-back'))
   try {
     // @ts-ignore VitePress router.go 支持站内路径
     router.go(prev.path)
@@ -379,13 +378,12 @@ onUnmounted(() => {
 
 .backbtn-fade-enter-active,
 .backbtn-fade-leave-active {
-  transition: opacity var(--kb-motion-base), transform var(--kb-motion-base);
+  transition: opacity 0.25s;
 }
 
 .backbtn-fade-enter-from,
 .backbtn-fade-leave-to {
   opacity: 0;
-  transform: scale(0.92);
 }
 
 @media (max-width: 899px) {

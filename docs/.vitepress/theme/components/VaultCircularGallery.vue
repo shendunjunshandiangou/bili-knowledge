@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
-import { useRouter } from 'vitepress';
-import { navigateWithMotion } from '../composables/usePageMotion';
 
 type Vault = {
   key: string;
@@ -16,7 +14,6 @@ type Vault = {
 };
 
 const props = defineProps<{ vaults: Vault[]; base: string }>();
-const router = useRouter();
 const viewport = ref<HTMLElement | null>(null);
 const maxScroll = ref(0);
 const scrollPosition = ref(0);
@@ -116,18 +113,8 @@ function resetTilt(key: string) {
   };
 }
 
-function onCardClick(event: MouseEvent, href: string) {
-  if (suppressClick) {
-    event.preventDefault();
-    return;
-  }
-  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-
-  event.preventDefault();
-  const card = event.currentTarget as HTMLElement;
-  card.classList.add('is-activating');
-  window.setTimeout(() => card.classList.remove('is-activating'), 180);
-  void navigateWithMotion(router, href);
+function onCardClick(event: MouseEvent) {
+  if (suppressClick) event.preventDefault();
 }
 
 onMounted(() => {
@@ -160,15 +147,12 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
           v-for="(vault, index) in vaults"
           :key="vault.key"
           class="gallery-card"
-          :style="{
-            ...tiltStyles[vault.key],
-            '--vault-avatar-vt': `vault-avatar-${vault.key}`,
-          }"
+          :style="tiltStyles[vault.key]"
           :href="base + vault.key + '/'"
           @pointermove="onCardMove($event, vault.key)"
           @pointerleave="resetTilt(vault.key)"
           @dragstart.prevent
-          @click="onCardClick($event, base + vault.key + '/')"
+          @click="onCardClick"
         >
           <div class="gallery-card__glare" aria-hidden="true"></div>
           <div class="gallery-card__topline"><span>ARCHIVE / {{ String(index + 1).padStart(2, '0') }}</span><span>{{ vault.total.toLocaleString('zh-CN') }} PAGES</span></div>
@@ -178,7 +162,7 @@ onBeforeUnmount(() => resizeObserver?.disconnect());
           </div>
           <div class="gallery-card__body">
             <div class="gallery-card__identity">
-              <span class="gallery-card__avatar" :style="{ viewTransitionName: `vault-avatar-${vault.key}` }">
+              <span class="gallery-card__avatar">
                 <img v-if="vault.avatar" :src="base + 'images/' + vault.avatar" :alt="vault.name + ' 头像'" draggable="false" />
                 <template v-else>{{ vault.name.slice(0, 1) }}</template>
               </span>
