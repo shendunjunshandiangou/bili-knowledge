@@ -122,7 +122,7 @@ html {
 }
 
 /* Document typography — 正文宋体，导航/侧栏/首页/目录保持 sans */
-.vp-doc:not(:has(.home-page)):not(:has(.catalog-page)) {
+.vp-doc:not(:has(.home-page)):not(:has(.catalog-page)):not(:has(.vault-hub)) {
   font-family: var(--vp-font-family-serif);
   font-weight: 400;
   font-synthesis: none;
@@ -133,7 +133,8 @@ html {
 .vp-doc:has(.home-page),
 .vp-doc:has(.catalog-page),
 .vp-doc:has(.reading-hub),
-.vp-doc:has(.section-hub) {
+.vp-doc:has(.section-hub),
+.vp-doc:has(.vault-hub) {
   line-height: 1.8;
   color: var(--vp-c-text-1);
 }
@@ -145,7 +146,8 @@ html {
 .VPDoc:not(.has-sidebar):has(.home-page) .container,
 .VPDoc:not(.has-sidebar):has(.catalog-page) .container,
 .VPDoc:not(.has-sidebar):has(.reading-hub) .container,
-.VPDoc:not(.has-sidebar):has(.section-hub) .container {
+.VPDoc:not(.has-sidebar):has(.section-hub) .container,
+.VPDoc:not(.has-sidebar):has(.vault-hub) .container {
   max-width: 1600px;
 }
 
@@ -153,10 +155,12 @@ html {
 .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
 .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
 .VPDoc:not(.has-sidebar):has(.section-hub) .content,
+.VPDoc:not(.has-sidebar):has(.vault-hub) .content,
 .VPDoc:not(.has-sidebar):has(.home-page) .content-container,
 .VPDoc:not(.has-sidebar):has(.catalog-page) .content-container,
 .VPDoc:not(.has-sidebar):has(.reading-hub) .content-container,
-.VPDoc:not(.has-sidebar):has(.section-hub) .content-container {
+.VPDoc:not(.has-sidebar):has(.section-hub) .content-container,
+.VPDoc:not(.has-sidebar):has(.vault-hub) .content-container {
   width: 100%;
   max-width: none;
   padding-inline: 0;
@@ -166,7 +170,8 @@ html {
 .VPDoc:not(.has-sidebar):has(.home-page) .content,
 .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
 .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
-.VPDoc:not(.has-sidebar):has(.section-hub) .content {
+.VPDoc:not(.has-sidebar):has(.section-hub) .content,
+.VPDoc:not(.has-sidebar):has(.vault-hub) .content {
   padding-bottom: 96px;
 }
 
@@ -174,7 +179,8 @@ html {
   .VPDoc:not(.has-sidebar):has(.home-page) .content,
   .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
   .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
-  .VPDoc:not(.has-sidebar):has(.section-hub) .content {
+  .VPDoc:not(.has-sidebar):has(.section-hub) .content,
+  .VPDoc:not(.has-sidebar):has(.vault-hub) .content {
     padding-bottom: 128px;
   }
 }
@@ -357,7 +363,8 @@ html {
   .VPDoc:not(.has-sidebar):has(.home-page) .content,
   .VPDoc:not(.has-sidebar):has(.catalog-page) .content,
   .VPDoc:not(.has-sidebar):has(.reading-hub) .content,
-  .VPDoc:not(.has-sidebar):has(.section-hub) .content {
+  .VPDoc:not(.has-sidebar):has(.section-hub) .content,
+  .VPDoc:not(.has-sidebar):has(.vault-hub) .content {
     padding-bottom: 48px;
   }
 
@@ -367,7 +374,8 @@ html {
 
   .vp-doc .catalog-page,
   .vp-doc .reading-hub,
-  .vp-doc .section-hub {
+  .vp-doc .section-hub,
+  .vp-doc .vault-hub {
     padding-inline: 12px;
   }
 

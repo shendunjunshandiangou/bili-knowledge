@@ -1,19 +1,11 @@
 ---
 title: 小Lin说 知识库
+aside: false
+sidebar: false
 ---
 
-# 小Lin说 知识库
+<script setup>
+import VaultHub from '../.vitepress/theme/components/VaultHub.vue'
+</script>
 
-本区整理自 B 站 UP 主 **小Lin说** 的视频内容，包含三个层次：
-
-- **体系化阅读**：7 篇
-- **逐视频文章**：161 篇
-- **原子笔记**：959 篇
-
-## 快速入口
-
-- [体系化阅读](knowledge/)
-- [逐视频文章](articles/)
-- [原子笔记](atoms/)
-
-> 内容版权归原作者与原 UP 主所有，本站仅做结构化整理与学习索引。
+<VaultHub vault-key="xiaolin" />

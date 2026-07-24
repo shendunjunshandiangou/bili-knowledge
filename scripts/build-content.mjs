@@ -497,10 +497,7 @@ function processVault(vault, globalSlugMap) {
 
 function writeVaultIndex(vault, sections) {
   const outPath = path.join(docsRoot, vault.key, 'index.md');
-  const counts = sections.map((s) => `- **${s.section.title}**：${s.files.length} 篇`).join('\n');
-  const content = `---\ntitle: ${vault.name} 知识库\n---\n\n# ${vault.name} 知识库\n\n本区整理自 B 站 UP 主 **${vault.name}** 的视频内容，包含三个层次：\n\n${counts}\n\n## 快速入口\n\n${sections
-    .map((s) => `- [${s.section.title}](${s.section.key}/)`)
-    .join('\n')}\n\n> 内容版权归原作者与原 UP 主所有，本站仅做结构化整理与学习索引。\n`;
+  const content = `---\ntitle: ${vault.name} 知识库\naside: false\nsidebar: false\n---\n\n<script setup>\nimport VaultHub from '../.vitepress/theme/components/VaultHub.vue'\n</script>\n\n<VaultHub vault-key="${vault.key}" />\n`;
   fs.writeFileSync(outPath, content, 'utf8');
 }
 
