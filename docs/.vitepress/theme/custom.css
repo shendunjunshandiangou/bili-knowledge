@@ -286,6 +286,11 @@ html {
   color: var(--vp-c-brand-1);
 }
 
+/* 全站隐藏「最后更新」 */
+.VPLastUpdated {
+  display: none !important;
+}
+
 /* Footer */
 .VPDocFooter .pager-link {
   border: 1px solid var(--vp-c-divider);

@@ -15,7 +15,7 @@ export default defineConfig({
   lang: 'zh-CN',
   base: '/bili-knowledge/',
   appearance: false,
-  lastUpdated: true,
+  lastUpdated: false,
   ignoreDeadLinks: true,
   markdown: {
     lineNumbers: false,
@@ -83,7 +83,6 @@ export default defineConfig({
       prev: '上一页',
       next: '下一页',
     },
-    lastUpdatedText: '最后更新',
     editLink: {
       pattern: '',
       text: '',
