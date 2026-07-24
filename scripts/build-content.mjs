@@ -77,8 +77,11 @@ function ensureDir(p) {
 }
 
 function copyStaticAssets() {
-  if (!fs.existsSync(staticRoot)) return;
-  fs.cpSync(staticRoot, path.join(docsRoot, 'public'), { recursive: true });
+  const imagesRoot = path.join(staticRoot, 'images');
+  const publicImages = path.join(docsRoot, 'public', 'images');
+  if (!fs.existsSync(imagesRoot)) return;
+  ensureDir(path.join(docsRoot, 'public'));
+  fs.cpSync(imagesRoot, publicImages, { recursive: true });
 }
 
 function removeExt(name) {
